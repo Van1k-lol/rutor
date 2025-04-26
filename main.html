@@ -41,7 +41,7 @@
         </div>
       </div>
     </header>
-    <div class="modal">
+    <div class="modal__login">
       <div class="modal__main">
         <div class="main__wrap">
           <div class="modal__add"><img src="./assets/img/main/main_reg/Frame 16.png" alt=""></div>
@@ -64,18 +64,72 @@
             </div>
           </div>
           <div class="modal__forms__button--auth">
-            <button class="modal__button-signin">Вход</button>
+            <div class="modal__button-container">
+              <div class="modal__button-shadow-bgc-correct"></div>
+              <div class="modal__button-shadow"></div>
+              <div class="modal__button-shadow-bgc"></div>
+              <button class="modal__button-signin">Вход</button>
+            </div>
+          <p class="modal__forms__or-text">или</p>
+          <div class="modal__button-container">
+              <div class="modal__button__telegram-shadow"></div>
+              <button class="modal__button__telegram-signin">Вход через Telegram</button>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="modal__register">
+      <div class="modal__main">
+        <div class="main__wrap">
+          <div class="modal__add"><img src="./assets/img/main/main_log/Banner.png" alt=""></div>
+          <div class="modal__forms">
+          <div class="modal__button-close"><img src="./assets/img/main/main_reg/Vector.png" class="modal__button--img" alt=""></div>
+          <div class="modal__forms__top">
+            <h2 class="modal__text-auth">Регистрация</h2>
+          </div>
+          <div class="modal__forms__container">
+            <div class="modal__forms__inputs">
+              <input placeholder="Почта" type="email" class="modal__input-email">
+              <div class="modal__input--wrapper">
+
+                <input placeholder="Пароль" id="password" type="password" class="modal__input-password">
+                <button class="modal__input--toggle" type="button" onclick="togglePassword()"><img src="./assets/img/main/main_reg/eye-1.png" alt=""></button>
+              </div>
+              <form action="" class="modal__forms__inputs-currency">
+                <select name="currency" id=""></select>
+              </form>
+              <input type="text" class="modal__forms__inputs-promocode">
+              <div class="modal__forms__inputs__checkbox--wrapp">
+                <input type="checkbox" name="" id="">
+                <p></p>
+              </div>
+              <div class="modal__forms__inputs--reset">  
+                <p >Забыли пароль?</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal__forms__button--auth">
+            <div class="modal__button-container">
+              <div class="modal__button-shadow-bgc-correct"></div>
+              <div class="modal__button-shadow"></div>
+              <div class="modal__button-shadow-bgc"></div>
+              <button class="modal__button-signin">Вход</button>
+            </div>
+          <p class="modal__forms__or-text">или</p>
+          <div class="modal__button-container">
+              <div class="modal__button__telegram-shadow"></div>
+              <button class="modal__button__telegram-signin">Вход через Telegram</button>
+            </div>
           </div>
           </div>
         </div>
         </div>
       </div>
     </div>
-    <script>
-    function togglePassword() {
-      const input = document.getElementById('password');
-      input.type = input.type === 'password' ? 'text' : 'password';
-    }
+    <script src="script/sript.js" defer>
+    
 </script>
   </body>
 </html>

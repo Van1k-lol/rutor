@@ -180,10 +180,10 @@ body {
   transition: all 0.2s;
 }
 
-.modal {
+.modal__login {
   position: fixed;
   inset: 0;
-  background-color: rgba(146, 146, 146, 0.5);
+
   display: flex;
   cursor: pointer;
   padding: 30px;
@@ -200,6 +200,8 @@ body {
   color: white;
   padding: 15px;
   border-radius: 15px;
+  z-index: 1;
+  cursor: default;
 }
 .modal__add {
   width: 50%;
@@ -228,6 +230,7 @@ body {
 
 .modal__button--img {
   padding: 36px 29px 0 0;
+  cursor: pointer;
 }
 
 .modal__forms__top {
@@ -295,8 +298,48 @@ body {
 .modal__forms__button--auth {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  position: relative;
 }
+.modal__button-container {
+  position: relative;
+  width: fit-content;
+}
+.modal__button-container:hover .modal__button-shadow {
+  border: red 1.33px transparent;
+  box-shadow: 0px 0px 12.37px 0px #e8b11d4d;
+
+  box-shadow: 0px -3.76px 8.84px 0px #0e0a0187 inset;
+
+  background: linear-gradient(
+    175.67deg,
+    #e8b21d 17.86%,
+    #ffedbd 34.62%,
+    #e8b21d 71.74%,
+    #ffda75 93.61%
+  );
+
+  border-radius: 5.3px;
+}
+.modal__button-container:hover .modal__button-signin::after {
+  background: #e8b21d;
+}
+.modal__button-container:hover .modal__button-shadow-bgc-correct {
+  visibility: visible;
+}
+.modal__button-container:hover .modal__button-shadow-bgc-correct::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 1px;
+  background: #e8b21d;
+  left: -2px;
+  bottom: 2px;
+  transform: rotate(-55deg);
+}
+
 .modal__button-signin {
   display: block;
   background-color: #251c06;
@@ -305,7 +348,7 @@ body {
   font-size: 18px;
   border: #0e0a01;
   position: relative;
-  z-index: 1;
+  z-index: 4;
   border-radius: 5.3px;
   height: 56px;
   width: 362px;
@@ -313,23 +356,80 @@ body {
   cursor: pointer;
   overflow: visible;
 }
+.modal__button-shadow-bgc-correct {
+  position: absolute;
+  top: 3px;
+  left: -3px;
+  height: 56px;
+  width: 362px;
+  background-color: #251c06;
+  z-index: 3;
+  visibility: hidden;
+  border-radius: 5.3px;
+  transform: skew(-10deg);
+}
+.modal__button-shadow-bgc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 362px;
+  background-color: #251c06;
+  z-index: 2;
+  border-radius: 5.3px;
+  transform: skew(-10deg);
+}
 .modal__button-signin:hover {
-  background-color: #f9b01a;
+  background: 
+  /* linear-gradient(
+      0deg,
+      var(--gray-gray-700, #1f1704),
+      var(--gray-gray-700, #1f1704)
+    ), */ linear-gradient(
+      0deg,
+      rgba(249, 176, 26, 0.5),
+      rgba(249, 176, 26, 0.5)
+    ),
+    linear-gradient(
+      175.46deg,
+      rgba(249, 176, 26, 0.1) 21.26%,
+      rgba(255, 255, 255, 0.1) 49.63%,
+      rgba(249, 176, 26, 0.1) 93.33%
+    ),
+    radial-gradient(
+        26.11% 174.07% at 35.42% 25%,
+        rgba(249, 176, 26, 0.3) 0%,
+        rgba(249, 176, 26, 0) 63.51%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   content: "";
   cursor: pointer;
+  border-width: 1.33px;
+  border-style: solid;
+  border-image-source: linear-gradient(
+    175.67deg,
+    #e8b21d 17.86%,
+    #ffedbd 34.62%,
+    #e8b21d 71.74%,
+    #ffda75 93.61%
+  );
+  border-image-slice: 1;
+
+  -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  border-radius: 5.33px;
 }
 
-.modal__button-signin::before {
-  content: "";
+.modal__button-shadow {
   position: absolute;
+  top: 0;
+  left: -1px;
+  width: 362px;
+  height: 56px;
   border: 1px solid #251c06;
-  pointer-events: none;
   border-radius: 5.3px;
-  z-index: 0;
-  width: 100%;
-  height: 55px;
-  left: -5px;
-  bottom: -5px;
+  transform: skew(-10deg) translate(-4px, 3px);
+  z-index: 1;
 }
 
 .modal__button-signin::after {
@@ -340,7 +440,6 @@ body {
   background: #251c06;
   left: -5px;
   bottom: -1px;
-  z-index: -1;
   transform: rotate(-55deg);
 }
 .modal__input--wrapper {
@@ -356,4 +455,54 @@ body {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+}
+
+.modal__forms__or-text {
+  margin-top: 20px;
+  font-family: Gilroy;
+  font-size: 16px;
+  color: #7c612f;
+}
+
+.modal__button__telegram-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 362px;
+  height: 56px;
+  border: 1px solid #4297ff;
+  border-radius: 5.3px;
+  transform: skew(-10deg) translate(-4px, 3px);
+  z-index: 1;
+  pointer-events: none;
+}
+.modal__button__telegram-signin::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  background: #4297ff;
+  left: -5px;
+  bottom: -1px;
+  z-index: 0;
+  transform: rotate(-55deg);
+}
+.modal__button__telegram-signin {
+  display: block;
+  background-color: #2a4666;
+  color: #ffffff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #ffc14173;
+  font-size: 18px;
+  border: #4297ff 1px solid;
+  position: relative;
+  z-index: 2;
+  border-radius: 5.3px;
+  height: 56px;
+  width: 362px;
+  transform: skew(-10deg);
+  cursor: pointer;
+  overflow: visible;
+}
+.modal__register {
+  visibility: hidden;
 }

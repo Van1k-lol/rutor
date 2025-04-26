@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/tymofii-branch
 <svg width="67" height="69" viewBox="0 0 67 69" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.35954 61.4419C1.35954 64.737 4.03074 67.4082 7.32583 67.4082H55.7191C59.0142 67.4082 61.6854 64.737 61.6854 61.4419V13.0487C61.6854 9.75358 59.0142 7.08238 55.7191 7.08238H7.32583C4.03074 7.08238 1.35954 9.75358 1.35954 13.0487V61.4419Z" fill="#1F1704" stroke="#3B2B0D" stroke-width="1.32584"/>
 <path d="M5.33708 55.6966C5.33708 58.9917 8.00828 61.6629 11.3034 61.6629H59.6966C62.9917 61.6629 65.6629 58.9917 65.6629 55.6966V7.30337C65.6629 4.00828 62.9917 1.33708 59.6966 1.33708H11.3034C8.00828 1.33708 5.33708 4.00828 5.33708 7.30337V55.6966Z" fill="#1F1704" stroke="#3B2B0D" stroke-width="1.32584"/>
@@ -14,6 +17,7 @@
 <defs>
 <clipPath id="clip0_2001_9241">
 <rect width="20" height="20" fill="white" transform="translate(25 14)"/>
+<<<<<<< HEAD
 =======
 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_79_260)">
@@ -25,6 +29,8 @@
 <clipPath id="clip0_79_260">
 <rect width="20" height="20" fill="white"/>
 >>>>>>> 702f35d5f07027e8c776959af2aaf5fd0ac67784
+=======
+>>>>>>> origin/tymofii-branch
 </clipPath>
 </defs>
 </svg>

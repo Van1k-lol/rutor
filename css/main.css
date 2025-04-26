@@ -977,3 +977,512 @@ body {
     calc(100% - 8px) rgba(35, 27, 11, 0.7);
   transition: all 0.2s;
 }
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../assets/fonts/gilroy/Gilroy-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #0e0a01;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  /* background: url("../assets/img/main/main/bg_main.jpg") center no-repeat fixed #0e0a01; */
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.header {
+  border-bottom: 1px solid #1f1704;
+  margin-bottom: 32px;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.balance {
+  line-height: 44px;
+  padding: 0 12px 0 40px;
+  background: url(../assets/img/main/main_top/Bonus\ Giftbox.svg) 12px 50%
+    no-repeat;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.logo__img {
+  max-width: 100%;
+}
+
+.buttons button {
+  margin-right: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  color: #fff;
+  padding: 0;
+  background: 0 0;
+  transition: 0.2s;
+  border: 0;
+}
+
+.buttons button::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 4px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5.3px;
+  transform: skew(-10deg);
+}
+
+.buttons button span {
+  display: inline-block;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 25px;
+  border-radius: 5.3px;
+  transform: skew(-10deg);
+}
+
+.login span {
+  border: 1.33px solid #3b2b0d;
+  background: #1f1704;
+}
+
+.login::before {
+  border: 1.33px solid #3b2b0d;
+  background: #1f1704;
+}
+
+.login span i {
+  display: inline-block;
+  font-style: normal;
+  transform: skew(10deg);
+}
+
+.login::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  background: #3b2b0d;
+  left: -8px;
+  bottom: 0;
+  z-index: 3;
+  transform: rotate(-55deg);
+}
+
+.registration {
+  border: 1px solid #eec248;
+}
+
+.registration span {
+  font-weight: 700;
+  border: 1px solid #eec248;
+  box-shadow: 0 0 12.37px 0 rgba(232, 177, 29, 0.3),
+    inset 0 -3.76px 8.84px 0 rgba(14, 10, 1, 0.53);
+  background: radial-gradient(
+      68.61% 223.81% at 93.07% 3.57%,
+      rgba(249, 176, 26, 0.3) 0,
+      rgba(249, 176, 26, 0) 63.51%
+    ),
+    linear-gradient(
+      177.78deg,
+      rgba(249, 176, 26, 0.1) 0.9%,
+      rgba(255, 255, 255, 0.1) 38.79%,
+      rgba(249, 176, 26, 0.1) 97.18%
+    ),
+    linear-gradient(0deg, rgba(249, 176, 26, 0.4), rgba(249, 176, 26, 0.4)),
+    #1f1704;
+}
+
+.registration::before {
+  border: 1px solid #eec248;
+  box-shadow: 0 0 12.37px 0 rgba(232, 177, 29, 0.3),
+    inset 0 -3.76px 8.84px 0 rgba(14, 10, 1, 0.53);
+}
+
+.registration span i {
+  display: inline-block;
+  font-style: normal;
+  transform: skew(10deg);
+}
+
+.registration::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  background: #eec248;
+  left: -8px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-55deg);
+}
+
+.language {
+  appearance: none;
+  border: none;
+  position: relative;
+  outline: none;
+  padding: 5px;
+  border: 1px solid #251c06;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 74px;
+  height: 33px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #e0caa3;
+  overflow: hidden;
+  background: url("../assets/img/main/main_top/Vector.png") no-repeat
+    calc(100% - 8px) rgba(35, 27, 11, 0.7);
+  transition: all 0.2s;
+}
+
+.modal__login {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  cursor: pointer;
+  padding: 30px;
+  overflow-y: auto;
+  /* visibility: hidden; */
+}
+.modal__main {
+  position: relative;
+  width: 1128px;
+  height: 732px;
+  min-width: 600px;
+  background-color: #0e0a01;
+  margin: auto;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+  z-index: 1;
+  cursor: default;
+}
+.modal__add {
+  width: 50%;
+  align-items: center;
+  margin: 20px 0 20px 20px;
+}
+
+.main__wrap {
+  display: flex;
+}
+
+.modal__forms {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.modal__button-close {
+  display: flex;
+  flex-direction: column;
+  width: 579px;
+  height: 85px;
+  align-items: end;
+  background-color: #0e0a01;
+  border: #0e0a01;
+}
+
+.modal__button--img {
+  padding: 36px 29px 0 0;
+  cursor: pointer;
+}
+
+.modal__forms__top {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 28px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.modal__forms__container {
+  width: 100%;
+}
+.modal__forms__inputs {
+  width: 390px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.modal__input-email {
+  background: var(--gray-gray-600, #231b0bb2);
+  color: var(--gray-gray-300, #7c612f);
+  padding: 0 20px;
+  border-radius: 16px;
+  height: 51px;
+  border: 1px solid #523b12;
+  margin-bottom: 20px;
+  color: white;
+}
+.modal__input-email::placeholder {
+  font-family: Gilroy;
+  color: var(--gray-gray-300, #7c612f);
+}
+.modal__input-email:focus {
+  outline: none !important;
+  border: 1px solid #fed970;
+}
+.modal__input-password {
+  background: var(--gray-gray-600, #231b0bb2);
+  color: var(--gray-gray-300, #7c612f);
+  padding: 0 20px;
+  border-radius: 16px;
+  height: 51px;
+  border: 1px solid #523b12;
+  color: white;
+}
+.modal__input-password::placeholder {
+  font-family: Gilroy;
+  color: var(--gray-gray-300, #7c612f);
+}
+.modal__input-password:focus {
+  outline: none !important;
+  border: 1px solid #fed970;
+}
+.modal__forms__inputs--reset {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  font-family: Gilroy;
+  font-size: 16px;
+  color: #a68e62;
+  text-decoration: underline;
+}
+.modal__forms__button--auth {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.modal__button-container {
+  position: relative;
+  width: fit-content;
+}
+.modal__button-container:hover .modal__button-shadow {
+  border: red 1.33px transparent;
+  box-shadow: 0px 0px 12.37px 0px #e8b11d4d;
+
+  box-shadow: 0px -3.76px 8.84px 0px #0e0a0187 inset;
+
+  background: linear-gradient(
+    175.67deg,
+    #e8b21d 17.86%,
+    #ffedbd 34.62%,
+    #e8b21d 71.74%,
+    #ffda75 93.61%
+  );
+
+  border-radius: 5.3px;
+}
+.modal__button-container:hover .modal__button-signin::after {
+  background: #e8b21d;
+}
+.modal__button-container:hover .modal__button-shadow-bgc-correct {
+  visibility: visible;
+}
+.modal__button-container:hover .modal__button-shadow-bgc-correct::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 1px;
+  background: #e8b21d;
+  left: -2px;
+  bottom: 2px;
+  transform: rotate(-55deg);
+}
+
+.modal__button-signin {
+  display: block;
+  background-color: #251c06;
+  color: #ffffff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #ffc14173;
+  font-size: 18px;
+  border: #0e0a01;
+  position: relative;
+  z-index: 4;
+  border-radius: 5.3px;
+  height: 56px;
+  width: 362px;
+  transform: skew(-10deg);
+  cursor: pointer;
+  overflow: visible;
+}
+.modal__button-shadow-bgc-correct {
+  position: absolute;
+  top: 3px;
+  left: -3px;
+  height: 56px;
+  width: 362px;
+  background-color: #251c06;
+  z-index: 3;
+  visibility: hidden;
+  border-radius: 5.3px;
+  transform: skew(-10deg);
+}
+.modal__button-shadow-bgc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 362px;
+  background-color: #251c06;
+  z-index: 2;
+  border-radius: 5.3px;
+  transform: skew(-10deg);
+}
+.modal__button-signin:hover {
+  background: 
+  /* linear-gradient(
+      0deg,
+      var(--gray-gray-700, #1f1704),
+      var(--gray-gray-700, #1f1704)
+    ), */ linear-gradient(
+      0deg,
+      rgba(249, 176, 26, 0.5),
+      rgba(249, 176, 26, 0.5)
+    ),
+    linear-gradient(
+      175.46deg,
+      rgba(249, 176, 26, 0.1) 21.26%,
+      rgba(255, 255, 255, 0.1) 49.63%,
+      rgba(249, 176, 26, 0.1) 93.33%
+    ),
+    radial-gradient(
+        26.11% 174.07% at 35.42% 25%,
+        rgba(249, 176, 26, 0.3) 0%,
+        rgba(249, 176, 26, 0) 63.51%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  content: "";
+  cursor: pointer;
+  border-width: 1.33px;
+  border-style: solid;
+  border-image-source: linear-gradient(
+    175.67deg,
+    #e8b21d 17.86%,
+    #ffedbd 34.62%,
+    #e8b21d 71.74%,
+    #ffda75 93.61%
+  );
+  border-image-slice: 1;
+
+  -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  border-radius: 5.33px;
+}
+
+.modal__button-shadow {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 362px;
+  height: 56px;
+  border: 1px solid #251c06;
+  border-radius: 5.3px;
+  transform: skew(-10deg) translate(-4px, 3px);
+  z-index: 1;
+}
+
+.modal__button-signin::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  background: #251c06;
+  left: -5px;
+  bottom: -1px;
+  transform: rotate(-55deg);
+}
+.modal__input--wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.modal__input--toggle {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal__forms__or-text {
+  margin-top: 20px;
+  font-family: Gilroy;
+  font-size: 16px;
+  color: #7c612f;
+}
+
+.modal__button__telegram-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 362px;
+  height: 56px;
+  border: 1px solid #4297ff;
+  border-radius: 5.3px;
+  transform: skew(-10deg) translate(-4px, 3px);
+  z-index: 1;
+  pointer-events: none;
+}
+.modal__button__telegram-signin::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  background: #4297ff;
+  left: -5px;
+  bottom: -1px;
+  z-index: 0;
+  transform: rotate(-55deg);
+}
+.modal__button__telegram-signin {
+  display: block;
+  background-color: #2a4666;
+  color: #ffffff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #ffc14173;
+  font-size: 18px;
+  border: #4297ff 1px solid;
+  position: relative;
+  z-index: 2;
+  border-radius: 5.3px;
+  height: 56px;
+  width: 362px;
+  transform: skew(-10deg);
+  cursor: pointer;
+  overflow: visible;
+}
+.modal__register {
+  visibility: hidden;
+}

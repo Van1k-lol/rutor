@@ -95,16 +95,18 @@
                 <input placeholder="Пароль" id="password" type="password" class="modal__input-password">
                 <button class="modal__input--toggle" type="button" onclick="togglePassword()"><img src="./assets/img/main/main_reg/eye-1.png" alt=""></button>
               </div>
-              <form action="" class="modal__forms__inputs-currency">
-                <select name="currency" id=""></select>
-              </form>
-              <input type="text" class="modal__forms__inputs-promocode">
-              <div class="modal__forms__inputs__checkbox--wrapp">
-                <input type="checkbox" name="" id="">
-                <p></p>
+              <div class="modal__forms__inputs__aditional-wrap">
+
+                <form placeholder="Валюта" action="" class="modal__forms__inputs-currency">
+                  <select name="currency" id="" class="modal__forms__inputs-currency-select">
+                    <option value="" disabled selected hidden>Валюта</option>
+                  </select>
+                </form>
+                <input type="text" class="modal__forms__inputs-promocode">
               </div>
-              <div class="modal__forms__inputs--reset">  
-                <p >Забыли пароль?</p>
+              <div class="modal__forms__inputs__checkbox--wrapp">
+                <input type="checkbox" name="" id="" class="modal__forms__inputs__checkbox">
+                <p>Я согласен (-на) с правилами и условиями</p>
               </div>
             </div>
           </div>
@@ -113,7 +115,7 @@
               <div class="modal__button-shadow-bgc-correct"></div>
               <div class="modal__button-shadow"></div>
               <div class="modal__button-shadow-bgc"></div>
-              <button class="modal__button-signin">Вход</button>
+              <button class="modal__button-signin">Регистрация</button>
             </div>
           <p class="modal__forms__or-text">или</p>
           <div class="modal__button-container">

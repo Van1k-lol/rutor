@@ -2,7 +2,27 @@ img {
   max-width: 100%;
   border: none;
 }
+::-webkit-scrollbar {
+  width: 8px; /* ширина скролла */
+  height: 8px; /* для горизонтального */
+}
 
+/* Фон внутри скроллбара */
+::-webkit-scrollbar-track {
+  background: #1e1608;
+  border-radius: 10px;
+}
+
+/* Ползунок (то, что двигается) */
+::-webkit-scrollbar-thumb {
+  background: #e8b21d;
+  border-radius: 10px;
+}
+
+/* При наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0000;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -46,7 +66,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
   background-color: #0e0a01;
 }
 
@@ -372,7 +391,7 @@ body {
   overflow: hidden;
   border-radius: 16px;
   margin-top: 132px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .slides {
@@ -531,7 +550,7 @@ body {
   background: #161003;
   border-radius: 24px;
   border: 1px solid #1f1704;
-  margin-bottom: 46px;
+  margin-bottom: 2000px;
 }
 
 .favorites__wrap {
@@ -1164,7 +1183,7 @@ body {
 .modal__login {
   position: absolute;
   inset: 0;
-
+  z-index: 3;
   display: flex;
   cursor: pointer;
   padding: 30px;
@@ -1487,9 +1506,70 @@ body {
 .modal__register {
   position: absolute;
   inset: 0;
-
+  z-index: 2;
   display: flex;
   cursor: pointer;
   padding: 30px;
   overflow-y: auto;
+}
+.modal__forms__inputs__aditional-wrap {
+  margin-top: 20px;
+  display: flex;
+  width: 390px;
+}
+
+.modal__forms__inputs-currency {
+  width: 185px;
+  height: 51px;
+  margin-right: 20px;
+}
+.modal__forms__inputs-currency-select {
+  width: 185px;
+  height: 51px;
+  border-radius: 16px;
+  background: var(--gray-gray-600, #231b0bb2);
+  border: 1px solid var(--gray-gray-400, #3b2b0d);
+  color: var(--gray-gray-300, #7c612f);
+  padding: 0 20px;
+}
+.modal__forms__inputs-currency-select:focus {
+  outline: none !important;
+  border: 1px solid #fed970;
+}
+.modal__forms__inputs-promocode {
+  box-sizing: border-box;
+  width: 185px;
+  height: 51px;
+  border-radius: 16px;
+  background: var(--gray-gray-600, #231b0bb2);
+  border: 1px solid var(--gray-gray-400, #3b2b0d);
+  color: var(--gray-gray-300, #7c612f);
+}
+.modal__forms__inputs__checkbox--wrapp {
+  display: flex;
+}
+.modal__forms__inputs__checkbox {
+  outline: none !important;
+  appearance: none; /* убираем стандартный стиль браузера */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border: 2px solid var(--gray-gray-400, #3b2b0d);
+  border-radius: 3px;
+  accent-color: var(--brand-200, #e8b21d);
+  margin-top: 20px;
+}
+.modal__forms__inputs__checkbox:checked {
+  appearance: auto;
+  -webkit-appearance: auto;
+  border: 1px solid;
+  border-radius: 3px;
+}
+.modal__forms__inputs__checkbox--wrapp p {
+  font-size: 14px;
+  font-family: Gilroy;
+  margin-top: 20px;
+  margin-left: 12px;
 }

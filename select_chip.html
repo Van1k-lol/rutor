@@ -385,14 +385,45 @@
       </div>
   </div>
   </section>
-  <div class="modal" id="gameModal">
-    <div class="modal__content">
-      <button class="modal__close">&times;</button>
-      <div class="modal__search">
-        <input type="text" id="searchInput" placeholder="Введите больше 1 символа">
+  <div class="modal__search" id="gameModal">
+    <div class="modal__search__container">
+      <div class="modal__search__header">
+        <h1>Поиск по играм</h1>
+        <button class="modal__search__close"><img src="./assets/img/main/main_reg/Vector.png" alt=""></button>
       </div>
-      <div class="modal__grid" id="gamesGrid">
-        <!-- Сюда будут карточки -->
+      <div class="modal__search__border"></div>
+      <div class="modal__search__content">
+        <div class="modal__search__search">
+          <input type="text" id="searchInput" placeholder="Введите больше 1 символа" autocomplete="off">
+        </div>
+        <div class="modal__search__results">
+          <div class="games_top">
+            <div class="games_panel">
+              <div class="games_icon">
+                <img src="./assets/img/main/main/star_top-games.svg" alt="">
+              </div>
+              <div>
+                ТОП
+              </div>
+            </div>
+            <a href="#" class="games_all">
+              <div>Все</div>
+              <img src="./assets/img/main/main/arrow.svg" alt="arrow-right">
+            </a>
+          </div>
+        </div>
+        <div class="modal__search__grid" id="gamesGrid">
+          <!-- Сюда будут карточки -->
+        </div>
+      </div>
+      <div class="not__found none">
+        <img src="./assets/img/main/main_modal_search/illustration.png" alt="">
+        <div class="not__found__title">
+          Не найдено
+        </div>
+        <div class="not__found__text">
+          По вашему запросу ничего не найдено, попробуйте изменить запрос
+        </div>
       </div>
     </div>
   </div>

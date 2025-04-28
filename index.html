@@ -380,14 +380,45 @@
       </div>
   </div>
   </section>
-  <div class="modal" id="gameModal">
-    <div class="modal__content">
-      <button class="modal__close">&times;</button>
-      <div class="modal__search">
-        <input type="text" id="searchInput" placeholder="Введите больше 1 символа">
+  <div class="modal__search" id="gameModal">
+    <div class="modal__search__container">
+      <div class="modal__search__header">
+        <h1>Поиск по играм</h1>
+        <button class="modal__search__close"><img src="./assets/img/main/main_reg/Vector.png" alt=""></button>
       </div>
-      <div class="modal__grid" id="gamesGrid">
-        <!-- Сюда будут карточки -->
+      <div class="modal__search__border"></div>
+      <div class="modal__search__search">
+        <input type="text" id="searchInput" placeholder="Введите больше 1 символа" autocomplete="off">
+      </div>
+      <div class="modal__search__content">
+        <div class="modal__search__results">
+          <div class="games_top">
+            <div class="games_panel">
+              <div class="games_icon">
+                <img src="./assets/img/main/main/star_top-games.svg" alt="">
+              </div>
+              <div>
+                ТОП
+              </div>
+            </div>
+            <a href="#" class="games_all">
+              <div>Все</div>
+              <img src="./assets/img/main/main/arrow.svg" alt="arrow-right">
+            </a>
+          </div>
+        </div>
+        <div class="not__found none">
+          <img src="./assets/img/main/main_modal_search/illustration.png" alt="">
+          <div class="not__found__title">
+            Не найдено
+          </div>
+          <div class="not__found__text">
+            По вашему запросу ничего не найдено, попробуйте изменить запрос
+          </div>
+        </div>
+        <div class="modal__search__grid" id="gamesGrid">
+          <!-- Сюда будут карточки -->
+        </div>
       </div>
     </div>
   </div>
@@ -1807,56 +1838,58 @@
           </div>
           <div class="advantages__item__text">служба поддержки</div>
         </div>
-        
+
 
       </div>
     </section>
   </div>
-    <section class="about__us">
-      <div class="logo__img">
-        <img src="./assets/img/main/main_top/logo.png" alt="">
-      </div>
-      <div class="about__us__text">
-        <div class="welcome">Добро пожаловать в лучшее казино на Земле!</div>
-        <div class="welcome__text">Rutor Casino - место, где сбываются мечты, где люди срывают джекпоты и
-          выигрывают автомобили, где разыгрываются путешествия и ценные
-          подарки! У нас играют все - от новичков до профессионалов,
-          присоединяйся и ты к нашей семье, слови фортуну за хвост!</div>
-      </div>
-      
-    </section>
-    <div class="about__us__border"></div>
-    <section class="transactions">
-      <div class="transactions__title">Удобные транзакции</div>
-      <div class="transactions__list_img">
-        <img src="./assets/img/main/main/transactions/visa.png" alt="">
-        <img src="./assets/img/main/main/transactions/master_card.png" alt="">
-        <img src="./assets/img/main/main/transactions/city_24.png" alt="">
-        <img src="./assets/img/main/main/transactions/easy_pay.png" alt="">
-        <img src="./assets/img/main/main/transactions/apple_pay.png" alt="">
-        <img src="./assets/img/main/main/transactions/goo_pay.png" alt="">
-        <img src="./assets/img/main/main/transactions/p2p.png" alt="">
-        <img src="./assets/img/main/main/transactions/BYT.png" alt="">
-        <img src="./assets/img/main/main/transactions/Eth.png" alt="">
-        <img src="./assets/img/main/main/transactions/usdt.png" alt="">
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="rules">
-        <div class="rules__title">Правила и условия</div>
-        <div class="rules__text"><img class="rules__img" src="./assets/img/main/main/footer/21+red.png" alt="">Азартные игры призваны развлекать. Помните, что Вы рискуете деньгами, когда делаете ставки. Не тратьте больше, чем можете себе позволить проиграть</div>
-        
-      </div>
-      <div class="sponsors">
-        <a href="#"><img src="./assets/img/main/main/footer/gamCare.png" alt=""></a>
-        <a href="#"><img src="./assets/img/main/main/footer/gambing.png" alt=""></a>
-        <a href="#"><img src="./assets/img/main/main/footer/begameble.png" alt=""></a>
-        <a href="#"><img src="./assets/img/main/main/footer/21+png.png" alt=""></a>
-        <a href="#"><img src="./assets/img/main/main/footer/sslsecure.png" alt=""></a>
-        <a href="#"><img src="./assets/img/main/main/footer/dmcaprotected.png" alt=""></a>
-      </div>
-      <div class="all_rigth_received">© 2021-2025 Rutor Casino. Все права защищены.</div>
-    </footer>
+  <section class="about__us">
+    <div class="logo__img">
+      <img src="./assets/img/main/main_top/logo.png" alt="">
+    </div>
+    <div class="about__us__text">
+      <div class="welcome">Добро пожаловать в лучшее казино на Земле!</div>
+      <div class="welcome__text">Rutor Casino - место, где сбываются мечты, где люди срывают джекпоты и
+        выигрывают автомобили, где разыгрываются путешествия и ценные
+        подарки! У нас играют все - от новичков до профессионалов,
+        присоединяйся и ты к нашей семье, слови фортуну за хвост!</div>
+    </div>
+
+  </section>
+  <div class="about__us__border"></div>
+  <section class="transactions">
+    <div class="transactions__title">Удобные транзакции</div>
+    <div class="transactions__list_img">
+      <img src="./assets/img/main/main/transactions/visa.png" alt="">
+      <img src="./assets/img/main/main/transactions/master_card.png" alt="">
+      <img src="./assets/img/main/main/transactions/city_24.png" alt="">
+      <img src="./assets/img/main/main/transactions/easy_pay.png" alt="">
+      <img src="./assets/img/main/main/transactions/apple_pay.png" alt="">
+      <img src="./assets/img/main/main/transactions/goo_pay.png" alt="">
+      <img src="./assets/img/main/main/transactions/p2p.png" alt="">
+      <img src="./assets/img/main/main/transactions/BYT.png" alt="">
+      <img src="./assets/img/main/main/transactions/Eth.png" alt="">
+      <img src="./assets/img/main/main/transactions/usdt.png" alt="">
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="rules">
+      <div class="rules__title">Правила и условия</div>
+      <div class="rules__text"><img class="rules__img" src="./assets/img/main/main/footer/21+red.png" alt="">Азартные
+        игры призваны развлекать. Помните, что Вы рискуете деньгами, когда делаете ставки. Не тратьте больше, чем можете
+        себе позволить проиграть</div>
+
+    </div>
+    <div class="sponsors">
+      <a href="#"><img src="./assets/img/main/main/footer/gamCare.png" alt=""></a>
+      <a href="#"><img src="./assets/img/main/main/footer/gambing.png" alt=""></a>
+      <a href="#"><img src="./assets/img/main/main/footer/begameble.png" alt=""></a>
+      <a href="#"><img src="./assets/img/main/main/footer/21+png.png" alt=""></a>
+      <a href="#"><img src="./assets/img/main/main/footer/sslsecure.png" alt=""></a>
+      <a href="#"><img src="./assets/img/main/main/footer/dmcaprotected.png" alt=""></a>
+    </div>
+    <div class="all_rigth_received">© 2021-2025 Rutor Casino. Все права защищены.</div>
+  </footer>
 
 
 

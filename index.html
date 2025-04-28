@@ -7,14 +7,17 @@
   <title>Rutor Casino</title>
   <link rel="stylesheet" href="/css/main.css">
   <script src="/js/index.js" defer></script>
-  <script src="./script/sript.js" defer ></script>
+  <script src="./script/sript.js" defer></script>
 </head>
 
 <body>
+  <div class="background">
+    <img src="./assets/img/main/main/bg_main.jpg" alt="">
+  </div>
   <!-- HEADER -->
   <header class="header">
     <div class="wrap header__wrap">
-      <div class="balance">5 000$ + 250FS</div>
+      <a href="bonuses.html" class="balance">5 000$ + 250FS</a>
       <div class="logo">
         <a href="#" class="logo__link">
           <img src="/assets/img/main/main_top/logo.png" alt="logo" class="logo__img">
@@ -39,12 +42,13 @@
       </div>
     </div>
   </header>
-   <div class="modal__login">
-      <div class="modal__main">
-        <div class="main__wrap">
-          <div class="modal__add"><img src="./assets/img/main/main_reg/Frame 16.png" alt=""></div>
-          <div class="modal__forms">
-          <div class="modal__button-close"><img src="./assets/img/main/main_reg/Vector.png" class="modal__button--img" alt=""></div>
+  <div class="modal__login">
+    <div class="modal__main">
+      <div class="main__wrap">
+        <div class="modal__add"><img src="./assets/img/main/main_reg/Frame 16.png" alt=""></div>
+        <div class="modal__forms">
+          <div class="modal__button-close"><img src="./assets/img/main/main_reg/Vector.png" class="modal__button--img"
+              alt=""></div>
           <div class="modal__forms__top">
             <h2 class="modal__text-auth">Авторизация</h2>
           </div>
@@ -54,10 +58,11 @@
               <div class="modal__input--wrapper">
 
                 <input placeholder="Пароль" id="password" type="password" class="modal__input-password">
-                <button class="modal__input--toggle" type="button" onclick="togglePassword()"><img src="./assets/img/main/main_reg/eye-1.png" alt=""></button>
+                <button class="modal__input--toggle" type="button" onclick="togglePassword()"><img
+                    src="./assets/img/main/main_reg/eye-1.png" alt=""></button>
               </div>
-              <div class="modal__forms__inputs--reset">  
-                <p >Забыли пароль?</p>
+              <div class="modal__forms__inputs--reset">
+                <p>Забыли пароль?</p>
               </div>
             </div>
           </div>
@@ -68,22 +73,23 @@
               <div class="modal__button-shadow-bgc"></div>
               <button class="modal__button-signin">Вход</button>
             </div>
-          <p class="modal__forms__or-text">или</p>
-          <div class="modal__button-container">
+            <p class="modal__forms__or-text">или</p>
+            <div class="modal__button-container">
               <div class="modal__button__telegram-shadow"></div>
               <button class="modal__button__telegram-signin">Вход через Telegram</button>
             </div>
           </div>
-          </div>
-        </div>
         </div>
       </div>
-      <div class="modal__register">
-      <div class="modal__main">
-        <div class="main__wrap">
-          <div class="modal__add"><img src="./assets/img/main/main_log/Banner.png" alt=""></div>
-          <div class="modal__forms">
-          <div class="modal__button-close"><img src="./assets/img/main/main_reg/Vector.png" class="modal__button--img" alt=""></div>
+    </div>
+  </div>
+  <div class="modal__register">
+    <div class="modal__main">
+      <div class="main__wrap">
+        <div class="modal__add"><img src="./assets/img/main/main_log/Banner.png" alt=""></div>
+        <div class="modal__forms">
+          <div class="modal__button-close"><img src="./assets/img/main/main_reg/Vector.png" class="modal__button--img"
+              alt=""></div>
           <div class="modal__forms__top">
             <h2 class="modal__text-auth">Регистрация</h2>
           </div>
@@ -93,7 +99,8 @@
               <div class="modal__input--wrapper">
 
                 <input placeholder="Пароль" id="password" type="password" class="modal__input-password">
-                <button class="modal__input--toggle" type="button" onclick="togglePassword()"><img src="./assets/img/main/main_reg/eye-1.png" alt=""></button>
+                <button class="modal__input--toggle" type="button" onclick="togglePassword()"><img
+                    src="./assets/img/main/main_reg/eye-1.png" alt=""></button>
               </div>
               <div class="modal__forms__inputs__aditional-wrap">
 
@@ -117,19 +124,19 @@
               <div class="modal__button-shadow-bgc"></div>
               <button class="modal__button-signin">Регистрация</button>
             </div>
-          <p class="modal__forms__or-text">или</p>
-          <div class="modal__button-container">
+            <p class="modal__forms__or-text">или</p>
+            <div class="modal__button-container">
               <div class="modal__button__telegram-shadow"></div>
               <button class="modal__button__telegram-signin">Вход через Telegram</button>
             </div>
           </div>
-          </div>
-        </div>
         </div>
       </div>
+    </div>
+  </div>
   <nav class="nav_menu">
     <div class="nav_menu__button nav-active">
-      <a href="#" class="nav-active nav_menu__link link_home">
+      <a href="index.html" class="nav-active nav_menu__link link_home">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M18.896 12.9686C18.755 14.5284 18.5284 15.7958 18.2528 16.9267C18.069 18.0576 16.9663 19 15.7718 19H14.3016C13.4746 19 12.8313 18.3403 12.8313 17.4921V13.6283C12.8313 12.6859 12.0962 11.9319 11.1773 11.9319H9.06383C8.14497 11.9319 7.40985 12.6859 7.40985 13.6283V17.4921C7.40985 18.3403 6.76663 19 5.93963 19H4.19374C2.99917 19 1.98839 18.1518 1.71272 16.9267C1.43706 15.7016 1.19804 14.5294 1.0695 12.9686C0.906363 10.9877 1.0695 9.10468 1.16139 7.87958C1.16139 7.12565 1.62084 6.37173 2.26406 5.90053L8.69627 1.4712C9.06383 1.18848 9.52328 1 9.98273 1C10.4422 1 10.9935 1.18848 11.3611 1.4712L17.7933 5.90053C18.4365 6.37173 18.896 7.12565 18.896 7.87958C18.9879 9.10468 19.0748 10.9894 18.896 12.9686Z"
@@ -139,7 +146,7 @@
       </a>
     </div>
     <div class="nav_menu__button">
-      <a href="#" class="nav_menu__link link_games">
+      <a href="games.html" class="nav_menu__link link_games">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_79_260)">
             <path
@@ -172,7 +179,7 @@
       </a>
     </div>
     <div class="nav_menu__button">
-      <a href="#" class="nav_menu__link link_bonus">
+      <a href="bonuses.html" class="nav_menu__link link_bonus">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M10.2163 7.50081C10.1032 7.50081 10.0226 7.49915 9.98764 7.49837C9.85758 7.4952 9.73005 7.46165 9.61527 7.4004C9.50048 7.33915 9.40162 7.2519 9.32657 7.14562C9.25153 7.03934 9.20238 6.91698 9.18307 6.78831C9.16376 6.65965 9.17481 6.52825 9.21534 6.40462C9.50506 5.52571 9.76548 4.6289 9.99009 3.73698C10.4849 1.90753 11.5672 0.833313 12.8929 0.833313C13.7004 0.863457 14.463 1.21215 15.014 1.80312C15.565 2.39409 15.8595 3.17923 15.8332 3.9868C15.8332 5.93341 13.8809 6.78627 13.2388 7.06622C12.2634 7.3823 11.2412 7.52929 10.2163 7.50081ZM12.8929 2.49998C12.0742 2.49998 11.6519 3.97377 11.6063 4.14142C11.4671 4.6948 11.315 5.249 11.1514 5.79913C11.6308 5.78191 12.1052 5.69585 12.5601 5.5436C13.3609 5.19448 14.1665 4.74119 14.1665 3.9868C14.1921 3.62135 14.0728 3.26053 13.8345 2.98231C13.5962 2.70409 13.258 2.53083 12.8929 2.49998Z"
@@ -188,6 +195,7 @@
       </a>
     </div>
     <div class="nav_menu__button">
+      <div class="new__message-active"></div>
       <a href="#" class="nav_menu__link link_chat">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -198,27 +206,29 @@
       </a>
     </div>
   </nav>
-  <section class="main_top">
-    <div class="slider" id="slider">
-      <div class="slides" id="slides">
-        <div class="slide active">
-          <img src="./assets/img/main/main_top/Banner_1.png" alt="Slide 1" />
-        </div>
-        <div class="slide">
-          <img src="./assets/img/main/main_top/Banner_1.png" alt="Slide 2" />
-        </div>
-        <div class="slide">
-          <img src="./assets/img/main/main_top/Banner_1.png" alt="Slide 3" />
-        </div>
-      </div>
+  <div class="wrap">
+    <section class="main_top">
+      <div class="slider" id="slider">
+        <a href="bonuses.html">
+          <div class="slides" id="slides">
+            <div class="slide active">
+              <img src="./assets/img/main/main_top/Banner_1.png" alt="Slide 1" />
+            </div>
+            <div class="slide">
+              <img src="./assets/img/main/main_top/Banner_1.png" alt="Slide 2" />
+            </div>
+            <div class="slide">
+              <img src="./assets/img/main/main_top/Banner_1.png" alt="Slide 3" />
+            </div>
+          </div>
+        </a>
 
-      <div class="bar-indicator" id="barIndicator">
-        <span class="bar active" data-index="0"></span>
-        <span class="bar" data-index="1"></span>
-        <span class="bar" data-index="2"></span>
+        <div class="bar-indicator" id="barIndicator">
+          <span class="bar active" data-index="0"></span>
+          <span class="bar" data-index="1"></span>
+          <span class="bar" data-index="2"></span>
+        </div>
       </div>
-    </div>
-    <div class="wrap">
       <div class="filters">
         <div class="filter-tabs">
           <button class="tab filter-active">
@@ -229,20 +239,22 @@
               </svg></div>
             <div>Новинки</div>
           </button>
-          <button class="tab">
-            <div><svg width="21" height="20" viewBox="0 0 21 20" fill="#7c612f" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.7098 11.0614C9.0973 10.5436 8.325 10.2344 7.4866 10.2344C6.89828 10.2344 6.32676 10.3864 5.8125 10.6771C5.29824 10.3864 4.72668 10.2344 4.1384 10.2344C2.15371 10.2344 0.539062 11.9674 0.539062 14.0976C0.539062 17.297 2.95398 20 5.8125 20C7.38094 20 8.81574 19.1861 9.79144 17.9231C9.10883 16.7832 8.74219 15.4638 8.74219 14.0976C8.74219 12.9582 9.10289 11.9061 9.7098 11.0614Z"
-                  fill="#7C612F" />
-                <path
-                  d="M12.4736 8.59972C12.5708 8.78144 12.6693 8.9562 12.768 9.12409C13.011 9.0837 13.2598 9.06253 13.5133 9.06253C13.722 9.06253 13.9302 9.07726 14.1364 9.10593C13.9219 8.7787 13.7014 8.41296 13.4885 8.01257C12.7397 6.60413 12.2864 5.17816 12.1298 3.74831C12.2412 3.89663 12.3641 4.04038 12.5005 4.17671C13.8738 5.55015 15.9948 5.59023 16.0844 5.59124C16.0867 5.59128 16.0889 5.59128 16.0912 5.59128C16.2465 5.59128 16.3956 5.5296 16.5055 5.41964C16.617 5.30812 16.6789 5.15632 16.6771 4.99859C16.6761 4.90898 16.636 2.788 15.2626 1.41456C13.8941 0.0460084 11.7835 0.00132089 11.6799 3.18287e-05C11.6677 -0.000163484 11.6554 0.000578704 11.6432 0.0012037C11.5532 0.00514902 11.4667 0.0297975 11.3892 0.0727271C9.96726 0.828274 8.75726 1.89699 7.7928 3.24956C7.02671 4.32394 6.41452 5.5773 5.97323 6.97488C5.71097 7.80554 5.54085 8.58499 5.43042 9.25066C5.55944 9.28882 5.68694 9.33249 5.81241 9.38195C6.0805 9.27628 6.35772 9.19613 6.63987 9.14253C6.74147 8.59441 6.88573 7.97695 7.09073 7.32773C7.86804 4.86577 9.158 2.98757 10.9327 1.728C10.761 4.02718 11.2848 6.37898 12.4736 8.59972Z"
-                  fill="#7C612F" />
-                <path
-                  d="M16.8616 10.2344C16.2733 10.2344 15.7018 10.3864 15.1875 10.6771C14.6732 10.3864 14.1017 10.2344 13.5134 10.2344C11.5287 10.2344 9.91406 11.9674 9.91406 14.0976C9.91406 17.297 12.329 20 15.1875 20C18.046 20 20.4609 17.297 20.4609 14.0976C20.4609 11.9674 18.8463 10.2344 16.8616 10.2344Z"
-                  fill="#7C612F" />
-              </svg></div>
-            <div>Слоты</div>
-          </button>
+          <a href="select_chip.html">
+            <button class="tab">
+              <div><svg width="21" height="20" viewBox="0 0 21 20" fill="#7c612f" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.7098 11.0614C9.0973 10.5436 8.325 10.2344 7.4866 10.2344C6.89828 10.2344 6.32676 10.3864 5.8125 10.6771C5.29824 10.3864 4.72668 10.2344 4.1384 10.2344C2.15371 10.2344 0.539062 11.9674 0.539062 14.0976C0.539062 17.297 2.95398 20 5.8125 20C7.38094 20 8.81574 19.1861 9.79144 17.9231C9.10883 16.7832 8.74219 15.4638 8.74219 14.0976C8.74219 12.9582 9.10289 11.9061 9.7098 11.0614Z"
+                    fill="#7C612F" />
+                  <path
+                    d="M12.4736 8.59972C12.5708 8.78144 12.6693 8.9562 12.768 9.12409C13.011 9.0837 13.2598 9.06253 13.5133 9.06253C13.722 9.06253 13.9302 9.07726 14.1364 9.10593C13.9219 8.7787 13.7014 8.41296 13.4885 8.01257C12.7397 6.60413 12.2864 5.17816 12.1298 3.74831C12.2412 3.89663 12.3641 4.04038 12.5005 4.17671C13.8738 5.55015 15.9948 5.59023 16.0844 5.59124C16.0867 5.59128 16.0889 5.59128 16.0912 5.59128C16.2465 5.59128 16.3956 5.5296 16.5055 5.41964C16.617 5.30812 16.6789 5.15632 16.6771 4.99859C16.6761 4.90898 16.636 2.788 15.2626 1.41456C13.8941 0.0460084 11.7835 0.00132089 11.6799 3.18287e-05C11.6677 -0.000163484 11.6554 0.000578704 11.6432 0.0012037C11.5532 0.00514902 11.4667 0.0297975 11.3892 0.0727271C9.96726 0.828274 8.75726 1.89699 7.7928 3.24956C7.02671 4.32394 6.41452 5.5773 5.97323 6.97488C5.71097 7.80554 5.54085 8.58499 5.43042 9.25066C5.55944 9.28882 5.68694 9.33249 5.81241 9.38195C6.0805 9.27628 6.35772 9.19613 6.63987 9.14253C6.74147 8.59441 6.88573 7.97695 7.09073 7.32773C7.86804 4.86577 9.158 2.98757 10.9327 1.728C10.761 4.02718 11.2848 6.37898 12.4736 8.59972Z"
+                    fill="#7C612F" />
+                  <path
+                    d="M16.8616 10.2344C16.2733 10.2344 15.7018 10.3864 15.1875 10.6771C14.6732 10.3864 14.1017 10.2344 13.5134 10.2344C11.5287 10.2344 9.91406 11.9674 9.91406 14.0976C9.91406 17.297 12.329 20 15.1875 20C18.046 20 20.4609 17.297 20.4609 14.0976C20.4609 11.9674 18.8463 10.2344 16.8616 10.2344Z"
+                    fill="#7C612F" />
+                </svg></div>
+              <div>Слоты</div>
+            </button>
+          </a>
           <button class="tab">
             <div><svg width="20" height="20" viewBox="0 0 20 20" fill="#7C612F" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -343,7 +355,7 @@
 
         </div>
         <div class="filter-controls">
-          <div class="search">
+          <div class="search" id="search">
             <div><svg width="16" height="16" viewBox="0 0 16 16" fill="#7C612F" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_798_12646)">
                   <path
@@ -368,12 +380,27 @@
           </div>
         </div>
       </div>
+  </div>
   </section>
+  <div class="modal" id="gameModal">
+    <div class="modal__content">
+      <button class="modal__close">&times;</button>
+      <div class="modal__search">
+        <input type="text" id="searchInput" placeholder="Введите больше 1 символа">
+      </div>
+      <div class="modal__grid" id="gamesGrid">
+        <!-- Сюда будут карточки -->
+      </div>
+    </div>
+  </div>
+
+
+
   <section class="favorites">
-    <div class="favorites__wrap">
-      <div class="favorites_top">
-        <div class="favorites_panel">
-          <div class="favorites_heart">
+    <div class="games__wrap">
+      <div class="games_top">
+        <div class="games_panel">
+          <div class="games_icon">
             <img src="./assets/img/main/main/heart_fav.svg" alt="">
           </div>
           <div>
@@ -381,29 +408,29 @@
           </div>
           <div class="toggle-container">
             <span class="toggle-text">Развернуть</span>
-            <div class="toggle-switch" id="toggleBtn">
+            <div class="toggle-switch toggleBtn" id="toggleBtn">
               <div class="toggle-circle"></div>
             </div>
           </div>
         </div>
-        <a href="#" class="favorites_all">
+        <a href="#" class="games_all">
           <div>Все</div>
           <img src="./assets/img/main/main/arrow.svg" alt="arrow-right">
         </a>
       </div>
-      <div class="favorites_bottom" id="favorites_bottom">
+      <div class="games_bottom" id="favorites_bottom">
         <div class="game favorites_add_game">
           <img src="./assets/img/main/main/Group 95.svg" alt="" class="add_game_img">
           Добавить игру
         </div>
         <div class="game game-card">
-          <img src="./assets/img/main/main/game.png" alt="Game" class="game-image">
+          <img src="./assets/img/main/main/games/game.png" alt="Game" class="game-image">
           <div class="game-overlay">
             <div class="game-overlay-top">
               <div class="game-title">Game name</div>
               <button class="fav-btn" title="Добавить в избранное">
-                <svg width="16" height="16" viewBox="0 0 16 16"
-                  fill="#3b2b0d" stroke="#fed970" xmlns="http://www.w3.org/2000/svg">
+                <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
                     stroke="#FED970" />
@@ -415,8 +442,7 @@
               <div class="btn btn-play">
                 <div class="btn__border">
                   <span>
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff"
-                      xmlns="http://www.w3.org/2000/svg">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
                         fill="white" />
@@ -429,13 +455,1414 @@
             </div>
           </div>
         </div>
-        <!-- <div class="game"><img src="./assets/img/main/main/fruitataWins.png" alt=""></div>
-        <div class="game"><img src="./assets/img/main/main/riseOfMerlin.png" alt=""></div> -->
+        <div class="game game-card">
+          <img src="./assets/img/main/main/games/fruitataWins.png" alt="Game" class="game-image">
+          <div class="game-overlay">
+            <div class="game-overlay-top">
+              <div class="game-title">Game name</div>
+              <button class="fav-btn" title="Добавить в избранное">
+                <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                    stroke="#FED970" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="game-buttons">
+              <div class="btn btn-play">
+                <div class="btn__border">
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                        fill="white" />
+                    </svg>
+                    <i>Играть</i>
+                  </span>
+                </div>
+              </div>
+              <button class="btn-demo">Демо</button>
+            </div>
+          </div>
+        </div>
+        <div class="game game-card">
+          <img src="./assets/img/main/main/riseOfMerlin.png" alt="Game" class="game-image">
+          <div class="game-overlay">
+            <div class="game-overlay-top">
+              <div class="game-title">Game name</div>
+              <button class="fav-btn" title="Добавить в избранное">
+                <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                    stroke="#FED970" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="game-buttons">
+              <div class="btn btn-play">
+                <div class="btn__border">
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                        fill="white" />
+                    </svg>
+                    <i>Играть</i>
+                  </span>
+                </div>
+              </div>
+              <button class="btn-demo">Демо</button>
+            </div>
+          </div>
+        </div>
+
 
       </div>
 
     </div>
   </section>
+  <div class="wrap">
+    <section class="top_games games">
+      <div class="games__wrap">
+        <div class="games_top">
+          <div class="games_panel">
+            <div class="games_icon">
+              <img src="./assets/img/main/main/star_top-games.svg" alt="">
+            </div>
+            <div>
+              ТОП
+            </div>
+            <div class="toggle-container">
+              <span class="toggle-text2">Развернуть</span>
+              <div class="toggle-switch toggleBtn" id="toggleBtn2">
+                <div class="toggle-circle"></div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="games_all">
+            <div>Все</div>
+            <img src="./assets/img/main/main/arrow.svg" alt="arrow-right">
+          </a>
+        </div>
+        <div class="games_bottom" id="games_bottom2">
+
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/1game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/2game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/fruitataWins.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/4game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/5game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/1game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/2game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/fruitataWins.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/4game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/5game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="new_games games">
+      <div class="games__wrap">
+        <div class="games_top">
+          <div class="games_panel">
+            <div class="games_icon">
+              <img src="./assets/img/main/main/new_games-fire.svg" alt="">
+            </div>
+            <div>
+              Новые
+            </div>
+            <div class="toggle-container">
+              <span class="toggle-text">Развернуть</span>
+              <div class="toggle-switch toggleBtn" id="toggleBtn">
+                <div class="toggle-circle"></div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="games_all">
+            <div>Все</div>
+            <img src="./assets/img/main/main/arrow.svg" alt="arrow-right">
+          </a>
+        </div>
+        <div class="games_bottom" id="favorites_bottom">
+
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/1game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/2game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/fruitataWins.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/4game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/5game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/1game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/2game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/fruitataWins.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/4game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/5game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+    </section>
+    <section class="live_games games">
+      <div class="games__wrap">
+        <div class="games_top">
+          <div class="games_panel">
+            <div class="games_icon">
+              <img src="./assets/img/main/main/live_games-icon.svg" alt="">
+            </div>
+            <div>
+              Live
+            </div>
+            <div class="toggle-container">
+              <span class="toggle-text">Развернуть</span>
+              <div class="toggle-switch toggleBtn" id="toggleBtn">
+                <div class="toggle-circle"></div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="games_all">
+            <div>Все</div>
+            <img src="./assets/img/main/main/arrow.svg" alt="arrow-right">
+          </a>
+        </div>
+        <div class="games_bottom" id="favorites_bottom">
+
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/1game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/2game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/fruitataWins.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/4game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/5game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/1game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/2game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/fruitataWins.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/4game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+          <div class="game game-card">
+            <img src="./assets/img/main/main/games/5game.png" alt="Game" class="game-image">
+            <div class="game-overlay">
+              <div class="game-overlay-top">
+                <div class="game-title">Game name</div>
+                <button class="fav-btn" title="Добавить в избранное">
+                  <svg class="fav-icon" width="16" height="16" viewBox="0 0 16 16" fill="#3b2b0d" stroke="#fed970"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.64049 3.89199L8 4.26394L8.35952 3.89198C9.80627 2.39516 11.334 2.25483 12.4741 2.77375C13.645 3.30675 14.5 4.57269 14.5 6.07934C14.5 7.61748 13.8676 8.80304 12.9626 9.81787C12.2172 10.6536 11.3147 11.3465 10.4366 12.0207C10.2282 12.1806 10.0212 12.3395 9.81807 12.499C9.45008 12.7879 9.12026 13.0427 8.80188 13.2279C8.4834 13.4133 8.2236 13.5 8 13.5C7.7764 13.5 7.5166 13.4133 7.19812 13.2279C6.87975 13.0427 6.54993 12.7879 6.18195 12.499C5.97877 12.3395 5.77179 12.1806 5.56344 12.0207C4.6853 11.3465 3.78276 10.6536 3.03741 9.81787C2.13237 8.80304 1.5 7.61748 1.5 6.07934C1.5 4.57269 2.35498 3.30675 3.52593 2.77375C4.66594 2.25483 6.19372 2.39516 7.64049 3.89199Z"
+                      stroke="#FED970" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="game-buttons">
+                <div class="btn btn-play">
+                  <div class="btn__border">
+                    <span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.30262 2.09475L6.25359 2.0663C5.69793 1.74269 5.20913 1.45749 4.79016 1.31382C4.5592 1.22883 4.31228 1.1908 4.06513 1.20216C3.80497 1.22117 3.55629 1.31265 3.34976 1.46531C2.91965 1.77399 2.73393 2.22846 2.63216 2.7313C2.53336 3.2185 2.49548 3.85291 2.44868 4.62531L2.44645 4.66514C2.41822 5.12744 2.40039 5.58476 2.40039 5.99941C2.40039 6.41406 2.41822 6.87209 2.44645 7.33439L2.44868 7.37351C2.49548 8.1459 2.53336 8.78032 2.63216 9.2668C2.73393 9.77036 2.91965 10.2241 3.34976 10.5335C3.56222 10.6864 3.80068 10.7775 4.06513 10.7967C4.31919 10.8144 4.56285 10.7632 4.79016 10.685C5.20913 10.5413 5.69793 10.2561 6.25359 9.93323L6.30262 9.90478C6.61908 9.71986 6.92959 9.52996 7.20668 9.34291C7.54601 9.11178 7.87679 8.86934 8.19839 8.61603L8.23553 8.58687C8.80308 8.14377 9.28445 7.76753 9.61725 7.39769C9.97976 6.99229 10.2004 6.55701 10.2004 5.99941C10.2004 5.4418 9.97976 5.00582 9.61651 4.60113C9.28445 4.23129 8.80308 3.85434 8.23628 3.41195L8.19913 3.38279C7.86188 3.11964 7.52313 2.86786 7.20668 2.65591C6.91157 2.45957 6.61007 2.27218 6.30262 2.09404"
+                          fill="white" />
+                      </svg>
+                      <i>Играть</i>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn-demo">Демо</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__title">Наши преимущества</div>
+      <div class="advantages__list">
+        <div class="advantages__item">
+          <div class="advantages__item__img advantages__item__img1">
+            <img src="./assets/img/main/main/advantages/bg.png" alt="">
+          </div>
+          <div class="advantages__item__title">
+            Больше 1000
+          </div>
+          <div class="advantages__item__text">ежедневных победителей</div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item__img advantages__item__img2">
+            <img src="./assets/img/main/main/advantages/bg.png" alt="">
+          </div>
+          <div class="advantages__item__title">
+            Лицензионный софт
+          </div>
+          <div class="advantages__item__text">без обмана</div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item__img advantages__item__img3">
+            <img src="./assets/img/main/main/advantages/bg.png" alt="">
+          </div>
+          <div class="advantages__item__title">
+            VIP сервис
+          </div>
+          <div class="advantages__item__text">для всех</div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item__img advantages__item__img4">
+            <img src="./assets/img/main/main/advantages/bg.png" alt="">
+          </div>
+          <div class="advantages__item__title">
+            24/7
+          </div>
+          <div class="advantages__item__text">служба поддержки</div>
+        </div>
+        
+
+      </div>
+    </section>
+  </div>
+    <section class="about__us">
+      <div class="logo__img">
+        <img src="./assets/img/main/main_top/logo.png" alt="">
+      </div>
+      <div class="about__us__text">
+        <div class="welcome">Добро пожаловать в лучшее казино на Земле!</div>
+        <div class="welcome__text">Rutor Casino - место, где сбываются мечты, где люди срывают джекпоты и
+          выигрывают автомобили, где разыгрываются путешествия и ценные
+          подарки! У нас играют все - от новичков до профессионалов,
+          присоединяйся и ты к нашей семье, слови фортуну за хвост!</div>
+      </div>
+      
+    </section>
+    <div class="about__us__border"></div>
+    <section class="transactions">
+      <div class="transactions__title">Удобные транзакции</div>
+      <div class="transactions__list_img">
+        <img src="./assets/img/main/main/transactions/visa.png" alt="">
+        <img src="./assets/img/main/main/transactions/master_card.png" alt="">
+        <img src="./assets/img/main/main/transactions/city_24.png" alt="">
+        <img src="./assets/img/main/main/transactions/easy_pay.png" alt="">
+        <img src="./assets/img/main/main/transactions/apple_pay.png" alt="">
+        <img src="./assets/img/main/main/transactions/goo_pay.png" alt="">
+        <img src="./assets/img/main/main/transactions/p2p.png" alt="">
+        <img src="./assets/img/main/main/transactions/BYT.png" alt="">
+        <img src="./assets/img/main/main/transactions/Eth.png" alt="">
+        <img src="./assets/img/main/main/transactions/usdt.png" alt="">
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="rules">
+        <div class="rules__title">Правила и условия</div>
+        <div class="rules__text"><img class="rules__img" src="./assets/img/main/main/footer/21+red.png" alt="">Азартные игры призваны развлекать. Помните, что Вы рискуете деньгами, когда делаете ставки. Не тратьте больше, чем можете себе позволить проиграть</div>
+        
+      </div>
+      <div class="sponsors">
+        <a href="#"><img src="./assets/img/main/main/footer/gamCare.png" alt=""></a>
+        <a href="#"><img src="./assets/img/main/main/footer/gambing.png" alt=""></a>
+        <a href="#"><img src="./assets/img/main/main/footer/begameble.png" alt=""></a>
+        <a href="#"><img src="./assets/img/main/main/footer/21+png.png" alt=""></a>
+        <a href="#"><img src="./assets/img/main/main/footer/sslsecure.png" alt=""></a>
+        <a href="#"><img src="./assets/img/main/main/footer/dmcaprotected.png" alt=""></a>
+      </div>
+      <div class="all_rigth_received">© 2021-2025 Rutor Casino. Все права защищены.</div>
+    </footer>
+
+
+
+
 
 </body>
 

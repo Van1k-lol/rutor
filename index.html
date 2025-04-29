@@ -76,7 +76,7 @@
           </div>
           <div class="modal__forms__container">
             <div class="modal__forms__inputs">
-              <input placeholder="Почта" type="email" class="modal__input-email">
+              <input placeholder="Почта" type="email" id="modal-login-email" class="modal__input-email">
               <div class="modal__input--wrapper">
 
                 <input placeholder="Пароль" id="password" type="password" class="modal__input-password">
@@ -89,11 +89,11 @@
             </div>
           </div>
           <div class="modal__forms__button--auth">
-            <div class="modal__button-container">
+            <div id="modBtnContainer" class="modal__button-container">
               <div class="modal__button-shadow-bgc-correct"></div>
               <div class="modal__button-shadow"></div>
               <div class="modal__button-shadow-bgc"></div>
-              <button class="modal__button-signin">Вход</button>
+              <button id="modalButtonSign" class="modal__button-signin">Вход</button>
             </div>
             <p class="modal__forms__or-text">или</p>
             <div class="modal__button-container">
@@ -134,7 +134,7 @@
                     <option value="" disabled selected hidden>Валюта</option>
                   </select>
                 </form>
-                <input type="text" class="modal__forms__inputs-promocode">
+                <input placeholder="Промокод" type="text" class="modal__forms__inputs-promocode">
               </div>
               <div class="modal__forms__inputs__checkbox--wrapp">
                 <input type="checkbox" name="" id="regCheckbox" class="modal__forms__inputs__checkbox">

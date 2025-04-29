@@ -8,6 +8,8 @@ const crossCloseReg1 = document.querySelector(".modal__button--img1")
 const modalCheckbox = document.getElementById("regCheckbox")
 const modalColBox = document.getElementById("modalButtonSign")
 const modalContainerBox = document.getElementById("modBtnContainer")
+const modalLoginEmailInput = document.getElementById("modal-login-email")
+const modalLoginEmailPassword = document.getElementById("password")
 let isModalLogOpen = 0;
 let isModalRegOpen = 0;
 
@@ -38,10 +40,19 @@ const closeModal = event => {
         modalWind.style.visibility = 'hidden';
         modalWind.style.opacity = 0;
         document.body.classList.remove('modal-open');
+        modalLoginEmailInput.value = ""
+        modalLoginEmailPassword.value = ""
+        modalContainerBox.classList.remove('checked');
+        modalColBox.classList.remove('checked');
+        
     } else if (target === modalRegWind || target === crossCloseReg1) {
         modalRegWind.style.visibility = 'hidden'
         modalRegWind.style.opacity = 0;
         document.body.classList.remove('modal-open');
+        modalLoginEmailInput.value = ""
+        modalLoginEmailPassword.value = ""
+        modalContainerBox.classList.remove('checked');
+        modalColBox.classList.remove('checked');
     }
 }
 
@@ -77,3 +88,12 @@ modalCheckbox.addEventListener("change", () => {
     modalColBox.classList.remove('checked');
   }
 })
+modalLoginEmailInput.addEventListener("input", ()=>{
+    if(modalLoginEmailInput.value.length !== 0 && modalLoginEmailPassword.value.length !== 0){
+        modalColBox.classList.add('checked');
+        modalContainerBox.classList.add('checked');
+    }else{
+        modalContainerBox.classList.remove('checked');
+        modalColBox.classList.remove('checked');
+    }
+});

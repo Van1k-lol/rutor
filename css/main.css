@@ -1577,6 +1577,10 @@ button {
   background: var(--gray-gray-600, #231b0bb2);
   border: 1px solid var(--gray-gray-400, #3b2b0d);
   color: var(--gray-gray-300, #7c612f);
+  padding: 0 20px;
+}
+.modal__forms__inputs-promocode::placeholder{
+  color: var(--gray-gray-300, #7c612f);
 }
 .modal__forms__inputs__checkbox--wrapp {
   display: flex;

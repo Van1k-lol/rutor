@@ -37,33 +37,27 @@ const closeModal = event => {
     if (target === modalWind || target === crossCloseReg) {
         modalWind.style.visibility = 'hidden';
         modalWind.style.opacity = 0;
-        isModalLogOpen = 0
+        document.body.classList.remove('modal-open');
     } else if (target === modalRegWind || target === crossCloseReg1) {
         modalRegWind.style.visibility = 'hidden'
         modalRegWind.style.opacity = 0;
-        isModalRegOpen = 0
-        
+        document.body.classList.remove('modal-open');
     }
 }
 
 const openModal = () => {
     modalWind.style.visibility = 'visible'
     modalWind.style.opacity = 1;
-    isModalLogOpen = 1
-    if (isModalRegOpen === 1) {
-         modalRegWind.style.visibility = 'visible'
-        modalRegWind.style.opacity = 1;
-    }
+    document.body.classList.add('modal-open');
 }
 
 const openRegModal = () => {
      modalRegWind.style.visibility = 'visible'
     modalRegWind.style.opacity = 1;
-    isModalRegOpen = 1;
-    if (isModalLogOpen === 1) {
-        modalWind.style.visibility = 'visible'
-    modalWind.style.opacity = 1;
-    }
+    document.body.classList.add('modal-open');
+}
+const closeRegModal = event = {
+    
 }
 
 buttonOpenReg.addEventListener("click", openRegModal)

@@ -4,6 +4,10 @@ const modalRegWind = document.querySelector(".modal__register")
 const buttonOpenLog = document.querySelector(".login")
 const headerClose = document.querySelector("wrap header__wrap")
 const crossCloseReg = document.querySelector(".modal__button--img")
+const crossCloseReg1 = document.querySelector(".modal__button--img1")
+const modalCheckbox = document.getElementById("regCheckbox")
+const modalColBox = document.getElementById("modalButtonSign")
+const modalContainerBox = document.getElementById("modBtnContainer")
 let isModalLogOpen = 0;
 let isModalRegOpen = 0;
 
@@ -34,10 +38,11 @@ const closeModal = event => {
         modalWind.style.visibility = 'hidden';
         modalWind.style.opacity = 0;
         isModalLogOpen = 0
-    } else if (target === modalRegWind) {
+    } else if (target === modalRegWind || target === crossCloseReg1) {
         modalRegWind.style.visibility = 'hidden'
         modalRegWind.style.opacity = 0;
         isModalRegOpen = 0
+        
     }
 }
 
@@ -65,5 +70,16 @@ buttonOpenReg.addEventListener("click", openRegModal)
 buttonOpenLog.addEventListener("click", openModal)
 modalWind.addEventListener("click", closeModal)
 crossCloseReg.addEventListener("click", closeModal)
+crossCloseReg1.addEventListener("click", closeModal)
 modalRegWind.addEventListener("click",closeModal)
-headerClose.addEventListener("click", closeModal)
+// headerClose.addEventListener("click", closeModal)
+modalCheckbox.addEventListener("change", () => {
+     if (modalCheckbox.checked) {
+         modalColBox.classList.add('checked');
+         modalContainerBox.classList.add('checked');
+         
+  } else {
+     modalContainerBox.classList.remove('checked');
+    modalColBox.classList.remove('checked');
+  }
+})

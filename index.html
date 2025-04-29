@@ -42,6 +42,28 @@
       </div>
     </div>
   </header>
+  <div class="modal__balance">
+    <div class="modal__balance__main">
+      <div class="balance__main__wrap">
+        <div class="balance__info">
+          <div class="modal__balance-amount">
+            <img class="modal__balance-amount-img" src="./assets/img/balance/Balance Icon.png" alt="">
+            <div class="modal__balance-amount-text">
+              <h>Баланс</h>
+              <p>0.00 USD</p>
+
+            </div>
+          </div>
+          <div class="modal__balance-amount-bonus">
+             <h>Бонусный</h>
+            <img src="" alt="">
+            <p>0.00 USD</p>
+          </div>
+        </div>
+       <div class="balance__info-buttons"></div>
+      </div>
+    </div>
+  </div>
   <div class="modal__login">
     <div class="modal__main">
       <div class="main__wrap">
@@ -83,12 +105,15 @@
       </div>
     </div>
   </div>
+
+
+
   <div class="modal__register">
     <div class="modal__main">
       <div class="main__wrap">
         <div class="modal__add"><img src="./assets/img/main/main_log/Banner.png" alt=""></div>
         <div class="modal__forms">
-          <div class="modal__button-close"><img src="./assets/img/main/main_reg/Vector.png" class="modal__button--img"
+          <div class="modal__button-close"><img src="./assets/img/main/main_reg/Vector.png" class="modal__button--img1"
               alt=""></div>
           <div class="modal__forms__top">
             <h2 class="modal__text-auth">Регистрация</h2>
@@ -112,17 +137,17 @@
                 <input type="text" class="modal__forms__inputs-promocode">
               </div>
               <div class="modal__forms__inputs__checkbox--wrapp">
-                <input type="checkbox" name="" id="" class="modal__forms__inputs__checkbox">
+                <input type="checkbox" name="" id="regCheckbox" class="modal__forms__inputs__checkbox">
                 <p>Я согласен (-на) с правилами и условиями</p>
               </div>
             </div>
           </div>
           <div class="modal__forms__button--auth">
-            <div class="modal__button-container">
+            <div id="modBtnContainer" class="modal__button-container ">
               <div class="modal__button-shadow-bgc-correct"></div>
               <div class="modal__button-shadow"></div>
               <div class="modal__button-shadow-bgc"></div>
-              <button class="modal__button-signin">Регистрация</button>
+              <button id="modalButtonSign" class="modal__button-signin ">Регистрация</button>
             </div>
             <p class="modal__forms__or-text">или</p>
             <div class="modal__button-container">

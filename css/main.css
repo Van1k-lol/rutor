@@ -56,7 +56,7 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
-
+  overflow: hidden;
   overflow-x: hidden;
   width: 100%;
   height: 100%;
@@ -1140,6 +1140,10 @@ body {
   padding: 36px 29px 0 0;
   cursor: pointer;
 }
+.modal__button--img1 {
+  padding: 36px 29px 0 0;
+  cursor: pointer;
+}
 
 .modal__forms__top {
   font-family: Gilroy;
@@ -1243,16 +1247,47 @@ body {
 
   border-radius: 5.3px;
 }
+.modal__button-container.checked .modal__button-shadow {
+  border: red 1.33px transparent;
+  box-shadow: 0px 0px 12.37px 0px #e8b11d4d;
+
+  box-shadow: 0px -3.76px 8.84px 0px #0e0a0187 inset;
+
+  background: linear-gradient(
+    175.67deg,
+    #e8b21d 17.86%,
+    #ffedbd 34.62%,
+    #e8b21d 71.74%,
+    #ffda75 93.61%
+  );
+
+  border-radius: 5.3px;
+}
 
 .modal__button-container:hover .modal__button-signin::after {
+  background: #e8b21d;
+}
+.modal__button-container.checked .modal__button-signin::after {
   background: #e8b21d;
 }
 
 .modal__button-container:hover .modal__button-shadow-bgc-correct {
   visibility: visible;
 }
-
+.modal__button-container.checked .modal__button-shadow-bgc-correct {
+  visibility: visible;
+}
 .modal__button-container:hover .modal__button-shadow-bgc-correct::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 1px;
+  background: #e8b21d;
+  left: -2px;
+  bottom: 2px;
+  transform: rotate(-55deg);
+}
+.modal__button-container.checked .modal__button-shadow-bgc-correct::after {
   content: "";
   position: absolute;
   width: 7px;
@@ -1306,6 +1341,46 @@ body {
 }
 
 .modal__button-signin:hover {
+  background:
+    /* linear-gradient(
+      0deg,
+      var(--gray-gray-700, #1f1704),
+      var(--gray-gray-700, #1f1704)
+    ), */ linear-gradient(
+      0deg,
+      rgba(249, 176, 26, 0.5),
+      rgba(249, 176, 26, 0.5)
+    ),
+    linear-gradient(
+      175.46deg,
+      rgba(249, 176, 26, 0.1) 21.26%,
+      rgba(255, 255, 255, 0.1) 49.63%,
+      rgba(249, 176, 26, 0.1) 93.33%
+    ),
+    radial-gradient(
+        26.11% 174.07% at 35.42% 25%,
+        rgba(249, 176, 26, 0.3) 0%,
+        rgba(249, 176, 26, 0) 63.51%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  content: "";
+  cursor: pointer;
+  border-width: 1.33px;
+  border-style: solid;
+  border-image-source: linear-gradient(
+    175.67deg,
+    #e8b21d 17.86%,
+    #ffedbd 34.62%,
+    #e8b21d 71.74%,
+    #ffda75 93.61%
+  );
+  border-image-slice: 1;
+
+  -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  border-radius: 5.33px;
+}
+.modal__button-signin.checked {
   background:
     /* linear-gradient(
       0deg,
@@ -1437,7 +1512,7 @@ body {
 .modal__register {
   position: absolute;
   inset: 0;
-  z-index: 3;
+
   z-index: 2;
   display: flex;
   cursor: pointer;
@@ -1583,4 +1658,66 @@ body {
 .game-card img {
   width: 100%;
   display: block;
+}
+.modal__balance {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 2;
+  display: flex;
+  cursor: pointer;
+  padding: 30px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.modal__balance__main {
+  position: absolute;
+  width: 536px;
+  left: 657px;
+  top: 90px;
+  background: var(--gray-gray-700, #1f1704);
+  height: 214px;
+  z-index: 5;
+  border-radius: 24px;
+}
+.balance__main__wrap {
+  position: relative;
+  width: 536px;
+
+  height: 214px;
+  z-index: 5;
+  border-radius: 24px;
+}
+.balance__info {
+  display: flex;
+}
+
+.modal__balance-amount p {
+  padding: 0;
+  margin: 0;
+}
+.modal__balance-amount {
+  box-sizing: border-box;
+  width: 222px;
+  height: 70px;
+  border-radius: 12px;
+  margin: 36px 0 0 36px;
+  display: flex;
+  padding: 12px 20px;
+  border: 1px solid var(--gray-gray-400, #3b2b0d);
+}
+.modal__balance-amount-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  margin-top: 5px;
+}
+
+.modal__balance-amount-text h {
+  font-size: 14px;
+  font-family: Gilroy;
+}
+.modal__balance-amount-text p {
+  font-size: 20px;
+  font-family: Gilroy;
 }

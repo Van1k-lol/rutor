@@ -1,3 +1,6 @@
+/* https://www.figma.com/design/Pq7DUAlrfmUONtpP1uc5h6/Rutor-Casino?node-id=223-9693&t=xo8hC4pJdnAI0PyP-0 */
+
+
 @font-face {
   font-family: Gilroy;
   src: url("../assets/fonts/gilroy/Gilroy-Regular.ttf");
@@ -7,6 +10,7 @@
 
 body.modal-open {
   overflow: hidden;
+  
 }
 
 .text1 {

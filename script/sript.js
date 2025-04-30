@@ -97,3 +97,12 @@ modalLoginEmailInput.addEventListener("input", ()=>{
         modalColBox.classList.remove('checked');
     }
 });
+modalLoginEmailPassword.addEventListener("input", () => {
+    if(modalLoginEmailInput.value.length !== 0 && modalLoginEmailPassword.value.length !== 0){
+        modalColBox.classList.add('checked');
+        modalContainerBox.classList.add('checked');
+    }else{
+        modalContainerBox.classList.remove('checked');
+        modalColBox.classList.remove('checked');
+    }
+})

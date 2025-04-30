@@ -1,6 +1,5 @@
 /* https://www.figma.com/design/Pq7DUAlrfmUONtpP1uc5h6/Rutor-Casino?node-id=223-9693&t=xo8hC4pJdnAI0PyP-0 */
 
-
 @font-face {
   font-family: Gilroy;
   src: url("../assets/fonts/gilroy/Gilroy-Regular.ttf");
@@ -10,7 +9,6 @@
 
 body.modal-open {
   overflow: hidden;
-  
 }
 
 .text1 {
@@ -1576,11 +1574,15 @@ button {
   border-radius: 16px;
   background: var(--gray-gray-600, #231b0bb2);
   border: 1px solid var(--gray-gray-400, #3b2b0d);
-  color: var(--gray-gray-300, #7c612f);
+  color: var(--gray-gray-300, #ffcb69);
   padding: 0 20px;
 }
-.modal__forms__inputs-promocode::placeholder{
+.modal__forms__inputs-promocode::placeholder {
   color: var(--gray-gray-300, #7c612f);
+}
+.modal__forms__inputs-promocode:focus {
+  outline: none !important;
+  border: 1px solid #fed970;
 }
 .modal__forms__inputs__checkbox--wrapp {
   display: flex;
@@ -1790,13 +1792,14 @@ button {
   padding: 30px;
   overflow-y: hidden;
   overflow-x: hidden;
-  visibility: hidden;
-  opacity: 0;
+  /* visibility: hidden;
+  opacity: 0; */
 }
 .modal__balance__main {
   position: absolute;
   width: 536px;
-  left: 657px;
+  box-sizing: border-box;
+  right: 25%;
   top: 90px;
   background: var(--gray-gray-700, #1f1704);
   height: 214px;
@@ -1843,4 +1846,35 @@ button {
 .modal__balance-amount-text p {
   font-size: 20px;
   font-family: Gilroy;
+}
+
+.modal__balance-amount-bonus {
+  display: flex;
+  box-sizing: border-box;
+  width: 222px;
+  height: 70px;
+  border-radius: 12px;
+  margin: 36px 0 0 36px;
+  display: flex;
+  padding: 12px 20px;
+  border: 1px solid var(--gray-gray-400, #3b2b0d);
+}
+.modal__balance__bonus-amount-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 11px;
+  margin-top: 5px;
+}
+
+.modal__balance-bonus-amount-text h {
+  font-size: 14px;
+  font-family: Gilroy;
+}
+.modal__balance-bonus-amount-text p {
+  font-size: 20px;
+  font-family: Gilroy;
+  margin: 0;
+}
+.modal__balance__button-container {
+  position: relative;
 }

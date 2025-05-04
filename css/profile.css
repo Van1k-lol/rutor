@@ -70,3 +70,134 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+
+.first__wrap__main {
+  margin-left: 120px;
+}
+
+.profile__title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #9f8f6b;
+  user-select: none;
+}
+
+.profile__title span {
+  text-decoration: underline;
+}
+
+.profile__nav {
+  display: flex;
+  flex-direction: column;
+  background: #161003;
+  border: 1px solid #251c06;
+  border-radius: 16px;
+  max-width: 241px;
+  overflow: hidden;
+  padding: 16px 0;
+}
+
+.profile__nav__item.active {
+  background: #1f1704;
+  color: #FFF;
+  border-left: 5px solid #e8b21d;
+}
+
+.profile__nav__item {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #7c612f;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.profile__nav__item span {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+
+.profile__slider {
+  display: flex;
+  gap: 12px;
+  margin-left: 500px;
+}
+
+
+.profile__slide.active {
+  border: 1px solid #fed970;
+  background: linear-gradient(180deg, rgba(155, 78, 38, 0.5) 0%, rgba(53, 27, 13, 0) 100%);
+}
+
+.profile__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 12px;
+  width: 90px;
+  height: 106px;
+  background: url('../assets/img/levels/bg2.png');
+}
+.profile__slide.active::before{
+  content: '';
+  background: none;
+}
+.profile__slide::before{
+  content: '';
+  background: url('../assets/img/levels/lockIcon.png');
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile__slide.active .profile__slide__level {
+  border-radius: 22px;
+  padding: 1px 5px;
+  position: absolute;
+  top: -5%;
+  left: 25%;
+  background: #fed970;
+  font-weight: 500;
+  font-size: 8px;
+  color: #000;
+  font-family: Gilroy;
+}
+.profile__slide__level{
+  border-radius: 22px;
+  padding: 1px 5px;
+  position: absolute;
+  top: -5%;
+  left: 25%;
+  background: #1f1704;
+  font-weight: 500;
+  font-size: 8px;
+  color: #7c612f;
+  font-family: Gilroy;
+}
+
+.profile__slide__img {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 73px;
+}
+
+.profile__slide.active .profile__slide__title {
+  color: #fed970;
+}
+
+.profile__slide__title {
+  margin: 8px 0 8px 0;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+}

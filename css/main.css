@@ -9,10 +9,6 @@ body.modal-open {
   overflow: hidden;
 }
 
-.text1 {
-  text-transform: lowercase;
-}
-
 body {
   background-color: #0e0a01;
   font-size: 14px;
@@ -35,7 +31,6 @@ body {
   width: 100%;
   height: 100%;
   max-width: 1353px;
-
 }
 
 
@@ -677,6 +672,7 @@ button {
   font-size: 12px;
   text-align: center;
   color: #e0caa3;
+  cursor: pointer;
 }
 
 .favorites_add_game:hover {
@@ -1543,11 +1539,10 @@ button {
   width: 100%;
   height: 1px;
   background: #1f1704;
-  margin-bottom: 32px;
+  flex-shrink: 0;
 }
 
 .modal__search__search {
-  margin-bottom: 20px;
   padding: 0 32px 32px 32px;
   position: relative;
 }
@@ -1561,6 +1556,7 @@ button {
   color: white;
   font-size: 14px;
   box-sizing: border-box;
+  margin-top: 32px;
 }
 
 .modal__search input::placeholder {
@@ -1574,9 +1570,9 @@ button {
 .modal__search__search::after {
   content: "";
   position: absolute;
-  top: 15%;
+  top: 40%;
   left: 5%;
-  transform: translate(-5% -15%);
+  transform: translate(-5% -40%);
   width: 20px;
   height: 20px;
   background: url("../assets/img/main/main_modal_search/Loupe_Icon.svg") no-repeat center;
@@ -1612,4 +1608,190 @@ button {
 .game-card img {
   width: 100%;
   display: block;
+}
+
+
+
+
+/* =================-FILTER______MODAL-===================== */
+
+.filter__modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.filter__modal.active {
+  display: flex;
+}
+
+
+.filter__modal__container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  width: 1128px;
+  max-height: 90vh;
+  background: #0e0a01;
+  border: 1px solid #1f1704;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==================================== */
+/* ===================================== */
+/* ===================================== */
+
+
+
+
+.filter-tag {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row-reverse;
+  gap: 10px;
+  background: #1f1704;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 160px;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: Gilroy;
+  text-align: end;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.tag {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.filter-tag span {
+  cursor: pointer;
+}
+
+.reset-filters-btn {
+  background: #f9b01a66;
+  padding: 8px 19px;
+  border: 1px solid #fed970;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.reset-filters-btn::before {
+  content: '✕';
+  width: 12px;
+  height: 12px;
+  color: #FFF;
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+
+.modal_providers {
+  padding: 20px;
+  background: #151515;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+.filter__active__container{
+  display: none;
+  flex-wrap: wrap;
+  margin: 32px 32px;
+  gap: 26px;
+}
+.providers_list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 26px 32px 113px 32px;
+  gap: 26px;
+  padding-bottom: 32px;
+}
+
+
+.providers_list label, .filter__active__container div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1f1704;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 160px;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: Gilroy;
+  text-align: start;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.providers_list.none {
+  display: none;
+}
+
+.providers_list label:hover {
+  background: #251c06;
+}
+
+.provider-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.providers_list label span {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#modal__search__results1 {
+  margin: 0 32px ;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  font-family: Gilroy;
+}
+
+#gamesGrid1{
+  margin-top: 16px;
+}
+.modal__search__grid {
+  display: none;
+}
+
+.modal__search__grid.active {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.game-card img {
+  width: 100%;
 }

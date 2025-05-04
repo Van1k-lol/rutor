@@ -2318,3 +2318,36 @@ button {
 .game-card img {
   width: 100%;
 }
+
+/* <div class="modal-overlay">
+  <div class="modal" >
+    <div class="tabs">
+      <button class="tab active"id="tab1"><img src="./assets/icon/up.png" class="modal__overlay__tabs-icon"> Депозит</button>
+      <button class="tab" id="tab2">Выплата</button>
+      <button class="tab" id="tab3">История</button>
+    </div>
+    
+    <div class="subtabs">
+      <span class="subtab active">Все</span>
+      <span class="subtab">Карта</span>
+      <span class="subtab">Электронный кошелек</span>
+    </div>
+    <div class="modal__switch-html" id="modal-switch" >
+  
+  <div class="section">
+    <label>Карта</label>
+    <div class="input-row">
+      <div class="input-box"><Input class="input-box"></Input></div>
+      <div class="input-box"><Input class="input-box"></Input></div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <label>Электронный кошелек</label>
+    <div class="input-box large"><Input class="input-box large"></Input></div>
+  </div>
+</div>
+
+    <button class="bottom-button">Не нашли платежную систему?</button>
+  </div>
+</div> */

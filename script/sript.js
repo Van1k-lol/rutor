@@ -39,15 +39,18 @@ const closeModal = event => {
     if (target === modalWind || target === crossCloseReg) {
         modalWind.style.visibility = 'hidden';
         modalWind.style.opacity = 0;
+        modalWind.style.display = "none"
         document.body.classList.remove('modal-open');
         modalLoginEmailInput.value = ""
         modalLoginEmailPassword.value = ""
         modalContainerBox.classList.remove('checked');
         modalColBox.classList.remove('checked');
         
+        
     } else if (target === modalRegWind || target === crossCloseReg1) {
         modalRegWind.style.visibility = 'hidden'
         modalRegWind.style.opacity = 0;
+        modalRegWind.style.display = "none"
         document.body.classList.remove('modal-open');
         modalLoginEmailInput.value = ""
         modalLoginEmailPassword.value = ""

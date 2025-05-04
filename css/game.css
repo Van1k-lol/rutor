@@ -27,7 +27,8 @@ body {
 }
 
 .background {
-  background: url("../assets/img/main/main/bg_main.jpg") center no-repeat #0e0a01;
+  background: url("../assets/img/main/main/bg_main.jpg") center no-repeat
+    #0e0a01;
   position: absolute;
   z-index: -100;
   top: 105px;
@@ -35,9 +36,7 @@ body {
   width: 100%;
   height: 100%;
   max-width: 1353px;
-
 }
-
 
 input {
   outline: none;
@@ -75,13 +74,7 @@ button {
   cursor: pointer;
 }
 
-
 /*  */
-
-
-
-
-
 
 .header {
   border-bottom: 1px solid #1f1704;
@@ -108,7 +101,6 @@ button {
   flex-wrap: wrap;
 }
 
-
 .logo__img {
   max-width: 100%;
 }
@@ -122,7 +114,7 @@ button {
 /* Баланс */
 .balance-wrapper {
   position: relative;
-  transition: all .2s;
+  transition: all 0.2s;
   cursor: pointer;
 }
 
@@ -141,7 +133,7 @@ button {
   gap: 4px;
   min-width: 130px;
   transform: skew(-10deg);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .balance-button::after {
@@ -202,7 +194,6 @@ button {
   transform: translateY(-50%) rotate(180deg);
 }
 
-
 .balance-wrapper:hover .balance-button {
   border: 1.33px solid #7c612f;
 }
@@ -229,7 +220,6 @@ button {
   background: #7c612f;
 }
 
-
 .balance-modal {
   position: absolute;
   top: calc(100% + 14px);
@@ -237,7 +227,7 @@ button {
   background: #1f1704;
   border: 1px solid #3b2b0d;
   border-radius: 24px;
-  padding: 36px;
+
   width: 536px;
   z-index: 100;
 }
@@ -275,7 +265,7 @@ button {
   font-size: 20px;
   font-family: Gilroy;
 }
-.bonuses__balance__container{
+.bonuses__balance__container {
   display: flex;
   gap: 12px;
   align-items: center;
@@ -285,7 +275,7 @@ button {
   border-radius: 12px;
 }
 
-.balance-actions{
+.balance-actions {
   display: flex;
   gap: 8px;
   flex: 1;
@@ -300,7 +290,7 @@ button {
   display: flex;
   flex-direction: column;
   transform: skew(-10deg);
-  transition: all .2s;
+  transition: all 0.2s;
   display: flex;
   gap: 8px;
   text-align: center;
@@ -336,8 +326,7 @@ button {
   transition: all 0.2s;
 }
 
-
-.action-button{
+.action-button {
   width: 100%;
   height: 100%;
   transform: skew(10deg);
@@ -347,13 +336,17 @@ button {
 .deposit {
   box-shadow: 0 0 12.37px 0 rgba(232, 177, 29, 0.3),
     inset 0 -3.76px 8.84px 0 rgba(14, 10, 1, 0.53);
-  background: radial-gradient(68.61% 223.81% at 93.07% 3.57%,
+  background: radial-gradient(
+      68.61% 223.81% at 93.07% 3.57%,
       rgba(249, 176, 26, 0.3) 0,
-      rgba(249, 176, 26, 0) 63.51%),
-    linear-gradient(177.78deg,
+      rgba(249, 176, 26, 0) 63.51%
+    ),
+    linear-gradient(
+      177.78deg,
       rgba(249, 176, 26, 0.1) 0.9%,
       rgba(255, 255, 255, 0.1) 38.79%,
-      rgba(249, 176, 26, 0.1) 97.18%),
+      rgba(249, 176, 26, 0.1) 97.18%
+    ),
     linear-gradient(0deg, rgba(249, 176, 26, 0.4), rgba(249, 176, 26, 0.4)),
     #1f1704;
   box-shadow: 0 0 12px #e8b11d4d, inset 0 -4px 9px #0e0a0187;
@@ -367,29 +360,30 @@ button {
   border-color: #ff5c5c;
 }
 
-
-
 /* Профиль */
 .profile-button {
   position: relative;
 }
 
-
 .profile__button__container {
-  background: radial-gradient(68.61% 223.81% at 93.07% 3.57%,
+  background: radial-gradient(
+      68.61% 223.81% at 93.07% 3.57%,
       rgba(249, 176, 26, 0.3) 0,
-      rgba(249, 176, 26, 0) 63.51%),
-    linear-gradient(177.78deg,
+      rgba(249, 176, 26, 0) 63.51%
+    ),
+    linear-gradient(
+      177.78deg,
       rgba(249, 176, 26, 0.1) 0.9%,
       rgba(255, 255, 255, 0.1) 38.79%,
-      rgba(249, 176, 26, 0.1) 97.18%),
+      rgba(249, 176, 26, 0.1) 97.18%
+    ),
     linear-gradient(0deg, rgba(249, 176, 26, 0.4), rgba(249, 176, 26, 0.4)),
     #1f1704;
   box-shadow: 0 0 12px #e8b11d4d, inset 0 -4px 9px #0e0a0187;
   border: 2px solid #f9dc7e;
   border-radius: 10px;
   padding: 12px 20px 12px 83px;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   transform: skew(-10deg);
@@ -422,7 +416,6 @@ button {
   transition: all 0.2s;
 }
 
-
 .profile-icon {
   height: 57px;
   width: 80px;
@@ -445,15 +438,10 @@ button {
   transform: skew(10deg);
 }
 
-
-
 .profile-text {
   transform: skew(10deg);
   display: inline-block;
 }
-
-
-
 
 .language {
   cursor: pointer;
@@ -471,19 +459,14 @@ button {
   font-weight: 500;
   color: #e0caa3;
   overflow: hidden;
-  background: url("../assets/img/main/main_top/Vector.png") no-repeat calc(100% - 8px) rgba(35, 27, 11, 0.7);
+  background: url("../assets/img/main/main_top/Vector.png") no-repeat
+    calc(100% - 8px) rgba(35, 27, 11, 0.7);
   transition: all 0.2s;
 }
 
 .language:hover {
   border: 2px solid #7c612f;
 }
-
-
-
-
-
-
 
 /* main */
 .main {
@@ -535,13 +518,12 @@ button {
 }
 
 .link_to_game a button::after {
-  content: '';
+  content: "";
   width: 16px;
   height: 16px;
   display: block;
-  background: url('../assets/img/main/play.svg') no-repeat center
+  background: url("../assets/img/main/play.svg") no-repeat center;
 }
-
 
 .view__container {
   display: flex;
@@ -575,7 +557,6 @@ button {
   border: 1px solid #251c06;
   margin-bottom: 160px;
 }
-
 
 .fullscreen {
   flex-grow: 1;

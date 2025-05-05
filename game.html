@@ -30,30 +30,44 @@
 
             <!-- Модалка -->
             <div class="balance-modal hidden" id="balanceModal">
-              <div class="balance-block">
-                <div class="balance__container">
-                  <img src="./assets/img/main/Card_icon.svg" alt="credit_card">
-                  <div class="balance__content">
-                    <div class="label">Баланс</div>
-                    <div class="value">0.00 USD</div>
-                  </div>
-                </div>
-                <div class="bonuses__balance__container">
-                  <img src="./assets/img/main/Bonus_Giftbox_yellow.svg" alt="Bonus_Giftbox">
-                  <div class="bonuses__balance__content">
-                    <div class="label">Бонусный баланс</div>
-                    <div class="value">0.00 USD</div>
-                  </div>
-                </div>
-              </div>
-              <div class="balance-actions">
-                <div class="action-button__before">
-                  <button class="action-button deposit">↑ Пополнить</button>
-                </div>
-                <div class="action-button__before">
-                  <button class="action-button withdraw">↓ Вывести</button>
-                </div>
-              </div>
+              <div class="modal__balance">
+  <div class="modal__balance__main">
+    <div class="balance__main__wrap">
+      <div class="balance__info">
+        <div class="modal__balance-amount">
+          <img class="modal__balance-amount-img" src="./assets/img/balance/Balance Icon.png" alt="">
+          <div class="modal__balance-amount-text">
+            <h>Баланс</h>
+            <p>0.00 USD</p>
+          </div>
+        </div>
+        <div class="modal__balance-amount-bonus">
+          <img class="modal__balance__bonus-amount-img" src="./assets/img/balance/Bonus Giftbox.png" alt="">
+          <div class="modal__balance-bonus-amount-text">
+              <h>Бонусный Баланс</h>
+              <p>0.00 USD</p>
+            </div>
+        </div>
+        
+      </div>
+    <div class="balance__info-buttons">
+      <div class="modal__balance__button-container">
+        <div class="modal__balance__button-shadow-bgc-correct"></div>
+        <div class="modal__balance__button-shadow"></div>
+        <div class="modal__balance__button-shadow-bgc"></div>
+        <button id="modalButtonSign" class="modal__balance__button-signin "><img src="./assets/icon/Arrow 1 (Stroke).png" alt="" class="modal__balance__button-img">Пополнить</button>
+      </div>
+      <div class="modal__balance__button__withdraw-container">
+        <div class="modal__balance__button__withdraw-shadow-bgc-correct"></div>
+        <div class="modal__balance__button__withdraw-shadow"></div>
+        <div class="modal__balance__button__withdraw-shadow-bgc"></div>
+        <button id="modalButtonSign" class="modal__balance__button__withdraw-signin "><img src="./assets/icon/Arrow 1 (Stroke).png" alt="" class="modal__balance__button__withdraw-img">Вывести</button>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>
             </div>
           </div>
 

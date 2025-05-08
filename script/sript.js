@@ -39,7 +39,7 @@ const closeModal = event => {
     if (target === modalWind || target === crossCloseReg) {
         modalWind.style.visibility = 'hidden';
         modalWind.style.opacity = 0;
-        modalWind.style.display = "none"
+        // modalWind.style.display = "none"
         document.body.classList.remove('modal-open');
         modalLoginEmailInput.value = ""
         modalLoginEmailPassword.value = ""
@@ -50,7 +50,7 @@ const closeModal = event => {
     } else if (target === modalRegWind || target === crossCloseReg1) {
         modalRegWind.style.visibility = 'hidden'
         modalRegWind.style.opacity = 0;
-        modalRegWind.style.display = "none"
+        // modalRegWind.style.display = "none"
         document.body.classList.remove('modal-open');
         modalLoginEmailInput.value = ""
         modalLoginEmailPassword.value = ""
@@ -81,16 +81,16 @@ crossCloseReg.addEventListener("click", closeModal)
 crossCloseReg1.addEventListener("click", closeModal)
 modalRegWind.addEventListener("click",closeModal)
 // headerClose.addEventListener("click", closeModal)
-modalCheckbox.addEventListener("change", () => {
-     if (modalCheckbox.checked) {
-         modalColBox.classList.add('checked');
-         modalContainerBox.classList.add('checked');
+// modalCheckbox.addEventListener("change", () => {
+//      if (modalCheckbox.checked) {
+//          modalColBox.classList.add('checked');
+//          modalContainerBox.classList.add('checked');
          
-  } else {
-     modalContainerBox.classList.remove('checked');
-    modalColBox.classList.remove('checked');
-  }
-})
+//   } else {
+//      modalContainerBox.classList.remove('checked');
+//     modalColBox.classList.remove('checked');
+//   }
+// })
 modalLoginEmailInput.addEventListener("input", ()=>{
     if(modalLoginEmailInput.value.length !== 0 && modalLoginEmailPassword.value.length !== 0){
         modalColBox.classList.add('checked');

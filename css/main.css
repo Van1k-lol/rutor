@@ -35,10 +35,10 @@ body {
   max-width: 1353px;
 }
 
-input {
+/* input {
   outline: none;
   border: none;
-}
+} */
 
 input:focus {
   outline: none;
@@ -62,13 +62,14 @@ img {
 
 /* Ползунок (то, что двигается) */
 ::-webkit-scrollbar-thumb {
-  background: #e8b21d;
+  background: #ffcd44;
   border-radius: 10px;
+  transition: all 0.2s;
 }
 
 /* При наведении */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff0000;
+  background: #e7bc47;
 }
 a {
   text-decoration: none;
@@ -631,12 +632,13 @@ button {
   background: #161003;
   border-radius: 24px;
   border: 1px solid #1f1704;
-  margin-bottom: 2000px;
+  margin-bottom: 46px;
 }
 
 .games__wrap {
   display: flex;
   flex-direction: column;
+  width: 1200px;
 }
 
 .games_top {
@@ -1615,6 +1617,12 @@ button {
   color: var(--gray-gray-300, #7c612f);
   padding: 0 20px;
 }
+.modal__forms__inputs-currency-select-main {
+  color: var(--gray-gray-300, #7c612f);
+}
+.modal__forms__inputs-currency-select option {
+  color: white;
+}
 .modal__forms__inputs-currency-select:focus {
   outline: none !important;
   border: 1px solid #fed970;
@@ -1641,7 +1649,7 @@ button {
 }
 .modal__forms__inputs__checkbox {
   outline: none !important;
-  appearance: none; /* убираем стандартный стиль браузера */
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 16px;
@@ -1652,10 +1660,15 @@ button {
   accent-color: var(--brand-200, #e8b21d);
   margin-top: 20px;
 }
+.modal__forms__inputs__checkbox:focus {
+  border: 2px solid var(--gray-gray-400, #3b2b0d);
+}
 .modal__forms__inputs__checkbox:checked {
   appearance: auto;
   -webkit-appearance: auto;
-  border: 1px solid;
+  border: 2px solid var(--gray-gray-400, #3b2b0d);
+  width: 15px;
+  height: 15px;
   border-radius: 3px;
 }
 .modal__forms__inputs__checkbox--wrapp p {

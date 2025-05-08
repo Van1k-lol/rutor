@@ -21,6 +21,18 @@ body {
   overflow-x: hidden;
 }
 
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .background {
   background: #0e0a01;
   position: absolute;
@@ -84,8 +96,8 @@ button {
   cursor: pointer;
 }
 
-.first__wrap__main {
-  margin-left: 120px;
+.first__wrap__main{
+  max-width: 1200px;
 }
 
 .profile__title {
@@ -363,51 +375,6 @@ button {
   color: #0e0a01;
 }
 
-/* .profile__slide__level.level__1 {
-  background: #fed970;
-  color: #000;
-  position: absolute;
-  top: -5px;
-  left: 86px;
-}
-.profile__slide__level.level__2 {
-  position: absolute;
-  top: -5px;
-  left: 189px;
-}
-.profile__slide__level.level__3 {
-  position: absolute;
-  top: -5px;
-  left: 290px;
-}
-.profile__slide__level.level__4 {
-  position: absolute;
-  top: -5px;
-  left: 391px;
-}
-.profile__slide__level.level__5 {
-  position: absolute;
-  top: -5px;
-  left: 494px;
-}
-.profile__slide__level.level__6 {
-  position: absolute;
-  top: -5px;
-  left: 594px;
-}
-.profile__slide__level.level__7 {
-  position: absolute;
-  top: -5px;
-  left: 494px;
-}
-
-.profile__slide__level.level__10 {
-  background: #e8b21d;
-  color: #0e0a01;
-  position: absolute;
-  top: -5px;
-  left: 1000px;
-} */
 
 .profile__slide__img {
   margin-top: 10px;
@@ -852,9 +819,9 @@ button {
 
 .modal-overlay {
   position: absolute;
-  display: none;
+  /* display: none;
   visibility: hidden;
-  opacity: 0;
+  opacity: 0; */
   top: 0px;
   z-index: 101;
   left: 0;
@@ -867,11 +834,12 @@ button {
 }
 
 .modal {
+  margin-top: 400px;
   background: var(--gray-gray-900, #0e0a01);
   border-radius: 12px;
   width: 1128px;
   min-height: 610px;
-  max-height: 961px;
+  max-height: 934px;
   color: #fff;
   display: flex;
   flex-direction: column;

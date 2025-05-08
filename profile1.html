@@ -111,8 +111,9 @@
           <span class="subtab active">Все</span>
           <span class="subtab">Карта</span>
           <span class="subtab">Электронный кошелек</span>
+          <span class="subtab unactive">Криптовалюта</span>
         </div>
-        <div class="modal__switch-html" id="modal-switch">
+        <div class="modal__switch-html-deposit" id="modal-switch">
 
           <div class="section">
             <label>Карта</label>
@@ -126,9 +127,65 @@
             <label>Электронный кошелек</label>
             <div class="input-box large"><Input class="input-box large"></Input></div>
           </div>
-        </div>
+
 
         <button class="bottom-button">Не нашли платежную систему?</button>
+        </div>
+        <div class="modal__switch-html-withdraw">
+     <div class="section">
+       <label>Карта</label>
+       <div class="input-row">
+         <div class="input-box"></div>
+         <div class="input-box"></div>
+         <div class="input-box"></div>
+       </div>
+     </div>
+     <div class="section">
+       <label>Электронный кошелек</label>
+       <div class="input-box large"></div>
+     </div>
+
+     <div class="section">
+       <label>Криптовалюта</label>
+       <div class="crypto-grid">
+         <div class="input-box crypto"></div>
+      <div class="input-box crypto"></div>
+         <div class="input-box crypto selected"></div>
+         <div class="input-box crypto"></div>
+         <div class="input-box crypto"></div>
+       </div>
+     </div>
+        </div>
+        <div class="modal__switch-html-history">
+    <table class="history-table">
+      <thead>
+        <tr class="history-table-headers">
+          <th>Тип</th>
+          <th>ID</th>
+          <th>Дата</th>
+          <th>Сумма</th>
+          <th>Система</th>
+          <th>Статус</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><button class="type-button"><span>↑</span> Депозит</button></td>
+          <td>VBHAEu8084</td>
+          <td>2025-01-14 23:24:24</td>
+          <td>+2 USD</td>
+          <td>Система</td>
+          <td>Не оплачен</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+        </div>
+
+
       </div>
     </div>
 

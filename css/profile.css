@@ -493,6 +493,7 @@ button {
   border-radius: 12px;
   width: 1128px;
   /* height: 610px; */
+  max-height: 961px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -553,8 +554,10 @@ button {
   text-decoration: underline;
 }
 
-.modal__switch-html {
-  transition: opacity 0.3s ease, max-height 0.3s ease;
+.modal__switch-html-deposit {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .section {
@@ -618,4 +621,63 @@ button {
   width: 246px;
   height: 110px;
   margin-bottom: 24px;
+}
+.modal__switch-html-withdraw {
+  /* display: none;
+  opacity: 0;
+  visibility: hidden; */
+  height: 961px;
+}
+.modal__switch-html-history {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.history-table {
+  width: 1128px;
+  border-collapse: collapse;
+  background-color: #1a130a;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+.history-table thead {
+  background-color: #2a1f11;
+  color: #ccc;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px 15px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-family: Gilroy;
+}
+
+.type-button span {
+  color: #fed970;
+}
+.type-button {
+  background: #f9af1a42;
+  font-family: Gilroy;
+  border: none;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: default;
+  font-weight: 600;
+  font-size: 14px;
+}
+.history-table-headers {
+  width: 1128px;
+  color: #e0caa3;
+}
+.subtab.unactive {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
 }

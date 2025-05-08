@@ -9,74 +9,74 @@ const historyTab = document.getElementById("tab3")
 const modalHTML = document.getElementById("modal-switch")
 
 
-const findActiveTab = event => {
+// const findActiveTab = event => {
 
-  const target = event.target;
-  console.log(target.classList)
-  console.log(target)
-  if (target === depositTab) {
-    depositTab.classList.add("active")
-    historyTab.classList.remove("active")
-    withdrawTab.classList.remove("active")
+//   const target = event.target;
+//   console.log(target.classList)
+//   console.log(target)
+//   if (target === depositTab) {
+//     depositTab.classList.add("active")
+//     historyTab.classList.remove("active")
+//     withdrawTab.classList.remove("active")
 
 
 
-    modalHTML.innerHTML = `
-       <div class="section">
-    <label>Карта</label>
-    <div class="input-row">
-      <div class="input-box"><Input class="input-box"></Input></div>
-      <div class="input-box"><Input class="input-box"></Input></div>
-    </div>
-  </div>
+//     modalHTML.innerHTML = `
+//        <div class="section">
+//     <label>Карта</label>
+//     <div class="input-row">
+//       <div class="input-box"><Input class="input-box"></Input></div>
+//       <div class="input-box"><Input class="input-box"></Input></div>
+//     </div>
+//   </div>
   
-  <div class="section">
-    <label>Электронный кошелек</label>
-    <div class="input-box large"><Input class="input-box large"></Input></div>
-  </div>
-    `
-  } else if (target === withdrawTab) {
-    depositTab.classList.remove("active")
-    historyTab.classList.remove("active")
-    withdrawTab.classList.add("active")
+//   <div class="section">
+//     <label>Электронный кошелек</label>
+//     <div class="input-box large"><Input class="input-box large"></Input></div>
+//   </div>
+//     `
+//   } else if (target === withdrawTab) {
+//     depositTab.classList.remove("active")
+//     historyTab.classList.remove("active")
+//     withdrawTab.classList.add("active")
 
 
 
 
-    modalHTML.innerHTML = `
-    <div class="section">
-      <label>Карта</label>
-      <div class="input-row">
-        <div class="input-box"></div>
-        <div class="input-box"></div>
-        <div class="input-box"></div>
-      </div>
-    </div>
+//     modalHTML.innerHTML = `
+//     <div class="section">
+//       <label>Карта</label>
+//       <div class="input-row">
+//         <div class="input-box"></div>
+//         <div class="input-box"></div>
+//         <div class="input-box"></div>
+//       </div>
+//     </div>
 
-    <div class="section">
-      <label>Электронный кошелек</label>
-      <div class="input-box large"></div>
-    </div>
+//     <div class="section">
+//       <label>Электронный кошелек</label>
+//       <div class="input-box large"></div>
+//     </div>
 
-    <div class="section">
-      <label>Криптовалюта</label>
-      <div class="crypto-grid">
-        <div class="input-box crypto"></div>
-        <div class="input-box crypto"></div>
-        <div class="input-box crypto selected"></div>
-        <div class="input-box crypto"></div>
-        <div class="input-box crypto"></div>
-      </div>
-    </div>
+//     <div class="section">
+//       <label>Криптовалюта</label>
+//       <div class="crypto-grid">
+//         <div class="input-box crypto"></div>
+//         <div class="input-box crypto"></div>
+//         <div class="input-box crypto selected"></div>
+//         <div class="input-box crypto"></div>
+//         <div class="input-box crypto"></div>
+//       </div>
+//     </div>
     
     
     
-    `
-  }
+//     `
+//   }
 
 
 
-}
+// }
 
 let isFullScreen = false;
 

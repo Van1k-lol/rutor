@@ -112,7 +112,7 @@
           <span class="subtab active">Все</span>
           <span class="subtab">Карта</span>
           <span class="subtab">Электронный кошелек</span>
-          <span class="subtab unactive">Криптовалюта</span>
+          <span id="crypto-subtab" class="subtab unactive">Криптовалюта</span>
         </div>
         <div class="modal__switch-html-deposit" id="modal-switch">
 
@@ -129,10 +129,12 @@
             <div class="input-box large"><Input class="input-box large"></Input></div>
           </div>
 
+          <div class="modal__deposit__helpButton-wrap">
 
-        <button class="bottom-button">Не нашли платежную систему?</button>
+            <button class="bottom-button">Не нашли платежную систему?</button>
+          </div>
         </div>
-        <div class="modal__switch-html-withdraw">
+        <div id="modal-withdraw-body" class="modal__switch-html-withdraw hidden">
      <div class="section">
        <label>Карта</label>
        <div class="input-row">
@@ -155,9 +157,12 @@
          <div class="input-box crypto"></div>
          <div class="input-box crypto"></div>
        </div>
-     </div>
+      </div>
+       <div class="modal__deposit__helpButton-wrap">
+            <button class="bottom-button">Не нашли платежную систему?</button>
+          </div>
         </div>
-        <div class="modal__switch-html-history">
+        <div id="modal-history-body" class="modal__switch-html-history hidden">
     <table class="history-table">
       <thead>
         <tr class="history-table-headers">

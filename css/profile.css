@@ -18,6 +18,7 @@ body {
   height: 100%;
   color: #ffffff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
 }
 
 .background {
@@ -767,7 +768,7 @@ button {
   cursor: pointer;
   transition: all 0.3s ease;
   background: #161003;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .rules .conditions {
@@ -782,6 +783,7 @@ button {
   font-size: 14px;
   font-family: Gilroy;
   user-select: none;
+  z-index: auto;
 }
 
 .rules img {
@@ -849,11 +851,11 @@ button {
 } */
 
 .modal-overlay {
-  position: fixed;
+  position: absolute;
+  display: none;
   visibility: hidden;
   opacity: 0;
-  display: none;
-  top: 50px;
+  top: 0px;
   z-index: 101;
   left: 0;
   width: 100%;
@@ -868,7 +870,7 @@ button {
   background: var(--gray-gray-900, #0e0a01);
   border-radius: 12px;
   width: 1128px;
-  /* height: 610px; */
+  min-height: 610px;
   max-height: 961px;
   color: #fff;
   display: flex;
@@ -931,9 +933,9 @@ button {
 }
 
 .modal__switch-html-deposit {
-  display: none;
+  /* display: none;
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden; */
 }
 
 .section {
@@ -999,15 +1001,9 @@ button {
   margin-bottom: 24px;
 }
 .modal__switch-html-withdraw {
-  /* display: none;
-  opacity: 0;
-  visibility: hidden; */
   height: 961px;
 }
 .modal__switch-html-history {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
 }
 
 .history-table {
@@ -1056,4 +1052,16 @@ button {
   display: none;
   visibility: hidden;
   opacity: 0;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.modal__deposit__helpButton-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }

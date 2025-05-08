@@ -7,76 +7,44 @@ const depositTab = document.getElementById("tab1")
 const withdrawTab = document.getElementById("tab2")
 const historyTab = document.getElementById("tab3")
 const modalHTML = document.getElementById("modal-switch")
+const withdrawBody = document.getElementById("modal-withdraw-body")
+const historyBody = document.getElementById("modal-history-body")
+const cryptoSubtab = document.getElementById("crypto-subtab")
+console.log(withdrawBody)
 
-
-// const findActiveTab = event => {
-
-//   const target = event.target;
-//   console.log(target.classList)
-//   console.log(target)
-//   if (target === depositTab) {
-//     depositTab.classList.add("active")
-//     historyTab.classList.remove("active")
-//     withdrawTab.classList.remove("active")
-
-
-
-//     modalHTML.innerHTML = `
-//        <div class="section">
-//     <label>Карта</label>
-//     <div class="input-row">
-//       <div class="input-box"><Input class="input-box"></Input></div>
-//       <div class="input-box"><Input class="input-box"></Input></div>
-//     </div>
-//   </div>
+const openWithdrawTab = () => {
+  depositTab.classList.remove('active')
+  historyTab.classList.remove("active")
+  withdrawTab.classList.add("active")
+   cryptoSubtab.classList.remove("unactive")
   
-//   <div class="section">
-//     <label>Электронный кошелек</label>
-//     <div class="input-box large"><Input class="input-box large"></Input></div>
-//   </div>
-//     `
-//   } else if (target === withdrawTab) {
-//     depositTab.classList.remove("active")
-//     historyTab.classList.remove("active")
-//     withdrawTab.classList.add("active")
 
+  withdrawBody.classList.remove("hidden")
+  modalHTML.classList.add("hidden")
+  historyBody.classList.add("hidden")
+  
+  console.log("added")
+}
+const openDepositTab = () => {
+withdrawTab.classList.remove("active")
+  historyTab.classList.remove("active")
+  depositTab.classList.add("active")
+ cryptoSubtab.classList.add("unactive")
 
+  modalHTML.classList.remove("hidden")
+  withdrawBody.classList.add("hidden")
+  historyBody.classList.add("hidden")
+}
+const openHistoryTab = () => {
+withdrawTab.classList.remove("active")
+depositTab.classList.remove("active")
+  historyTab.classList.add("active")
 
+   modalHTML.classList.add("hidden")
+  withdrawBody.classList.add("hidden")
+  historyBody.classList.remove("hidden")
 
-//     modalHTML.innerHTML = `
-//     <div class="section">
-//       <label>Карта</label>
-//       <div class="input-row">
-//         <div class="input-box"></div>
-//         <div class="input-box"></div>
-//         <div class="input-box"></div>
-//       </div>
-//     </div>
-
-//     <div class="section">
-//       <label>Электронный кошелек</label>
-//       <div class="input-box large"></div>
-//     </div>
-
-//     <div class="section">
-//       <label>Криптовалюта</label>
-//       <div class="crypto-grid">
-//         <div class="input-box crypto"></div>
-//         <div class="input-box crypto"></div>
-//         <div class="input-box crypto selected"></div>
-//         <div class="input-box crypto"></div>
-//         <div class="input-box crypto"></div>
-//       </div>
-//     </div>
-    
-    
-    
-//     `
-//   }
-
-
-
-// }
+}
 
 let isFullScreen = false;
 
@@ -151,7 +119,7 @@ const arrowIcon = document.querySelector('.arrow-icon')
 
   modal.addEventListener('click', (e) => e.stopPropagation());
 
-depositTab.addEventListener("click",findActiveTab )
+depositTab.addEventListener("click",openDepositTab )
   
-withdrawTab.addEventListener("click", findActiveTab)
-historyTab.addEventListener("click", findActiveTab)
+withdrawTab.addEventListener("click", openWithdrawTab )
+historyTab.addEventListener("click", openHistoryTab)

@@ -5,8 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profile</title>
-  <link rel="stylesheet" href="css/game.css" />
-  <link rel="stylesheet" href="css/profile.css" />
+  <link rel="stylesheet" href="./css/game.css" />
+  <link rel="stylesheet" href="./css/profile.css" />
+  <link rel="stylesheet" href="./css/profile2.css">
   <script src="./js/game.js" defer></script>
   <script src="./js/profile.js" defer></script>
 </head>
@@ -16,7 +17,7 @@
     <div class="wrap header__wrap">
       <div class="logo">
         <a href="index.html" class="logo__link">
-          <img src="/assets/img/main/main_top/logo.png" alt="logo" class="logo__img" />
+          <img src="./assets/img/main/main_top/logo.png" alt="logo" class="logo__img" />
         </a>
       </div>
       <div class="auth_container">
@@ -80,8 +81,8 @@
           <!-- Профиль -->
           <a href="profile1.html" class="profile-button">
             <div class="profile__button__container">
-              <span class="level-badge">1 уровень</span>
-              <img src="./assets/img/levels/dragon_1.png" alt="avatar" class="profile-icon" />
+              <span class="level-badge">2 уровень</span>
+              <img src="./assets/img/levels/dragon_2.png" alt="avatar" class="profile-icon" />
               <span class="profile-text">Профиль</span>
             </div>
           </a>
@@ -235,17 +236,29 @@
           <div class="profile__right__part">
 
             <div class="profile__slider__wrapper">
+              <div class="profile__slider__levels">
+                
+                
+                
+                <span class="profile__slide__level level__4">4 уровень</span>
+                <span class="profile__slide__level level__5">5 уровень</span>
+                <span class="profile__slide__level level__6">6 уровень</span>
+                <span class="profile__slide__level level__7">7 уровень</span>
+                <span class="profile__slide__level level__8">8 уровень</span>
+                <span class="profile__slide__level level__9">9 уровень</span>
+                <span class="profile__slide__level level__10">10 уровень</span>
+              </div>
               <div class="profile__slider__container">
                 <div class="profile__slider">
                   <div class="profile__slide__spacer1"></div>
-                  <a href="profile1.html" class="profile__slide level__1 open active">
+                  <a href="profile1.html" class="profile__slide level__1 open">
                     <span class="profile__slide__level level__1">1 уровень</span>
                     <img class="profile__slide__img" src="./assets/img/levels/avatar1.png" alt="">
                     <div class="profile__slide__title">Дитя</div>
                   </a>
-                  <a href="profile2.html" class="profile__slide level__2">
+                  <a href="profile2.html" class="profile__slide level__2 active open">
                     <span class="profile__slide__level level__2">2 уровень</span>
-                    <img class="profile__slide__img" src="./assets/img/levels/egg2.png" alt="">
+                    <img class="profile__slide__img" src="./assets/img/levels/avatar2.png" alt="">
                     <div class="profile__slide__title">Лесной</div>
                   </a>
                   <a href="profile3.html" class="profile__slide level__3">
@@ -254,38 +267,37 @@
                     <div class="profile__slide__title">Пещерный</div>
                   </a>
                   <a href="profile4.html" class="profile__slide level__4">
-                    <span class="profile__slide__level level__4">4 уровень</span>
-                    <img class="profile__slide__img" src="./assets/img/levels/Egg4.png" alt="">
+                    
+                    <img class="profile__slide__img" src="./assets/img/levels/egg4.png" alt="">
                     <div class="profile__slide__title">Солнечный</div>
                   </a>
                   <a href="profile5.html" class="profile__slide level__5">
-                    <span class="profile__slide__level level__5">5 уровень</span>
+                    
                     <img class="profile__slide__img" src="./assets/img/levels/egg5.png" alt="">
                     <div class="profile__slide__title">Ледяной</div>
                   </a>
                   <a href="profile6.html" class="profile__slide level__6">
-                    <span class="profile__slide__level level__6">6 уровень</span>
+                    
                     <img class="profile__slide__img" src="./assets/img/levels/egg6.png" alt="">
                     <div class="profile__slide__title">Звездный</div>
                   </a>
                   <a href="profile7.html" class="profile__slide level__7">
-                    <span class="profile__slide__level level__7">7 уровень</span>
+                    
                     <img class="profile__slide__img" src="./assets/img/levels/egg7.png" alt="">
                     <div class="profile__slide__title">Черный</div>
                   </a>
                   <a href="profile8.html" class="profile__slide level__8">
-                    <span class="profile__slide__level level__8">8 уровень</span>
+                    
                     <img class="profile__slide__img" src="./assets/img/levels/egg8png.png" alt="">
                     <div class="profile__slide__title">Огненный</div>
                   </a>
                   <a href="profile9.html" class="profile__slide level__9">
-                    <span class="profile__slide__level level__9">9 уровень</span>
-
+                    
                     <img class="profile__slide__img" src="./assets/img/levels/egg9.png" alt="">
                     <div class="profile__slide__title">Имперский</div>
                   </a>
                   <a href="profile10.html" class="profile__slide level__10">
-                    <span class="profile__slide__level level__10">10 уровень</span>
+                    
                     <img class="profile__slide__img" src="./assets/img/levels/egg10.png" alt="">
                     <div class="profile__slide__title">Золотой</div>
                   </a>
@@ -295,14 +307,14 @@
             </div>
             <div class="profile__content__wrap">
               <div class="profile__content__container">
-                <div class="content__container__top">
+                <div class="content__container__top level__2">
                   <div class="your__progress">
-                    <div class="your__progress__top">
+                    <div class="your__progress__top level__2">
                       <div class="progress__top__desc">
                         <div class="progress__top__title">Ваш уровень</div>
-                        <div class="progress__top__text">Дитя дракона</div>
+                        <div class="progress__top__text">Лесной дракон</div>
                       </div>
-                      <img src="./assets/img/levels/1dragon.png" alt="">
+                      <img class="your__progress__top__img" src="./assets/img/levels/2dragon.png" alt="">
                     </div>
                     <div class="your__progress__bottom">
                       <div class="progress__to__next">
@@ -316,25 +328,25 @@
                     </div>
                   </div>
                   <div class="your__progress__tasks">
-                    <div class="progress__tasks__title">Для перехода на 2 уровень:</div>
+                    <div class="progress__tasks__title">Для перехода на 3 уровень:</div>
                     <div class="tasks">
                       <div class="task">
                         <div class="task__desc">
                           <div class="task__desc__top">за 30 дней</div>
-                          <div class="task__desc__bottom">Набрать 400 б.</div>
+                          <div class="task__desc__bottom">Набрать 50 б.</div>
                         </div>
                         <div class="task__progress">
-                          120
+                          15
                         </div>
                       </div>
                       <div class="change__task">или</div>
                       <div class="task">
                         <div class="task__desc">
                           <div class="task__desc__top">за 90 дней</div>
-                          <div class="task__desc__bottom">Набрать 240 б.</div>
+                          <div class="task__desc__bottom">Набрать 100 б.</div>
                         </div>
                         <div class="task__progress">
-                          120
+                          35
                         </div>
                       </div>
                     </div>
@@ -342,17 +354,29 @@
                 </div>
                 <div class="content__container__bottom">
                   <div class="container__bottom__title">Бонусы уровня:</div>
-                  <div class="bonuses__level__container">
+                  <div class="bonuses__level__container level__2">
                     <div class="bonuse__level__item">
                       <div class="bonuse__item__title" id="item__title1">Суточный лимит на вывод</div>
-                      <div class="bonuse__item__desc">200 000 ₽</div>
+                      <div class="bonuse__item__desc">350 000 ₽</div>
+                    </div>
+                    <div class="bonuse__level__item two__part">
+                      <div class="first__part">
+                        <div class="bonuse__item__title" id="item__title4">Кэшбэк</div>
+                        <div class="bonuse__item__desc">5%</div>
+                      </div>
+                      <div class="second__part">
+                        <div class="bonuse__item__title">Отыгрыш</div>
+                        <div class="bonuse__item__desc">15х</div>
+                      </div>
+                    </div>
+                    
+                    <div class="bonuse__level__item">
+                      <div class="bonuse__item__title" id="item__title2"><div style="max-width: 150px;">Техподдержка по телефону и в чате 24/7</div></div>
                     </div>
                     <div class="bonuse__level__item">
-                      <div class="bonuse__item__title" id="item__title2" style="max-width: 150px;">Техподдержка по телефону и в чате 24/7</div>
+                      <div class="bonuse__item__title" id="item__title3"><div style="max-width: 150px;">Участие в акциях, турнирах и лотереях</div></div>
                     </div>
-                    <div class="bonuse__level__item">
-                      <div class="bonuse__item__title" id="item__title3" style="max-width: 150px;">Участие в акциях, турнирах и лотереях</div>
-                    </div>
+
                   </div>
                 </div>
               </div>

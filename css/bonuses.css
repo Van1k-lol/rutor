@@ -189,7 +189,6 @@ font-size: 12px;
 }
 .conditions__list.active{
   display: flex;
-
 }
 
 .conditions.active::before  {

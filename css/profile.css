@@ -383,7 +383,15 @@ button {
   user-select: none;
 }
 .profile__slide.open .profile__slide__img {
-  transform: translateY(-3px) scale(1.3);
+  transform: translateY(-3px) scale(1.2);
+}
+.profile__slide.active-lock{
+  border: 1px solid #fed970;
+  opacity: 1;
+}
+.profile__slide.active-lock .profile__slide__level {
+  color: #fed970;
+  border: 1px solid #fed970;
 }
 
 .profile__slide.active .profile__slide__level {
@@ -819,9 +827,9 @@ button {
 
 .modal-overlay {
   position: absolute;
-  /* display: none;
+  display: none;
   visibility: hidden;
-  opacity: 0; */
+  opacity: 0;
   top: 0px;
   z-index: 101;
   left: 0;

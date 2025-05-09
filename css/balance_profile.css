@@ -1,0 +1,101 @@
+.profile__main__container {
+  display: flex;
+}
+
+.balance-wrapper {}
+
+.balance-wrapper.active::before {
+  display: none;
+}
+
+.balance-modal {
+  position: inherit;
+  top: 0;
+  left: 0;
+  max-width: 867px;
+  width: auto;
+  padding: 24px;
+  background: #161003;
+  border: 1px solid #251c06;
+}
+
+.modal__balance {
+  width: auto;
+  max-width: 100%;
+}
+
+.modal__balance__main {
+  background: #161003;
+  width: auto;
+}
+
+.balance__main__wrap {
+  max-width: 100%;
+  width: auto;
+}
+
+.title__balance {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.balance__info {
+  margin: 24px 0 0 0;
+}
+
+.modal__balance-amount {
+  display: flex;
+  flex-direction: column;
+  width: 398px;
+  height: auto;
+  border: 1px solid #251c06;
+  padding: 25px 20px;
+}
+
+.modal__balance__title {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.modal__balance-amount-img {
+  margin: 0 12px 0 0 ;
+}
+
+.modal__balance-amount-text {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+
+.balance__info-buttons {
+  margin: 0;
+}
+
+.modal__balance__button-container {
+  margin-left: 10px;
+}
+
+.modal__balance__button-shadow-bgc-correct {}
+
+.modal__balance__button-shadow {}
+
+.modal__balance__button-shadow-bgc {}
+
+.modal__balance__button-signin {}
+
+.modal__balance__button-img {}
+
+.modal__balance__button__withdraw-container {}
+
+.modal__balance__button__withdraw-shadow-bgc-correct {}
+
+.modal__balance__button__withdraw-shadow {}
+
+.modal__balance__button__withdraw-shadow-bgc {}
+
+.modal__balance__button__withdraw-signin {}
+
+.modal__balance__button__withdraw-img {}

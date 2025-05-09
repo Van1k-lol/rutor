@@ -95,14 +95,14 @@
   </header>
 <div class="modal-overlay">
       <div class="modal">
-        <div class="tabs">
+        <div class="tabs hidden">
           <button class="tab active" id="tab1"><img src="./assets/icon/up.png" class="modal__overlay__tabs-icon">
             Депозит</button>
           <button class="tab" id="tab2">Выплата</button>
           <button class="tab" id="tab3">История</button>
         </div>
 
-        <div class="subtabs">
+        <div class="subtabs hidden">
           <span class="subtab active">Все</span>
           <span class="subtab">Карта</span>
           <span class="subtab">Электронный кошелек</span>
@@ -180,6 +180,53 @@
       </tbody>
     </table>
   </div>
+  <div class="modal-header">
+    <div class="back__button-wrap">
+
+      <button class="back-button"><img src="./assets/icon/arrowleft.png" alt="">Депозит</button>
+     
+    </div>
+    <button class="close-button"><img src="./assets/icon/crossvek.png" alt=""></button>
+  </div>
+
+  <div class="modal-content">
+    <div class="left-panel">лого платежки</div>
+
+    <div class="right-panel">
+      <div class="top-text">Пополнение</div>
+
+      <div class="input-group">
+        <div class="input-group-wrap">
+
+          <input type="number" placeholder="Сумма платежа" />
+          <span class="currency">RUB</span>
+          <div class="min-label">Минимум 500 RUB</div>
+        </div>
+      </div>
+      <div class="amount-buttons-wrap">
+
+        <div class="amount-buttons">
+          <button>500</button>
+          <button>1500</button>
+          <button>2500</button>
+          <button>5000</button>
+        </div>
+      </div>
+
+     <div class="deposit-window-button-wrap">
+       <div class="modal__deposit__button-container">
+         <div class="modal__deposit__button-shadow-bgc-correct"></div>
+         <div class="modal__deposit__button-shadow"></div>
+         <div class="modal__deposit__button-shadow-bgc"></div>
+         <button id="modalButtonSign" class="modal__deposit__button-signin ">Пополнить</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
 </div>
 
 

@@ -156,7 +156,7 @@
             </svg>
             <span>Профиль</span>
           </a>
-          <a href="balance_profile.html" class="profile__nav__item active">
+          <a href="balance_profile.html" class="profile__nav__item">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="#7C612F" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17.6347 0.438477H6.45664C5.1799 0.438477 4.12637 1.47419 4.09961 2.75093H13.5456C15.8312 2.75093 17.6883 4.61691 17.6883 6.90255V15.4648C18.9651 15.438 20.0007 14.3845 20.0007 13.0988V2.80449C20.0007 1.50095 18.9383 0.438477 17.6347 0.438477Z"
@@ -170,7 +170,7 @@
             </svg>
             <span>Баланс</span>
           </a>
-          <a href="promocodes_profile.html" class="profile__nav__item">
+          <a href="promocodes_profile.html" class="profile__nav__item active">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="#7C612F" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M10.2144 7.50051C10.1012 7.50051 10.0207 7.49884 9.98569 7.49807C9.85562 7.4949 9.7281 7.46135 9.61332 7.4001C9.49853 7.33885 9.39966 7.2516 9.32462 7.14531C9.24957 7.03903 9.20043 6.91667 9.18112 6.78801C9.1618 6.65934 9.17286 6.52795 9.21339 6.40432C9.50311 5.52541 9.76352 4.6286 9.98813 3.73667C10.4829 1.90722 11.5653 0.833008 12.891 0.833008C13.6984 0.863152 14.461 1.21185 15.012 1.80281C15.5631 2.39378 15.8576 3.17892 15.8312 3.98649C15.8312 5.93311 13.8789 6.78597 13.2368 7.06592C12.2615 7.382 11.2393 7.52898 10.2144 7.50051ZM12.891 2.49967C12.0723 2.49967 11.6499 3.97347 11.6043 4.14112C11.4652 4.6945 11.313 5.2487 11.1494 5.79882C11.6288 5.7816 12.1032 5.69555 12.5581 5.54329C13.3589 5.19417 14.1646 4.74088 14.1646 3.98649C14.1901 3.62105 14.0709 3.26022 13.8326 2.982C13.5942 2.70379 13.256 2.53053 12.891 2.49967Z"
@@ -231,43 +231,24 @@
             <div class="modal__balance">
               <div class="modal__balance__main">
                 <div class="balance__main__wrap">
-                  <div class="title__balance">Баланс счета</div>
+                  <div class="title__balance">Промокоды</div>
                   <div class="balance__info">
-                    <div class="modal__balance-amount">
-                      <div class="modal__balance__title">
-                        <img class="modal__balance-amount-img" src="./assets/img/balance/Balance Icon.png" alt="">
-                        <h>Баланс</h>
-                      </div>
-                      <div class="modal__balance-amount-text">
-                        <p>0.00 USD</p>
-                      </div>
-                    </div>
-                    <div class="modal__balance-amount">
-                      <div class="modal__balance__title">
-                        <img class="modal__balance-amount-img" src="./assets/img/balance/Bonus Giftbox.png" alt="">
-                        <h>Бонусный Баланс</h>
-                      </div>
-                      <div class="modal__balance-amount-text">
-                        <p>0.00 USD</p>
+                    <div class="modal__search__search">
+                      <div class="input-wrapper">
+                        <input type="text" id="searchInput" autocomplete="off" placeholder="Введите промокод">
+                        <label for="searchInput">Введите промокод</label>
+                        <span class="clear-icon" id="clearBtn">&times;</span>
                       </div>
                     </div>
                   </div>
                   <div class="balance__info-buttons">
-                    <div class="modal__balance__button-container">
+                    <div class="modal__balance__button-container" id="button__apply">
                       <div class="modal__balance__button-shadow-bgc-correct"></div>
                       <div class="modal__balance__button-shadow"></div>
                       <div class="modal__balance__button-shadow-bgc"></div>
-                      <button id="modalButtonSign" class="modal__balance__button-signin "><img
-                          src="./assets/icon/Arrow 1 (Stroke).png" alt=""
-                          class="modal__balance__button-img">Пополнить</button>
-                    </div>
-                    <div class="modal__balance__button__withdraw-container">
-                      <div class="modal__balance__button__withdraw-shadow-bgc-correct"></div>
-                      <div class="modal__balance__button__withdraw-shadow"></div>
-                      <div class="modal__balance__button__withdraw-shadow-bgc"></div>
-                      <button id="modalButtonSign" class="modal__balance__button__withdraw-signin "><img
-                          src="./assets/icon/Arrow 1 (Stroke).png" alt=""
-                          class="modal__balance__button__withdraw-img">Вывести</button>
+                      <button id="modalButtonSign" class="modal__balance__button-signin ">
+                        <div class="text__modal__balance__button">Применить</div>
+                      </button>
                     </div>
                   </div>
 
@@ -279,5 +260,28 @@
       </div>
     </div>
   </main>
-  </body>
-  </html>
+  <script>
+    const BtnApply = document.getElementById('button__apply');
+    const input = document.getElementById('searchInput');
+    const clearBtn = document.getElementById('clearBtn');
+    input.addEventListener('input', () => {
+      if (input.value.length > 0) {
+        clearBtn.style.display = 'block';
+        BtnApply.classList.add('active');
+      } else {
+        clearBtn.style.display = 'none';
+        BtnApply.classList.remove('active');
+      }
+    });
+
+    // Очистка по клику на крестик
+    clearBtn.addEventListener('click', () => {
+      input.value = '';
+      clearBtn.style.display = 'none';
+      BtnApply.classList.remove('active');
+      input.focus();
+    });
+  </script>
+</body>
+
+</html>

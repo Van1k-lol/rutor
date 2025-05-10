@@ -93,16 +93,20 @@
       </div>
     </div>
   </header>
-<div class="modal-overlay">
+<div id="modal-balance-overlay" class="modal-overlay">
       <div class="modal">
-        <div class="tabs hidden">
-          <button class="tab active" id="tab1"><img src="./assets/icon/up.png" class="modal__overlay__tabs-icon">
-            Депозит</button>
-          <button class="tab" id="tab2">Выплата</button>
-          <button class="tab" id="tab3">История</button>
-        </div>
+        <div class="modal-tabs-wrap">
 
-        <div class="subtabs hidden">
+          <div class="tabs ">
+            <button class="tab active" id="tab1"><img src="./assets/icon/up.png" class="modal__overlay__tabs-icon">
+              Депозит</button>
+              <button class="tab" id="tab2">Выплата</button>
+              <button class="tab" id="tab3">История</button>
+            </div>
+            <img id="modal-tabs-cross" src="./assets/icon/crossvek.png" alt="">
+          </div>
+
+        <div id="depositModalSubtabs" class="subtabs">
           <span class="subtab active">Все</span>
           <span class="subtab">Карта</span>
           <span class="subtab">Электронный кошелек</span>
@@ -113,14 +117,14 @@
           <div class="section">
             <label>Карта</label>
             <div class="input-row">
-              <div class="input-box"><Input class="input-box"></Input></div>
-              <div class="input-box"><Input class="input-box"></Input></div>
+              <div class="input-box"></div>
+              <div class="input-box"></div>
             </div>
           </div>
 
           <div class="section">
             <label>Электронный кошелек</label>
-            <div class="input-box large"><Input class="input-box large"></Input></div>
+            <div class="input-box large"></Input></div>
           </div>
 
           <div class="modal__deposit__helpButton-wrap">
@@ -180,49 +184,52 @@
       </tbody>
     </table>
   </div>
-  <div class="modal-header">
-    <div class="back__button-wrap">
+  <div id="depositWindow" class="modal-sepoit-window-open hidden">
 
-      <button class="back-button"><img src="./assets/icon/arrowleft.png" alt="">Депозит</button>
-     
+    <div class="modal-header">
+      <div class="back__button-wrap">
+        
+        <button class="back-button"><img src="./assets/icon/arrowleft.png" alt="">Депозит</button>
+        
+      </div>
+      <button class="close-button"><img src="./assets/icon/crossvek.png" alt=""></button>
     </div>
-    <button class="close-button"><img src="./assets/icon/crossvek.png" alt=""></button>
-  </div>
-
-  <div class="modal-content">
-    <div class="left-panel">лого платежки</div>
-
-    <div class="right-panel">
-      <div class="top-text">Пополнение</div>
-
-      <div class="input-group">
-        <div class="input-group-wrap">
-
-          <input type="number" placeholder="Сумма платежа" />
-          <span class="currency">RUB</span>
+    
+    <div class="modal-content">
+      <div class="left-panel">лого платежки</div>
+      
+      <div class="right-panel">
+        <div class="top-text">Пополнение</div>
+        
+        <div class="input-group">
+          <div class="input-group-wrap">
+            
+            <input id="deposit-window-input" type="number" placeholder="Сумма платежа" />
+            <span class="currency">RUB</span>
           <div class="min-label">Минимум 500 RUB</div>
         </div>
       </div>
       <div class="amount-buttons-wrap">
 
         <div class="amount-buttons">
-          <button>500</button>
-          <button>1500</button>
-          <button>2500</button>
-          <button>5000</button>
+          <button id="button500">500</button>
+          <button id="button1500">1500</button>
+          <button id="button2500">2500</button>
+          <button id="button5000">5000</button>
         </div>
       </div>
-
-     <div class="deposit-window-button-wrap">
-       <div class="modal__deposit__button-container">
-         <div class="modal__deposit__button-shadow-bgc-correct"></div>
-         <div class="modal__deposit__button-shadow"></div>
-         <div class="modal__deposit__button-shadow-bgc"></div>
-         <button id="modalButtonSign" class="modal__deposit__button-signin ">Пополнить</button>
+      
+      <div class="deposit-window-button-wrap">
+        <div class="modal__deposit__button-container">
+          <div class="modal__deposit__button-shadow-bgc-correct"></div>
+          <div class="modal__deposit__button-shadow"></div>
+          <div class="modal__deposit__button-shadow-bgc"></div>
+          <button id="modalButtonSign" class="modal__deposit__button-signin ">Пополнить</button>
         </div>
-      </div>
       </div>
     </div>
+  </div>
+</div>
   </div>
 
 

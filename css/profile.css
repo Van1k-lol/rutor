@@ -854,6 +854,7 @@ button {
   justify-content: center;
   margin-top: 16px;
   margin-bottom: 32px;
+  margin-right: 23%;
 }
 
 .tab {
@@ -900,9 +901,9 @@ button {
 }
 
 .modal__switch-html-deposit {
-  display: none;
+  /* display: none;
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden; */
 }
 
 .section {
@@ -969,14 +970,14 @@ button {
 }
 .modal__switch-html-withdraw {
   height: 961px;
-  display: none;
+  /* display: none;
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden; */
 }
 .modal__switch-html-history {
-  display: none;
+  /* display: none;
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden; */
 }
 
 .history-table {
@@ -1325,4 +1326,18 @@ button {
   margin-top: 24px;
   margin-left: 36px;
   margin-right: 20px;
+}
+.modal-sepoit-window-open {
+  width: 100%;
+}
+.modal-tabs-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+.modal-tabs-wrap img {
+  width: 20px;
+  height: 20px;
+  padding-top: 35px;
+  padding-right: 32px;
 }

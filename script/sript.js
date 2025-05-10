@@ -33,6 +33,10 @@ function togglePassword() {
       const input = document.getElementById('password');
       input.type = input.type === 'password' ? 'text' : 'password';
 }
+function togglePassword2() {
+    const inpu2 = document.getElementById('password');
+    input2.type = input2.type === 'password' ? 'text' : 'password';
+}
  
 const closeModal = event => {
     const target = event.target;

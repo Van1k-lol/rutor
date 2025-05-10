@@ -10,18 +10,37 @@ const modalHTML = document.getElementById("modal-switch")
 const withdrawBody = document.getElementById("modal-withdraw-body")
 const historyBody = document.getElementById("modal-history-body")
 const cryptoSubtab = document.getElementById("crypto-subtab")
+const subtabsOffOn = document.getElementById("depositModalSubtabs")
+const inputBoxRedirect = document.getElementsByClassName("input-box")
+const depositWindowHTML = document.getElementById("depositWindow")
+const tabsOffOn = document.getElementsByClassName("modal-tabs-wrap")
+const backButtonFDep = document.getElementsByClassName("back__button-wrap")
 console.log(withdrawBody)
-
+const amountButton500 = document.getElementById("button500")
+const amountButton1500 = document.getElementById("button1500")
+const amountButton2500 = document.getElementById("button2500")
+const amountButton5000 = document.getElementById("button5000")
+const depositInputW = document.getElementById("deposit-window-input")
+const closeModalCross = document.getElementById("modal-tabs-cross")
+const modalOverlayBalance = document.getElementById("modal-balance-overlay")
+const openModalButton = document.getElementById("modalButtonSign")
+console.log(amountButton500)
 const openWithdrawTab = () => {
   depositTab.classList.remove('active')
   historyTab.classList.remove("active")
   withdrawTab.classList.add("active")
-   cryptoSubtab.classList.remove("unactive")
+  cryptoSubtab.classList.remove("unactive")
+  for (let tab of tabsOffOn) {
+    tab.classList.remove  ("hidden")
+  }
+
   
 
   withdrawBody.classList.remove("hidden")
   modalHTML.classList.add("hidden")
   historyBody.classList.add("hidden")
+  subtabsOffOn.classList.remove("hidden")
+  depositWindowHTML.classList.add("hidden")
   
   console.log("added")
 }
@@ -34,6 +53,7 @@ withdrawTab.classList.remove("active")
   modalHTML.classList.remove("hidden")
   withdrawBody.classList.add("hidden")
   historyBody.classList.add("hidden")
+  subtabsOffOn.classList.remove("hidden")
 }
 const openHistoryTab = () => {
 withdrawTab.classList.remove("active")
@@ -43,9 +63,30 @@ depositTab.classList.remove("active")
    modalHTML.classList.add("hidden")
   withdrawBody.classList.add("hidden")
   historyBody.classList.remove("hidden")
+  subtabsOffOn.classList.add("hidden")
+
+}
+const depositWindow = () => {
+  withdrawBody.classList.add("hidden")
+  modalHTML.classList.add("hidden")
+  historyBody.classList.add("hidden")
+  subtabsOffOn.classList.add("hidden")
+  depositWindowHTML.classList.remove("hidden")
+
+  for (let tab of tabsOffOn) {
+    tab.classList.add("hidden")
+  }
 
 }
 
+const closeDepositModalWindow = () => {
+  modalOverlayBalance.classList.add("hidden")
+}
+const openDepositModalWindow = () => {
+  modalOverlayBalance.classList.remove("hidden")
+  openDepositTab();
+
+}
 let isFullScreen = false;
 
 // Слушатели на кнопки вида
@@ -123,3 +164,23 @@ depositTab.addEventListener("click",openDepositTab )
   
 withdrawTab.addEventListener("click", openWithdrawTab )
 historyTab.addEventListener("click", openHistoryTab)
+// inputBoxRedirect.addEventListener("click", depositWindow)
+for (let box of inputBoxRedirect) {
+  box.addEventListener("click", depositWindow)
+}
+backButtonFDep[0].addEventListener("click", openWithdrawTab)
+
+amountButton500.addEventListener("click", () => {
+  depositInputW.value = "500"
+})
+amountButton1500.addEventListener("click", () => {
+  depositInputW.value = "1500"
+})
+amountButton2500.addEventListener("click", () => {
+  depositInputW.value = "2500"
+})
+amountButton5000.addEventListener("click", () => {
+  depositInputW.value = "5000"
+})
+closeModalCross.addEventListener("click", closeDepositModalWindow)
+openModalButton.addEventListener("click", openDepositModalWindow)

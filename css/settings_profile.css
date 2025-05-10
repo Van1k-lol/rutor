@@ -56,6 +56,7 @@ input {
   box-sizing: border-box;
 }
 
+
 input:focus {
   outline: none;
   border: none;
@@ -195,7 +196,6 @@ button {
   cursor: pointer;
 }
 
-.data__content {}
 
 .content__top {
   margin-bottom: 22px;
@@ -345,6 +345,7 @@ button {
 
 .modal__search__search {
   margin-bottom: 12px;
+  width: 100%;
 }
 
 .modal__search__search:last-child {
@@ -369,9 +370,11 @@ button {
   border-radius: 16px;
   border: 1px solid #3b2b0d;
   background: #231b0bb3;
-  color: #a68e62;
-  font-size: 14px;
+  color: #fff;
   box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Gilroy;
 }
 
 .input-wrapper svg {
@@ -388,11 +391,12 @@ button {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  pointer-events: auto; /* 👈 включаем кликабельность */
+  pointer-events: auto;
+  /* 👈 включаем кликабельность */
 }
 
-#emailChangeInput {
-  color: #FFF;
+#nameChangeInput {
+  color: #e0caa3;
 }
 
 .input-wrapper label {
@@ -532,8 +536,13 @@ button {
   font-family: Gilroy;
 }
 
-.change__password__container {}
 
+
+
+.input-error {
+  border: 1px solid #a74a40 !important;
+  background: rgba(167, 74, 64, 0.16) !important;
+}
 
 .toggle-password {
   cursor: pointer;
@@ -579,6 +588,112 @@ button {
 
 .address {
   grid-column: span 2;
+}
+
+
+.change__personal__container {
+  width: 100%;
+  max-width: 520px;
+  display: none;
+}
+
+.name__surname__container {
+  display: flex;
+  gap: 26px;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select select {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(35, 27, 11, 0.7);
+  border: 1px solid #3b2b0d;
+  border-radius: 8px;
+  font-family: Gilroy;
+  appearance: none;
+  font-size: 14px;
+}
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Стилизация select */
+.custom-select select {
+  width: 100%;
+
+  padding: 10px 36px 10px 12px; /* место под стрелку справа */
+  font-family: Gilroy, sans-serif;
+  font-size: 14px;
+  color: #7c612f;
+  background-color: transparent;
+  border: 1px solid #7c612f;
+  border-radius: 8px;
+  appearance: none; /* убрать стандартную стрелку */
+  background-image: url('assets/img/levels/arrow_downRules.svg');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  cursor: pointer;
+  background-color: rgba(35, 27, 11, 0.7);
+}
+
+.custom-select select:focus{
+  border: 1px solid #fed970;
+}
+option{
+  color: #fff;
+}
+.custom-select select.selected {
+  color: #fff;
+}
+
+
+
+.birth__row {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.form__buttons {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-family: Gilroy;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  border: 1px solid #e0caa3;
+  color: #e0caa3;
+}
+
+.save-btn {
+  background-color: #e0caa3;
+  border: none;
+  color: #161003;
 }
 
 

@@ -307,36 +307,42 @@
                 <img src="./assets/icon/profileChangeButton.svg" alt="change__password">
               </div>
             </div>
+
             <div class="password__bottom">
-              <div class="password__bottom__text">
-                ********************
-              </div>
+              <div class="password__bottom__text">********************</div>
             </div>
-            <div class="change__password">
-              <div class="modal__search__search">
 
-                <div class="input__container">
-                  <div class="input-wrapper">
-                    <input type="text" id="nameChangeInput" autocomplete="off" placeholder="Введите имя пользователя"
-                      disabled>
-                    <label id="nameLabel" for="nameChangeInput">Имя пользователя</label>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="#FED970" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.49415 15.4042C8.09619 15.8537 7.39461 15.8537 6.99665 15.4042L3.07617 10.9757C2.74724 10.6041 2.74724 10.0456 3.07617 9.67401C3.46692 9.23262 4.15578 9.23262 4.54653 9.67401L7.7454 13.2874L15.4535 4.58045C15.8442 4.13907 16.5331 4.13907 16.9238 4.58045C17.2528 4.95201 17.2528 5.51057 16.9238 5.88213L8.49415 15.4042Z"
-                        fill="#FED970" />
-                    </svg>
-                  </div>
-                </div>
-
-              </div>
+            <div class="change__password__container" style="display: none">
               <div class="modal__search__search">
                 <div class="input-wrapper">
-                  <input type="email" id="emailChangeInput" autocomplete="off" placeholder="Введите email">
-                  <label id="emailLabel" for="emailChangeInput">Email</label>
+                  <input type="password" id="currentPassword" placeholder="Текущий пароль" autocomplete="off">
+                  <label for="currentPassword">Текущий пароль</label>
+                  <img class="toggle-password" src="./assets/img/main/main_reg/eye-1.svg" alt="show">
                 </div>
               </div>
+
+              <div class="modal__search__search">
+                <div class="input-wrapper">
+                  <input type="password" id="newPassword" placeholder="Новый пароль" autocomplete="off">
+                  <label for="newPassword">Новый пароль</label>
+                  <img class="toggle-password" src="./assets/img/main/main_reg/eye-1.svg" alt="show">
+                </div>
+              </div>
+
+              <div class="modal__search__search">
+                <div class="input-wrapper">
+                  <input type="password" id="repeatPassword" placeholder="Повторите новый пароль" autocomplete="off">
+                  <label for="repeatPassword">Повторите новый пароль</label>
+                  <img class="toggle-password" src="./assets/img/main/main_reg/eye-1.svg" alt="show">
+                </div>
+              </div>
+              <div id="passwordError"
+                style="display: none; color: #a74a40; font-weight: 500; font-size: 14px; margin-top: 8px;">
+                Пароли не совпадают
+              </div>
+
               <div class="buttons__container">
-                <div class="modal__balance__button-container" id="btnBack">
+                <div class="modal__balance__button-container" id="btnBack1">
                   <div class="modal__balance__button-shadow-bgc-correct1"></div>
                   <div class="modal__balance__button-shadow1"></div>
                   <div class="modal__balance__button-shadow-bgc1"></div>
@@ -344,7 +350,7 @@
                     <div class="text__modal__balance__button1">Отменить</div>
                   </button>
                 </div>
-                <div class="modal__balance__button-container disable" id="btnSave">
+                <div class="modal__balance__button-container disable" id="btnSave1">
                   <div class="modal__balance__button-shadow-bgc-correct"></div>
                   <div class="modal__balance__button-shadow"></div>
                   <div class="modal__balance__button-shadow-bgc"></div>
@@ -355,11 +361,12 @@
               </div>
             </div>
           </div>
+
           <div class="personal__data">
             <div class="top_title__wrap">
               <div class="top__title">Персональные данные</div>
               <div class="top__img" id="changePersonalData">
-                <img src="./assets/icon/profileChangeButton.svg" alt="change__password">
+                <img src="./assets/icon/profileChangeButton.svg" alt="change__personal">
               </div>
             </div>
             <div class="form-grid">
@@ -384,6 +391,112 @@
                 <div class="value">Не введено</div>
               </div>
             </div>
+            <div class="change__personal__container">
+              <div class="name__surname__container">
+                <div class="modal__search__search">
+                  <div class="input-wrapper input-wrapper1">
+                    <input type="text" id="firstName" autocomplete="off" placeholder="Имя">
+                    <label for="firstName">Имя</label>
+                  </div>
+                </div>
+
+                <div class="modal__search__search">
+                  <div class="input-wrapper input-wrapper1">
+                    <input type="text" id="lastName" autocomplete="off" placeholder="Фамилия">
+                    <label for="lastName">Фамилия</label>
+                  </div>
+                </div>
+              </div>
+              <div style="font-weight: 400; font-size: 14px; color: #a68e62;">Дата рождения</div>
+              <div class="birth__row">
+                <div class="custom-select">
+                  <select id="birthDay">
+                    <option style="color: #7c612f;" disabled selected>Число</option>
+                  </select>
+                </div>
+                <div class="custom-select">
+                  <select id="birthMonth">
+                    <option style="color: #7c612f;" disabled selected>Месяц</option>
+                    <option value="1">Январь</option>
+                    <option value="2">Февраль</option>
+                    <option value="3">Март</option>
+                    <option value="4">Апрель</option>
+                    <option value="5">Май</option>
+                    <option value="6">Июнь</option>
+                    <option value="7">Июль</option>
+                    <option value="8">Август</option>
+                    <option value="9">Сентябрь</option>
+                    <option value="10">Октябрь</option>
+                    <option value="11">Ноябрь</option>
+                    <option value="12">Декабрь</option>
+                  </select>
+                </div>
+                <div class="custom-select">
+                  <select id="birthYear">
+                    <option disabled selected>Год</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="name__surname__container" style="margin-bottom: 20px;">
+                <div class="modal__search__search">
+                  <div class="input-wrapper input-wrapper1">
+                    <input type="text" id="country" autocomplete="off" placeholder="Страна">
+                    <label for="country">Страна</label>
+                  </div>
+                </div>
+
+                <div class="modal__search__search">
+                  <div class="input-wrapper input-wrapper1">
+                    <input type="text" id="city" autocomplete="off" placeholder="Город">
+                    <label for="city">Город</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="name__surname__container" style="margin-bottom: 36px;">
+                <div class="modal__search__search">
+                  <div class="input-wrapper input-wrapper1">
+                    <input type="text" id="address" autocomplete="off" placeholder="Адрес">
+                    <label for="address">Адрес</label>
+                  </div>
+                </div>
+
+                <div class="modal__search__search">
+                  <div class="input-wrapper input-wrapper1">
+                    <input type="text" id="zip" autocomplete="off" placeholder="Индекс">
+                    <label for="zip">Индекс</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="custom-select" style="max-width: 156px;">
+                <select id="gender">
+                  <option disabled selected>Пол</option>
+                  <option value="male">Мужской</option>
+                  <option value="female">Женский</option>
+                </select>
+              </div>
+            </div>
+            <div class="buttons__container">
+              <div class="modal__balance__button-container" id="btnBack2">
+                <div class="modal__balance__button-shadow-bgc-correct1"></div>
+                <div class="modal__balance__button-shadow1"></div>
+                <div class="modal__balance__button-shadow-bgc1"></div>
+                <button id="modalButtonSign" class="modal__balance__button-signin modal__balance__button-signin1">
+                  <div class="text__modal__balance__button1">Отменить</div>
+                </button>
+              </div>
+              <div class="modal__balance__button-container disable" id="btnSave2">
+                <div class="modal__balance__button-shadow-bgc-correct"></div>
+                <div class="modal__balance__button-shadow"></div>
+                <div class="modal__balance__button-shadow-bgc"></div>
+                <button id="modalButtonSign" class="modal__balance__button-signin">
+                  <div class="text__modal__balance__button">Сохранить</div>
+                </button>
+              </div>
+            </div>
+
           </div>
         </div>
         <div class="right__part">

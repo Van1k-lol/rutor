@@ -1,0 +1,912 @@
+@font-face {
+  font-family: Gilroy;
+  src: url("../assets/fonts/gilroy/Gilroy-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+body {
+  background-color: #0e0a01;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.background {
+  background: #0e0a01;
+  position: absolute;
+  z-index: -100;
+  top: 105px;
+  left: 90px;
+  width: 100%;
+  height: 100%;
+  max-width: 1353px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+input {
+  outline: none;
+  border: none;
+  all: unset;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+img {
+  max-width: 100%;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+}
+
+svg path {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* ===========КОНТЕЙНЕР МЕЙНА============= */
+
+
+
+.first__wrap__main {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.profile__title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #9f8f6b;
+  user-select: none;
+}
+
+.profile__title span {
+  text-decoration: underline;
+}
+
+.profile__main__container {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+
+
+/*================= НАВИГАЦИЯ=============== */
+
+
+
+
+.profile__nav {
+  flex-direction: column;
+  background: #161003;
+  border: 1px solid #251c06;
+  border-radius: 16px;
+  max-width: 241px;
+  overflow: hidden;
+  padding: 16px 0;
+  margin-right: 32px;
+  max-height: 264px;
+}
+
+.profile__nav__item.active {
+  background: #1f1704;
+  color: #fff;
+  border-left: 5px solid #e8b21d;
+}
+
+.profile__nav__item {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #7c612f;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.profile__nav__item span {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* ==================== СЕРЕДИНА СТРАНИЦЫ =================== */
+
+.middle__part {
+  max-width: 568px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.data {
+  border: 1px solid #251c06;
+  border-radius: 16px;
+  background: #161003;
+  padding: 24px 24px 34px 24px;
+  font-family: 'Gilroy';
+}
+
+.top_title__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top__title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.top__img {
+  cursor: pointer;
+}
+
+.data__content {}
+
+.content__top {
+  margin-bottom: 22px;
+}
+
+
+.top__text__title {
+  font-weight: 400;
+  font-size: 12px;
+  color: #e0caa3;
+  margin-bottom: 8px;
+  font-family: Gilroy;
+}
+
+.top__text__title span {
+  font-weight: 400;
+  font-size: 12px;
+  color: #d45243;
+  border-radius: 20px;
+  padding: 2px 8px;
+  background: rgba(167, 74, 64, 0.2);
+  margin-left: 8px;
+  font-family: Gilroy;
+}
+
+.top__text__desc {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Gilroy;
+}
+
+
+.content__bottom {
+  display: flex;
+  align-items: center;
+  gap: 61px;
+}
+
+.modal__balance__button-container {
+  margin: 0;
+  transform: translateY(-5px);
+}
+
+
+.text__modal__balance__button {
+  letter-spacing: 0.08em;
+  transform: skew(10deg);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  font-family: Gilroy;
+}
+
+.modal__balance__button-container.disable {
+  cursor: not-allowed;
+}
+
+.modal__balance__button-container.disable .modal__balance__button-shadow-bgc-correct {
+  position: absolute;
+  top: 3px;
+  box-sizing: border-box;
+  left: -3px;
+  height: 44px;
+  width: 222px;
+  background-color: #161003;
+  z-index: 3;
+  visibility: visible;
+  border-radius: 5.3px;
+  transform: skew(-10deg);
+}
+
+.modal__balance__button-container.disable .modal__balance__button-shadow-bgc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 44px;
+  width: 222px;
+  background-color: #161003;
+  z-index: 4;
+  border-radius: 5.3px;
+  transform: skew(-10deg);
+}
+
+.modal__balance__button-container.disable .modal__balance__button-shadow {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 222px;
+  height: 44px;
+  border: 1px solid #251c06;
+  border-radius: 5.3px;
+  transform: skew(-10deg) translate(-4px, 3px);
+  z-index: 1;
+
+  box-shadow: 0px -3.76px 8.84px 0px #0e0a0187 inset;
+
+  border: 1.33px solid #251c06;
+
+  border-radius: 5.3px;
+}
+
+
+.modal__balance__button-container.disable .modal__balance__button-signin {
+  display: block;
+  background:
+    #1f1704;
+  color: #3b2b0d;
+  font-size: 16px;
+  border: #0e0a01;
+  position: relative;
+  z-index: 4;
+  border-radius: 5.3px;
+  height: 44px;
+  width: 222px;
+  transform: skew(-10deg);
+  cursor: not-allowed;
+  overflow: visible;
+  border: 1.33px solid #251c06;
+  text-shadow: none;
+}
+
+.modal__balance__button-container.disable .modal__balance__button-signin::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  background: #251c06;
+  left: -5px;
+  bottom: -1px;
+  transform: rotate(-55deg);
+}
+
+.modal__balance__button-container.disable.active .text__modal__balance__button {
+  letter-spacing: normal;
+}
+
+.text__modal__balance__button {
+  transform: skew(10deg);
+}
+
+
+
+.data__content__changer {
+  display: none;
+}
+
+
+.modal__search__search {
+  margin-bottom: 12px;
+}
+
+.modal__search__search:last-child {
+  margin-bottom: 0px;
+}
+
+.input__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-wrapper input {
+  padding: 16px 44px 16px 20px;
+  /* справа делаем отступ под иконку */
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #3b2b0d;
+  background: #231b0bb3;
+  color: #a68e62;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.input-wrapper svg {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.input-wrapper img {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  pointer-events: auto; /* 👈 включаем кликабельность */
+}
+
+#emailChangeInput {
+  color: #FFF;
+}
+
+.input-wrapper label {
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  font-size: 14px;
+  color: #7c612f;
+  pointer-events: none;
+  transition: 0.2s ease;
+  display: none;
+}
+
+.input-wrapper input::placeholder {
+  color: #7c612f;
+}
+
+.input-wrapper input:focus {
+  border: 1px solid #fed970;
+}
+
+.input-wrapper input:focus+label {
+  display: block;
+}
+
+.input-wrapper input:focus::placeholder {
+  color: transparent;
+}
+
+.input-wrapper input:focus {
+  padding: 24px 20px 8px 20px;
+}
+
+.buttons__container {
+  margin-top: 32px;
+  display: flex;
+  gap: 20px;
+}
+
+
+
+
+.modal__balance__button-shadow1 {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 222px;
+  height: 44px;
+  border-radius: 5.3px;
+  transform: skew(-10deg) translate(-4px, 3px);
+  z-index: 1;
+
+  box-shadow: 0px -3.76px 8.84px 0px #0e0a0187 inset;
+
+  border: 1.33px solid #7c612f;
+
+  border-radius: 5.3px;
+}
+
+.modal__balance__button-shadow-bgc-correct1 {
+  position: absolute;
+  top: 3px;
+  box-sizing: border-box;
+  left: -3px;
+  height: 44px;
+  width: 222px;
+  background-color: #161003;
+  z-index: 3;
+  visibility: visible;
+  border-radius: 5.3px;
+  transform: skew(-10deg);
+}
+
+.modal__balance__button-shadow-bgc1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 44px;
+  width: 222px;
+  background-color: #161003;
+  z-index: 4;
+  border-radius: 5.3px;
+  transform: skew(-10deg);
+}
+
+.modal__balance__button-signin1 {
+  display: block;
+  background:
+    #1f1704;
+  font-size: 16px;
+  position: relative;
+  z-index: 4;
+  border-radius: 5.3px;
+  height: 44px;
+  width: 222px;
+  transform: skew(-10deg);
+  cursor: pointer;
+  overflow: visible;
+  border: 1.33px solid #7c612f;
+  text-shadow: none;
+}
+
+.modal__balance__button-signin1::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  background: #7c612f;
+  left: -5px;
+  bottom: -1px;
+  transform: rotate(-55deg);
+}
+
+.text__modal__balance__button1 {
+  transform: skew(10deg);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+
+
+.password {
+  border: 1px solid #251c06;
+  border-radius: 16px;
+  background: #161003;
+  padding: 24px 24px 36px 24px;
+  font-family: Gilroy;
+}
+
+
+.password__bottom__text {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Gilroy;
+}
+
+.change__password__container {}
+
+
+.toggle-password {
+  cursor: pointer;
+}
+
+
+
+
+.personal__data {
+  border: 1px solid #251c06;
+  border-radius: 16px;
+  background: #161003;
+  padding: 24px 24px 36px 24px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 16px 26px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  max-height: 39px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 12px;
+  color: #e0caa3;
+  font-family: Gilroy;
+  margin-bottom: 8px;
+}
+
+.value {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Gilroy;
+}
+
+.address {
+  grid-column: span 2;
+}
+
+
+
+/* ================== правая часть СТРАНИЦЫ ================= */
+
+.right__part {
+  max-width: 267px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.settings__agree {
+  border: 1px solid #251c06;
+  border-radius: 16px;
+  background: #161003;
+  padding: 24px 24px 58px 24px;
+}
+
+.agree {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.agree:last-child {
+  margin-bottom: 0;
+}
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.checkmark {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #3b2b0d;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid #161003;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Показываем галочку при checked */
+.checkbox input:checked+.checkmark::after {
+  display: block;
+}
+
+.checkbox input:checked+.checkmark {
+  background-color: #e8b21d;
+}
+
+
+.desc__agree {
+  font-weight: 500;
+  font-family: Gilroy;
+  font-size: 14px;
+  color: #e0caa3;
+}
+
+.activity {
+  border: 1px solid #251c06;
+  border-radius: 16px;
+  background: #161003;
+  padding: 24px 24px 36px 24px;
+  height: 100%;
+}
+
+.activity__address {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Gilroy;
+}
+
+
+
+/* ==================== М О Д А Л К А =================== */
+
+
+
+
+.modal-overlay {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  top: 0px;
+  z-index: 101;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  margin-top: 400px;
+  background: var(--gray-gray-900, #0e0a01);
+  border-radius: 12px;
+  width: 1128px;
+  min-height: 610px;
+  max-height: 934px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal label {
+  font-family: Gilroy;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 16px;
+  cursor: pointer;
+  padding-top: 20px;
+  width: 146px;
+  height: 56px;
+  border-bottom: 2px solid var(--gray-gray-400, #3b2b0d);
+  margin-right: 20px;
+}
+
+.tab.active {
+  color: white;
+  border-bottom: 2px solid #ffc300;
+}
+
+.modal__overlay__tabs-icon {
+  box-sizing: border-box;
+  padding: 0 0;
+  margin: 0 0;
+  width: 20px;
+  height: 20px;
+}
+
+.subtabs {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 10 auto;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 32px;
+}
+
+.subtab.active {
+  color: #ffc300;
+  text-decoration: underline;
+}
+
+.modal__switch-html-deposit {
+  /* display: none;
+  opacity: 0;
+  visibility: hidden; */
+}
+
+.section {
+  width: 1064px;
+}
+
+.input-row {
+  display: flex;
+  gap: 26px;
+  margin-top: 10px;
+  margin-bottom: 36px;
+}
+
+.input-box {
+  background: var(--gray-gray-800, #161003);
+  width: 519px;
+  height: 110px;
+  border-radius: 8px;
+  flex: 1;
+  color: white;
+  font-size: 55px;
+}
+
+.input-box input {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.input-box.large {
+  height: 110px;
+  width: 1064px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.bottom-button {
+  width: 298px;
+  height: 41px;
+  margin-top: 46px;
+  background: none;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #aaa;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.crypto-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 246px);
+  gap: 24px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.input-box.selected {
+  border: 2px solid #00aaff;
+}
+
+.input-box.crypto {
+  width: 246px;
+  height: 110px;
+  margin-bottom: 24px;
+}
+
+.modal__switch-html-withdraw {
+  height: 961px;
+}
+
+.modal__switch-html-history {}
+
+.history-table {
+  width: 1128px;
+  border-collapse: collapse;
+  background-color: #1a130a;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+.history-table thead {
+  background-color: #2a1f11;
+  color: #ccc;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px 15px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-family: Gilroy;
+}
+
+.type-button span {
+  color: #fed970;
+}
+
+.type-button {
+  background: #f9af1a42;
+  font-family: Gilroy;
+  border: none;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: default;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.history-table-headers {
+  width: 1128px;
+  color: #e0caa3;
+}
+
+.subtab.unactive {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__deposit__helpButton-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}

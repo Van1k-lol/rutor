@@ -142,7 +142,7 @@
 
 
 
-.modal__balance__button-shadow-bgc-correct {
+.modal__balance__button-shadow-bgc-correct1 {
   position: absolute;
   top: 3px;
   box-sizing: border-box;
@@ -155,7 +155,7 @@
   border-radius: 5.3px;
   transform: skew(-10deg);
 }
-.modal__balance__button-shadow-bgc {
+.modal__balance__button-shadow-bgc1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -166,7 +166,7 @@
   border-radius: 5.3px;
   transform: skew(-10deg);
 }
-.modal__balance__button-shadow {
+.modal__balance__button-shadow1 {
   position: absolute;
   top: 0;
   left: -1px;
@@ -185,7 +185,7 @@
 }
 
 
-.modal__balance__button-signin {
+.modal__balance__button-signin1 {
   display: block;
   background:
     #1f1704;
@@ -204,7 +204,7 @@
   text-shadow: none;
 }
 
-.modal__balance__button-signin::after {
+.modal__balance__button-signin1::after {
   content: "";
   position: absolute;
   width: 8px;
@@ -218,7 +218,7 @@
   transform: skew(10deg);
 }
 
-.modal__balance__button-container.active .modal__balance__button-signin{
+.modal__balance__button-container1.active .modal__balance__button-signin1{
   background: linear-gradient(
       0deg,
       rgba(249, 176, 26, 0.5),
@@ -240,10 +240,10 @@
     border: 1.33px solid #ffda75;
 }
 
-.modal__balance__button-container.active .modal__balance__button-signin::after{
+.modal__balance__button-container1.active .modal__balance__button-signin1::after{
     background: #ffda75;
 }
 
-.modal__balance__button-container.active .modal__balance__button-shadow{
+.modal__balance__button-container1.active .modal__balance__button-shadow1{
   border: 1.33px solid #ffda75;;
 }

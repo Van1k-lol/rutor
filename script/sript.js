@@ -10,6 +10,7 @@ const modalColBox = document.getElementById("modalButtonSign")
 const modalContainerBox = document.getElementById("modBtnContainer")
 const modalLoginEmailInput = document.getElementById("modal-login-email")
 const modalLoginEmailPassword = document.getElementById("password")
+const closedEye = document.getElementById("password2-img")
 let isModalLogOpen = 0;
 let isModalRegOpen = 0;
 
@@ -31,11 +32,19 @@ transition: opacity 300ms ease-in-out;
 
 function togglePassword() {
       const input = document.getElementById('password');
-      input.type = input.type === 'password' ? 'text' : 'password';
+    // input.type = input.type === 'password' ? 'text' : 'password';
+    if (input.type === 'password') {
+        input.type === 'text'
+        closedEye.src="../assets/icon/closeeye.png"
+    } else {
+         input.type === 'password'
+        closedEye.src="../assets/img/main/main_reg/eye-1.png"
+    }
 }
 function togglePassword2() {
-    const inpu2 = document.getElementById('password');
+    const input2 = document.getElementById('password2');
     input2.type = input2.type === 'password' ? 'text' : 'password';
+   
 }
  
 const closeModal = event => {

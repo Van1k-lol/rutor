@@ -32,14 +32,9 @@ transition: opacity 300ms ease-in-out;
 
 function togglePassword() {
       const input = document.getElementById('password');
-    // input.type = input.type === 'password' ? 'text' : 'password';
-    if (input.type === 'password') {
-        input.type === 'text'
-        closedEye.src="../assets/icon/closeeye.png"
-    } else {
-         input.type === 'password'
-        closedEye.src="../assets/img/main/main_reg/eye-1.png"
-    }
+    input.type = input.type === 'password' ? 'text' : 'password';
+   
+    
 }
 function togglePassword2() {
     const input2 = document.getElementById('password2');

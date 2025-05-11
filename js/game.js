@@ -3,29 +3,33 @@ const gameImg = document.querySelector('.game__img');
 const mainTop = document.querySelector('.main_top');
 const main = document.querySelector('.main');
 const changeView = document.querySelectorAll('.button__view');
-const depositTab = document.getElementById("tab1")
-const withdrawTab = document.getElementById("tab2")
-const historyTab = document.getElementById("tab3")
-const modalHTML = document.getElementById("modal-switch")
-const withdrawBody = document.getElementById("modal-withdraw-body")
-const historyBody = document.getElementById("modal-history-body")
-const cryptoSubtab = document.getElementById("crypto-subtab")
-const subtabsOffOn = document.getElementById("depositModalSubtabs")
-const inputBoxRedirect = document.getElementsByClassName("input-box")
-const depositWindowHTML = document.getElementById("depositWindow")
-const tabsOffOn = document.getElementsByClassName("modal-tabs-wrap")
-const backButtonFDep = document.getElementsByClassName("back__button-wrap")
+const depositTab = document.getElementById("tab1");
+const withdrawTab = document.getElementById("tab2");
+const historyTab = document.getElementById("tab3");
+const modalHTML = document.getElementById("modal-switch");
+const withdrawBody = document.getElementById("modal-withdraw-body");
+const historyBody = document.getElementById("modal-history-body");
+const cryptoSubtab = document.getElementById("crypto-subtab");
+const subtabsOffOn = document.getElementById("depositModalSubtabs");
+const inputBoxRedirect = document.getElementsByClassName("input-box");
+const depositWindowHTML = document.getElementById("depositWindow");
+const tabsOffOn = document.getElementsByClassName("modal-tabs-wrap");
+const backButtonFDep = document.getElementById("back-button1");
 console.log(withdrawBody)
-const amountButton500 = document.getElementById("button500")
-const amountButton1500 = document.getElementById("button1500")
-const amountButton2500 = document.getElementById("button2500")
-const amountButton5000 = document.getElementById("button5000")
-const depositInputW = document.getElementById("deposit-window-input")
-const closeModalCross = document.getElementById("modal-tabs-cross")
-const modalOverlayBalance = document.getElementById("modal-balance-overlay")
-const openModalButton = document.getElementById("modalButtonSign")
-console.log(amountButton500)
+const amountButton500 = document.getElementById("button500");
+const amountButton1500 = document.getElementById("button1500");
+const amountButton2500 = document.getElementById("button2500");
+const amountButton5000 = document.getElementById("button5000");
+const depositInputW = document.getElementById("deposit-window-input");
+const closeModalCross = document.getElementById("modal-tabs-cross");
+const modalOverlayBalance = document.getElementById("modal-balance-overlay");
+const openModalButton = document.getElementById("modalButtonSign");
+console.log(amountButton500);
+
+
+
 const openWithdrawTab = () => {
+  console.log("update")
   depositTab.classList.remove('active')
   historyTab.classList.remove("active")
   withdrawTab.classList.add("active")
@@ -83,8 +87,11 @@ const closeDepositModalWindow = () => {
   modalOverlayBalance.classList.add("hidden")
 }
 const openDepositModalWindow = () => {
+  console.log("clicked")
   modalOverlayBalance.classList.remove("hidden")
+  console.log('removed')
   openDepositTab();
+  console.log("opened")
 
 }
 let isFullScreen = false;
@@ -139,6 +146,27 @@ changeView.forEach(button => {
   });
 });
 
+
+
+
+
+
+
+
+
+// ==========================модалка хедер================
+// ==========================модалка хедер================
+// ==========================модалка хедер================
+// ==========================модалка хедер================
+// ==========================модалка хедер================
+// ==========================модалка хедер================
+
+
+
+
+
+
+
 const balanceWrapper =  document.querySelector('.balance-wrapper')
   const btn = document.getElementById('balanceButton');
   const modal = document.getElementById('balanceModal');
@@ -168,7 +196,9 @@ historyTab.addEventListener("click", openHistoryTab)
 for (let box of inputBoxRedirect) {
   box.addEventListener("click", depositWindow)
 }
-backButtonFDep[0].addEventListener("click", openWithdrawTab)
+backButtonFDep.addEventListener("click", () => {
+ openWithdrawTab()
+})
 
 amountButton500.addEventListener("click", () => {
   depositInputW.value = "500"

@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profile</title>
   <link rel="stylesheet" href="./css/game.css" />
-  <link rel="stylesheet" href="./css/profile.css" />
-  <link rel="stylesheet" href="./css/profile3.css">
+  <link rel="stylesheet" href="./css/settings_profile.css" />
   <script src="./js/game.js" defer></script>
   <script src="./js/profile.js" defer></script>
+  <script src="./js/settings_profile.js" defer></script>
 </head>
 
 <body>
@@ -81,8 +81,8 @@
           <!-- Профиль -->
           <a href="profile1.html" class="profile-button">
             <div class="profile__button__container">
-              <span class="level-badge">3 уровень</span>
-              <img src="./assets/img/levels/dragon_3.png" alt="avatar" class="profile-icon" />
+              <span class="level-badge">1 уровень</span>
+              <img src="./assets/img/levels/dragon_1.png" alt="avatar" class="profile-icon" />
               <span class="profile-text">Профиль</span>
             </div>
           </a>
@@ -93,8 +93,6 @@
         </div>
       </div>
     </div>
-  </header>
-  <main>
 
 
 
@@ -139,21 +137,15 @@
 
 
 
-
-
-
-
-
-
-    </header>
-    <main>
-      <div class="first__wrap__main">
-        <h1 class="profile__title">
-          <span>Главная</span> / Профиль
-        </h1>
-        <div class="profile__main__container">
-          <nav class="profile__nav">
-          <a href="profile1.html" class="profile__nav__item active">
+  </header>
+  <main>
+    <div class="first__wrap__main">
+      <h1 class="profile__title">
+        <span>Главная</span> / Профиль
+      </h1>
+      <div class="profile__main__container">
+        <nav class="profile__nav">
+          <a href="profile1.html" class="profile__nav__item">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="#fed970" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17.7285 14.8607C17.7285 17.4223 14.2687 19.5 10 19.5C5.73134 19.5 2.27148 17.4223 2.27148 14.8607C2.27148 12.2973 5.73134 10.2195 10 10.2195C14.2687 10.2195 17.7285 12.2973 17.7285 14.8607Z"
@@ -192,7 +184,7 @@
             </svg>
             <span>Промокоды</span>
           </a>
-          <a href="settings__profile.html" class="profile__nav__item">
+          <a href="settings__profile.html" class="profile__nav__item active">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="#7C612F" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7 3.00191C6.73478 3.00191 6.48043 3.10723 6.29289 3.29472C6.10536 3.4822 6 3.73649 6 4.00163C6 4.26678 6.10536 4.52106 6.29289 4.70855C6.48043 4.89603 6.73478 5.00136 7 5.00136C7.26522 5.00136 7.51957 4.89603 7.70711 4.70855C7.89464 4.52106 8 4.26678 8 4.00163C8 3.73649 7.89464 3.4822 7.70711 3.29472C7.51957 3.10723 7.26522 3.00191 7 3.00191ZM4.17 3.00191C4.3766 2.41653 4.75974 1.90964 5.2666 1.55109C5.77346 1.19254 6.37909 1 7 1C7.62091 1 8.22654 1.19254 8.7334 1.55109C9.24026 1.90964 9.6234 2.41653 9.83 3.00191H17C17.2652 3.00191 17.5196 3.10723 17.7071 3.29472C17.8946 3.4822 18 3.73649 18 4.00163C18 4.26678 17.8946 4.52106 17.7071 4.70855C17.5196 4.89603 17.2652 5.00136 17 5.00136H9.83C9.6234 5.58673 9.24026 6.09363 8.7334 6.45218C8.22654 6.81072 7.62091 7.00327 7 7.00327C6.37909 7.00327 5.77346 6.81072 5.2666 6.45218C4.75974 6.09363 4.3766 5.58673 4.17 5.00136H3C2.73478 5.00136 2.48043 4.89603 2.29289 4.70855C2.10536 4.52106 2 4.26678 2 4.00163C2 3.73649 2.10536 3.4822 2.29289 3.29472C2.48043 3.10723 2.73478 3.00191 3 3.00191H4.17ZM13 9.00027C12.7348 9.00027 12.4804 9.1056 12.2929 9.29309C12.1054 9.48057 12 9.73486 12 10C12 10.2651 12.1054 10.5194 12.2929 10.7069C12.4804 10.8944 12.7348 10.9997 13 10.9997C13.2652 10.9997 13.5196 10.8944 13.7071 10.7069C13.8946 10.5194 14 10.2651 14 10C14 9.73486 13.8946 9.48057 13.7071 9.29309C13.5196 9.1056 13.2652 9.00027 13 9.00027ZM10.17 9.00027C10.3766 8.4149 10.7597 7.908 11.2666 7.54946C11.7735 7.19091 12.3791 6.99837 13 6.99837C13.6209 6.99837 14.2265 7.19091 14.7334 7.54946C15.2403 7.908 15.6234 8.4149 15.83 9.00027H17C17.2652 9.00027 17.5196 9.1056 17.7071 9.29309C17.8946 9.48057 18 9.73486 18 10C18 10.2651 17.8946 10.5194 17.7071 10.7069C17.5196 10.8944 17.2652 10.9997 17 10.9997H15.83C15.6234 11.5851 15.2403 12.092 14.7334 12.4505C14.2265 12.8091 13.6209 13.0016 13 13.0016C12.3791 13.0016 11.7735 12.8091 11.2666 12.4505C10.7597 12.092 10.3766 11.5851 10.17 10.9997H3C2.73478 10.9997 2.48043 10.8944 2.29289 10.7069C2.10536 10.5194 2 10.2651 2 10C2 9.73486 2.10536 9.48057 2.29289 9.29309C2.48043 9.1056 2.73478 9.00027 3 9.00027H10.17ZM7 14.9986C6.73478 14.9986 6.48043 15.104 6.29289 15.2915C6.10536 15.4789 6 15.7332 6 15.9984C6 16.2635 6.10536 16.5178 6.29289 16.7053C6.48043 16.8928 6.73478 16.9981 7 16.9981C7.26522 16.9981 7.51957 16.8928 7.70711 16.7053C7.89464 16.5178 8 16.2635 8 15.9984C8 15.7332 7.89464 15.4789 7.70711 15.2915C7.51957 15.104 7.26522 14.9986 7 14.9986ZM4.17 14.9986C4.3766 14.4133 4.75974 13.9064 5.2666 13.5478C5.77346 13.1893 6.37909 12.9967 7 12.9967C7.62091 12.9967 8.22654 13.1893 8.7334 13.5478C9.24026 13.9064 9.6234 14.4133 9.83 14.9986H17C17.2652 14.9986 17.5196 15.104 17.7071 15.2915C17.8946 15.4789 18 15.7332 18 15.9984C18 16.2635 17.8946 16.5178 17.7071 16.7053C17.5196 16.8928 17.2652 16.9981 17 16.9981H9.83C9.6234 17.5835 9.24026 18.0904 8.7334 18.4489C8.22654 18.8075 7.62091 19 7 19C6.37909 19 5.77346 18.8075 5.2666 18.4489C4.75974 18.0904 4.3766 17.5835 4.17 16.9981H3C2.73478 16.9981 2.48043 16.8928 2.29289 16.7053C2.10536 16.5178 2 16.2635 2 15.9984C2 15.7332 2.10536 15.4789 2.29289 15.2915C2.48043 15.104 2.73478 14.9986 3 14.9986H4.17Z"
@@ -233,219 +225,250 @@
             <span style="color: #A74A40;">Выйти из аккаунта</span>
           </div>
         </nav>
-          <div class="profile__right__part">
-
-            <div class="profile__slider__wrapper">
-              <div class="profile__slider__container">
-                <div class="profile__slider">
-                  <div class="profile__slide__spacer1"></div>
-                  <a href="profile1.html" class="profile__slide level__1 open">
-                    <span class="profile__slide__level level__1">1 уровень</span>
-                    <img class="profile__slide__img" src="./assets/img/levels/avatar1.png" alt="">
-                    <div class="profile__slide__title">Дитя</div>
-                  </a>
-                  <a href="profile2.html" class="profile__slide level__2 open">
-                    <span class="profile__slide__level level__2">2 уровень</span>
-                    <img class="profile__slide__img" src="./assets/img/levels/avatar2.png" alt="">
-                    <div class="profile__slide__title">Лесной</div>
-                  </a>
-                  <a href="profile3.html" class="profile__slide level__3 active open">
-                    <span class="profile__slide__level level__3">3 уровень</span>
-                    <img class="profile__slide__img" src="./assets/img/levels/avatar3.png" alt="">
-                    <div class="profile__slide__title">Пещерный</div>
-                  </a>
-                  <a href="profile4.html" class="profile__slide level__4">
-                    <span class="profile__slide__level level__4">4 уровень</span>
-                    <img class="profile__slide__img" src="./assets/img/levels/Egg4.png" alt="">
-                    <div class="profile__slide__title">Солнечный</div>
-                  </a>
-                  <a href="profile5.html" class="profile__slide level__5">
-                    <span class="profile__slide__level level__5">5 уровень</span>
-                    <img class="profile__slide__img" src="./assets/img/levels/egg5.png" alt="">
-                    <div class="profile__slide__title">Ледяной</div>
-                  </a>
-                  <a href="profile6.html" class="profile__slide level__6">
-                    <span class="profile__slide__level level__6">6 уровень</span>
-                    <img class="profile__slide__img" src="./assets/img/levels/egg6.png" alt="">
-                    <div class="profile__slide__title">Звездный</div>
-                  </a>
-                  <a href="profile7.html" class="profile__slide level__7">
-                    <span class="profile__slide__level level__7">7 уровень</span>
-                    <img class="profile__slide__img" src="./assets/img/levels/egg7.png" alt="">
-                    <div class="profile__slide__title">Черный</div>
-                  </a>
-                  <a href="profile8.html" class="profile__slide level__8">
-                    <span class="profile__slide__level level__8">8 уровень</span>
-                    <img class="profile__slide__img" src="./assets/img/levels/egg8png.png" alt="">
-                    <div class="profile__slide__title">Огненный</div>
-                  </a>
-                  <a href="profile9.html" class="profile__slide level__9">
-                    <span class="profile__slide__level level__9">9 уровень</span>
-
-                    <img class="profile__slide__img" src="./assets/img/levels/egg9.png" alt="">
-                    <div class="profile__slide__title">Имперский</div>
-                  </a>
-                  <a href="profile10.html" class="profile__slide level__10">
-                    <span class="profile__slide__level level__10">10 уровень</span>
-                    <img class="profile__slide__img" src="./assets/img/levels/egg10.png" alt="">
-                    <div class="profile__slide__title">Золотой</div>
-                  </a>
-                  <div class="profile__slide__spacer"></div>
+        <div class="middle__part">
+          <div class="data">
+            <div class="top_title__wrap">
+              <div class="top__title">Данные аккаунта</div>
+              <div class="top__img" id="changeData">
+                <img src="./assets/icon/profileChangeButton.svg" alt="change__password">
+              </div>
+            </div>
+            <div class="data__content">
+              <div class="content__top">
+                <div class="content__text">
+                  <div class="top__text__title">Имя пользователя</div>
+                  <div class="top__text__desc" id="top__text__desc1">bcisabvjalvorsubn</div>
+                </div>
+              </div>
+              <div class="content__bottom">
+                <div class="content__text">
+                  <div class="top__text__title">Email <span>не подтвержден</span></div>
+                  <div class="top__text__desc" id="top__text__desc2" style="max-width: 225px; word-break: break-all;">
+                    bcisabvjalvorsubn@gmail.com</div>
+                </div>
+                <div class="modal__balance__button-container" id="button__apply">
+                  <div class="modal__balance__button-shadow-bgc-correct"></div>
+                  <div class="modal__balance__button-shadow"></div>
+                  <div class="modal__balance__button-shadow-bgc"></div>
+                  <button id="modalButtonSign" class="modal__balance__button-signin">
+                    <div class="text__modal__balance__button">Подтвердить</div>
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="profile__content__wrap">
-              <div class="profile__content__container">
-                <div class="content__container__top" style="background: url('../assets/img/levels/bg3_3.png') no-repeat, #1f1704;">
-                  <div class="your__progress">
-                    <div class="your__progress__top" style="background: linear-gradient(90deg, #3a3a3a 0%, #252525 100%)">
-                      <div class="progress__top__desc">
-                        <div class="progress__top__title">Ваш уровень</div>
-                        <div class="progress__top__text">Пещерный дракон</div>
-                      </div>
-                      <img class="your__progress__top__img" src="./assets/img/levels/3dragon.png" alt="">
-                    </div>
-                    <div class="your__progress__bottom">
-                      <div class="progress__to__next">
-                        <div class="progress__to__next__title">До 4 уровня</div>
-                        <div class="progress__to__next__percent">10/100%</div>
-                      </div>
-                      <div class="progress__bottom__progressbar__container">
-                        <div class="progress__bottom__progressbar__active"></div>
-                        <div class="progress__bottom__progressbar"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="your__progress__tasks">
-                    <div class="progress__tasks__title">Для перехода на 4 уровень:</div>
-                    <div class="tasks">
-                      <div class="task">
-                        <div class="task__desc">
-                          <div class="task__desc__top">за 30 дней</div>
-                          <div class="task__desc__bottom">Набрать 100 б.</div>
-                        </div>
-                        <div class="task__progress">
-                          15
-                        </div>
-                      </div>
-                      <div class="change__task">или</div>
-                      <div class="task">
-                        <div class="task__desc">
-                          <div class="task__desc__top">за 90 дней</div>
-                          <div class="task__desc__bottom">Набрать 250 б.</div>
-                        </div>
-                        <div class="task__progress">
-                          35
-                        </div>
-                      </div>
-                    </div>
+            <div class="data__content__changer">
+              <div class="modal__search__search">
+
+                <div class="input__container">
+                  <div class="input-wrapper">
+                    <input type="text" id="nameChangeInput" autocomplete="off" placeholder="Введите имя пользователя"
+                      disabled>
+                    <label id="nameLabel" for="nameChangeInput">Имя пользователя</label>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="#FED970" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.49415 15.4042C8.09619 15.8537 7.39461 15.8537 6.99665 15.4042L3.07617 10.9757C2.74724 10.6041 2.74724 10.0456 3.07617 9.67401C3.46692 9.23262 4.15578 9.23262 4.54653 9.67401L7.7454 13.2874L15.4535 4.58045C15.8442 4.13907 16.5331 4.13907 16.9238 4.58045C17.2528 4.95201 17.2528 5.51057 16.9238 5.88213L8.49415 15.4042Z"
+                        fill="#FED970" />
+                    </svg>
                   </div>
                 </div>
-                <div class="content__container__bottom">
-                  <div class="container__bottom__title">Бонусы уровня:</div>
-                  <div class="bonuses__level__container level__2">
-                    <div class="bonuse__level__item">
-                      <div class="bonuse__item__title" id="item__title1">Суточный лимит на вывод</div>
-                      <div class="bonuse__item__desc">500 000 ₽</div>
-                    </div>
-                    <div class="bonuse__level__item two__part">
-                      <div class="first__part">
-                        <div class="bonuse__item__title" id="item__title4">Кэшбэк</div>
-                        <div class="bonuse__item__desc">7%</div>
-                      </div>
-                      <div class="second__part">
-                        <div class="bonuse__item__title">Отыгрыш</div>
-                        <div class="bonuse__item__desc">15х</div>
-                      </div>
-                    </div>
-                    <div class="bonuse__level__item">
-                      <div class="bonuse__item__title" id="item__title5">Подарок на день рождения</div>
-                      <div class="bonuse__item__desc">3 000</div>
-                    </div>
-                    <div class="bonuse__level__item">
-                      <div class="bonuse__item__title" id="item__title2"><div style="max-width: 150px;">Техподдержка по телефону и в чате 24/7</div></div>
-                    </div>
-                    <div class="bonuse__level__item">
-                      <div class="bonuse__item__title" id="item__title3"><div style="max-width: 150px;">Участие в акциях, турнирах и лотереях</div></div>
-                    </div>
-                    <div class="bonuse__level__item">
-                      <div class="bonuse__item__title" id="item__title6"><div style="max-width: 110px;">Эксклюзивные
-                        бонусы</div></div>
-                    </div>
-                    <div class="bonuse__level__item">
-                      <div class="bonuse__item__title" id="item__title7"><div style="max-width: 100px;">Ускоренный
-                        вывод</div></div>
-                    </div>
-                    <div class="bonuse__level__item">
-                      <div class="bonuse__item__title" id="item__title8"><div style="max-width: 133px;">Ежедневная лотерея подарков</div></div>
-                    </div>
-                  </div>
+
+              </div>
+              <div class="modal__search__search">
+                <div class="input-wrapper">
+                  <input type="email" id="emailChangeInput" autocomplete="off" placeholder="Введите email">
+                  <label id="emailLabel" for="emailChangeInput">Email</label>
                 </div>
               </div>
-              <div class="rules">
-                <div class="conditions">
-                  <div class="rules__title">Правила системы лояльности:</div>
-                  <div><img src="./assets/img/levels/arrow_downRules.svg" alt=""></div>
+              <div class="buttons__container">
+                <div class="modal__balance__button-container" id="btnBack">
+                  <div class="modal__balance__button-shadow-bgc-correct1"></div>
+                  <div class="modal__balance__button-shadow1"></div>
+                  <div class="modal__balance__button-shadow-bgc1"></div>
+                  <button id="modalButtonSign" class="modal__balance__button-signin modal__balance__button-signin1">
+                    <div class="text__modal__balance__button1">Отменить</div>
+                  </button>
                 </div>
-                <ul class="conditions__list">
-                  <p>1. Кэшбэк - является возврат части расходов по результатам вашей игровой активности в виде денежных
-                    средств. Кэшбэк динамический: он изменяется с 1 по 10 уровни в зависимости от вашей игровой
-                    активности.</p>
-                  <p>2. Привилегии и подарки - становятся доступны на каждом новом уровне лояльности.</p>
-                  <p style="margin-bottom: 22px;">3. Каждый новый уровень лояльности дает возможность повысить % кэшбэка
-                    и получить эксклюзивные для данного уровня бенефиты. При накоплении определенного в таблице
-                    количества очков опыта вы переходите на новый уровень.</p>
-                  <p>4. Расчет очков для перехода на следующий уровень происходит по условиям:</p>
-                  <p>• 1000 рублей депозита равняются 1 баллу. </p>
-                  <p style="margin-bottom: 22px;">• Баллы начисляются только после пройденной верификации и
-                    подтверждения всех контактных данных.</p>
-                  <p style="margin-bottom: 22px;">
-                    6. Формула для расчета кэшбэка: (сумма ставок) - (сумма выигрышей) * (% кэшбэка). В случае, если
-                    результат расчета показывает отрицательное число - кэшбэк не начисляется.</p>
-                  <p style="margin-bottom: 22px;">Пример: Вы поставили 2000 и выиграли 3000 (3000 - 2000 = 1000), в
-                    таком случае расчет кэшбэка не происходит.</p>
+                <div class="modal__balance__button-container disable" id="btnSave">
+                  <div class="modal__balance__button-shadow-bgc-correct"></div>
+                  <div class="modal__balance__button-shadow"></div>
+                  <div class="modal__balance__button-shadow-bgc"></div>
+                  <button id="modalButtonSign" class="modal__balance__button-signin">
+                    <div class="text__modal__balance__button">Сохранить</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="password">
+            <div class="top_title__wrap">
+              <div class="top__title">Пароль</div>
+              <div class="top__img" id="changePassword">
+                <img src="./assets/icon/profileChangeButton.svg" alt="change__password">
+              </div>
+            </div>
+            <div class="password__bottom">
+              <div class="password__bottom__text">
+                ********************
+              </div>
+            </div>
+            <div class="change__password__container">
+              <div class="modal__search__search">
 
-                  <p style="margin-bottom: 22px;">Уровни лояльности присваиваются за следующее количество баллов:</p>
-                  <p>• Новичок - баллы не требуются. </p>
-                  <p>• Любитель - баллы не требуются.</p>
-                  <p>• Постоянник - 50 баллов.</p>
-                  <p>• Бронзовый - 100 баллов.</p>
-                  <p>• Серебрянный - 150 баллов. </p>
-                  <p>• Золотой - 200 баллов.</p>
-                  <p>• Платина - 250 баллов.</p>
-                  <p>• Рубиновый - 300 баллов</p>
-                  <p>• Сапфировый - 400 баллов</p>
-                  <p style="margin-bottom: 22px;">• Diamond - 500 баллов</p>
-                  <p style="margin-bottom: 22px;">Для сохранения текущего уровня кэшбэка количество баллов на конец
-                    месяца должно быть соответственно текущему уровню (либо количество баллов за 90 дней должно быть х3
-                    от текущего уровня - 50).</p>
-                  <p style="margin-bottom: 22px;">7. Есть ряд игр, которые полностью исключены из расчета кэшбэка.</p>
+                  <div class="input-wrapper">
+                    <input type="text" id="nameChangeInput" autocomplete="off" placeholder="Текущий пароль">
+                    <label id="nameLabel" for="nameChangeInput">Текущий пароль</label>
+                    <img src="./assets/img/main/main_reg/eye-1.png" alt="show">
+                  </div>
+              </div>
+              <div class="modal__search__search">
+                <div class="input-wrapper">
+                  <input type="email" id="emailChangeInput" autocomplete="off" placeholder="Новый пароль">
+                  <label id="emailLabel" for="emailChangeInput">Новый пароль</label>
+                  <img src="./assets/img/main/main_reg/eye-1.png" alt="show">
+                </div>
+              </div>
+              <div class="modal__search__search">
+                <div class="input-wrapper">
+                  <input type="email" id="emailChangeInput" autocomplete="off" placeholder="Повторите новый пароль">
+                  <label id="emailLabel" for="emailChangeInput">Повторите новый пароль</label>
+                  <img src="./assets/img/main/main_reg/eye-1.png" alt="show">
+                </div>
+              </div>
+              <div class="buttons__container">
+                <div class="modal__balance__button-container" id="btnBack1">
+                  <div class="modal__balance__button-shadow-bgc-correct1"></div>
+                  <div class="modal__balance__button-shadow1"></div>
+                  <div class="modal__balance__button-shadow-bgc1"></div>
+                  <button id="modalButtonSign" class="modal__balance__button-signin modal__balance__button-signin1">
+                    <div class="text__modal__balance__button1">Отменить</div>
+                  </button>
+                </div>
+                <div class="modal__balance__button-container disable" id="btnSave1">
+                  <div class="modal__balance__button-shadow-bgc-correct"></div>
+                  <div class="modal__balance__button-shadow"></div>
+                  <div class="modal__balance__button-shadow-bgc"></div>
+                  <button id="modalButtonSign" class="modal__balance__button-signin">
+                    <div class="text__modal__balance__button">Сохранить</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="password">
+            <div class="top_title__wrap">
+              <div class="top__title">Пароль</div>
+              <div class="top__img" id="changePassword">
+                <img src="./assets/icon/profileChangeButton.svg" alt="change__password">
+              </div>
+            </div>
 
-                  <p style="margin-bottom: 22px;">Пожалуйста, ознакомьтесь со списком ниже:</p>
+            <div class="password__bottom">
+              <div class="password__bottom__text">********************</div>
+            </div>
 
-                  <p style="margin-bottom: 22px;">Live Slots, Dogs 3D, XKeno, Live Roulette, Tron 3D, Velo 3D, Penalty,
-                    Keno Night, Bingo 37, Keno Live, Bet on Horses, Fortuna, Fortune 18, Bet on Dogs, Bingo 37 Ticket,
-                    Craps, Chicago Nights, Romeo, Baccarat, Bird of Paradise, Safari Hunter, Blue Ocean, FaFaFa 2,
-                    Fishing God, Fishermen Gold, Baccarat, American Roulette, Plinko, Chinese Roulette, European
-                    Roulette.</p>
-                  <p>8. Все ставки, сделанные за сутки до запроса о начислении, в расчете кешбэка не участвуют.</p>
-                  <p>9. Сумма кэшбэка рассчитывается сразу же, но получить его возможно лишь в последний день расчетного
-                    периода при условии, что вами были выполнены все условия.</p>
-                  <p>10. Рассчитанная сумма кэшбэка отыгрышу подлежит отыгрышу от 5х.</p>
-                  <p>11. Мультиаккаунты не могут принимать участие в программе лояльности. Очки опыта, накопленные на
-                    мультиаккаунтах, будут удалены.</p>
-                  <p>12. Баллы не засчитываются, если после внесения депозита в течении суток произошел вывод депозита в
-                    том же объеме без отыгрыша.</p>
-
-
-                </ul>
+            <div class="change__password__container" style="display: none">
+              <div class="modal__search__search">
+                <div class="input-wrapper">
+                  <input type="password" id="currentPassword" placeholder="Текущий пароль" autocomplete="off">
+                  <label for="currentPassword">Текущий пароль</label>
+                  <img class="toggle-password" src="./assets/img/main/main_reg/eye-1.svg" alt="show">
+                </div>
               </div>
 
+              <div class="modal__search__search">
+                <div class="input-wrapper">
+                  <input type="password" id="newPassword" placeholder="Новый пароль" autocomplete="off">
+                  <label for="newPassword">Новый пароль</label>
+                  <img class="toggle-password" src="./assets/img/main/main_reg/eye-1.svg" alt="show">
+                </div>
+              </div>
+
+              <div class="modal__search__search">
+                <div class="input-wrapper">
+                  <input type="password" id="repeatPassword" placeholder="Повторите новый пароль" autocomplete="off">
+                  <label for="repeatPassword">Повторите новый пароль</label>
+                  <img class="toggle-password" src="./assets/img/main/main_reg/eye-1.svg" alt="show">
+                </div>
+              </div>
+
+              <div class="buttons__container">
+                <div class="modal__balance__button-container" id="btnBack1">
+                  <div class="modal__balance__button-shadow-bgc-correct1"></div>
+                  <div class="modal__balance__button-shadow1"></div>
+                  <div class="modal__balance__button-shadow-bgc1"></div>
+                  <button id="modalButtonSign" class="modal__balance__button-signin modal__balance__button-signin1">
+                    <div class="text__modal__balance__button1">Отменить</div>
+                  </button>
+                </div>
+                <div class="modal__balance__button-container disable" id="btnSave1">
+                  <div class="modal__balance__button-shadow-bgc-correct"></div>
+                  <div class="modal__balance__button-shadow"></div>
+                  <div class="modal__balance__button-shadow-bgc"></div>
+                  <button id="modalButtonSign" class="modal__balance__button-signin">
+                    <div class="text__modal__balance__button">Сохранить</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="personal__data">
+            <div class="top_title__wrap">
+              <div class="top__title">Персональные данные</div>
+              <div class="top__img" id="changePersonalData">
+                <img src="./assets/icon/profileChangeButton.svg" alt="change__password">
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-item">
+                <div class="label">Имя</div>
+                <div class="value">Не введено</div>
+              </div>
+              <div class="form-item">
+                <div class="label">Фамилия</div>
+                <div class="value">Не введено</div>
+              </div>
+              <div class="form-item">
+                <div class="label">Пол</div>
+                <div class="value">Не введено</div>
+              </div>
+              <div class="form-item">
+                <div class="label">Дата рождения</div>
+                <div class="value">Не введено</div>
+              </div>
+              <div class="form-item address">
+                <div class="label">Адрес</div>
+                <div class="value">Не введено</div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="right__part">
+          <div class="settings__agree">
+            <div class="top__title">Настройки аккаунта</div>
+            <div class="agree">
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="desc__agree">Я согласен (-на) получать электронные письма</div>
+            </div>
+            <div class="agree">
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="desc__agree">Я согласен (-на) принимать SMS в Telegram</div>
+            </div>
+          </div>
+          <div class="activity">
+            <div class="top__title">Активность</div>
+            <div class="activity__address">172.225.34.247</div>
+          </div>
+        </div>
       </div>
-    </main>
+    </div>
+  </main>
 </body>
 
 </html>

@@ -40,7 +40,6 @@ body {
   border: none;
 } */
 
-
 input:focus {
   outline: none;
   border: none;
@@ -126,14 +125,7 @@ button {
   align-items: center;
   flex-wrap: wrap;
 }
-@media (max-width: 390px) {
-  .header__wrap {
-    justify-content: center;
-    width: 390px;
-    display: flex;
-    margin: 0 0;
-  }
-}
+
 .balance {
   line-height: 44px;
   padding: 0 12px 0 40px;
@@ -327,7 +319,7 @@ button {
   height: 100%;
   display: block;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .nav_menu {
     visibility: hidden;
     opacity: 0;
@@ -1076,11 +1068,12 @@ button {
 }
 
 .transactions__list_img {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  max-width: 962px;
+  display: grid;
+  grid-template-columns: repeat(
+    10,
+    1fr
+  ); /* 10 элементов в одном ряду для экрана 1440px+ */
+  gap: 10px; /* Отступы между элементами */
 }
 @media (max-width: 390px) {
   .transactions__list_img {
@@ -2330,6 +2323,104 @@ button {
 
 .game-card img {
   width: 100%;
+}
+
+@media (max-width: 425px) {
+  .balance {
+    display: none;
+    visibility: none;
+    opacity: 0;
+  }
+  .header__wrap {
+    justify-content: start;
+  }
+  .filter-tabs {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    gap: 8px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .filter-tabs::-webkit-scrollbar {
+    display: none; /* скрыть скроллбар */
+  }
+
+  .filter-tabs .tab {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    min-width: 120px; /* или сколько тебе нужно */
+  }
+
+  .games_bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 карточки в строке */
+    gap: 10px;
+  }
+
+  .games_bottom .game {
+    display: block;
+  }
+
+  .games_bottom .game:nth-child(n + 5) {
+    display: none; /* скрыть все карточки, начиная с 5-й */
+  }
+  .games_bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 карточки в ряд */
+    gap: 10px;
+  }
+
+  .games_bottom .game {
+    display: block;
+  }
+
+  .games_bottom .game:nth-child(n + 5) {
+    display: none; /* скрыть карточки, начиная с 5-й */
+  }
+  .transactions__list_img {
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* 4 элемента в первом ряду для экрана шириной до 425px */
+  }
+
+  .transactions__list_img img:nth-child(n + 5) {
+    grid-column: span 2; /* Второй ряд с 5 элементами */
+  }
+  .filter-tabs {
+    width: 0;
+    display: none;
+    visibility: none;
+    opacity: 0;
+  }
+  .games__wrap {
+    width: 425px;
+  }
+  .language {
+    width: 0;
+    display: none;
+    visibility: none;
+    opacity: 0;
+  }
+  .auth_container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .wrap.header__wrap {
+    width: 425px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .header {
+    margin-left: 0;
+  }
+  .buttons {
+    display: flex;
+  }
 }
 
 /* <div class="modal-overlay">

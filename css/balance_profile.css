@@ -3,11 +3,15 @@
 }
 
 
-.balance-wrapper.active::before {
+.balance-wrapper1{
+  z-index: -10;
+}
+
+.balance-wrapper1.active::before {
   display: none;
 }
 
-.balance-modal {
+.balance-modal1 {
   position: inherit;
   top: 0;
   left: 0;
@@ -15,35 +19,36 @@
   padding: 24px;
   background: #161003;
   border: 1px solid #251c06;
+  z-index: -1;
 }
 
-.modal__balance {
+.modal__balance1 {
   width: 100%;
   max-width: 100%;
 }
 
-.modal__balance__main {
+.modal__balance__main1 {
   background: #161003;
   width: 100%;
 }
 
-.balance__main__wrap {
+.balance__main__wrap1 {
   max-width: 100%;
   width: 100%;
 }
 
-.title__balance {
+.title__balance1 {
   font-weight: 600;
   font-size: 20px;
 }
 
-.balance__info {
+.balance__info1 {
   margin: 24px 0 0 0;
   display: flex;
   justify-content: space-between;
 }
 
-.modal__balance-amount {
+.modal__balance-amount1 {
   display: flex;
   flex-direction: column;
   width: 398px;
@@ -52,7 +57,7 @@
   padding: 25px 22px;
 }
 
-.modal__balance__title {
+.modal__balance__title1 {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -60,7 +65,7 @@
   margin-bottom: 24px;
 }
 
-.modal__balance-amount-img {
+.modal__balance-amount-img1 {
   margin: 0 12px 0 0;
 }
 
@@ -70,12 +75,17 @@
 }
 
 
-.balance__info-buttons {
+.balance__info-buttons1 {
   margin: 0;
 }
 
-.modal__balance__button-container {
+.modal__balance__button-container1 {
   margin-left: 10px;
+}
+
+.modal__balance__button__withdraw-img1{
+  height: 100%;
+  transform: none;
 }
 
 .modal__search__search {
@@ -216,6 +226,9 @@
 }
 .text__modal__balance__button{
   transform: skew(10deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal__balance__button-container1.active .modal__balance__button-signin1{

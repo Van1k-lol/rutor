@@ -93,6 +93,16 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+select { /* твой цвет бордера */
+  background: #161003;       /* твой фон */
+  color: #fff;               /* цвет текста */
+  outline: none;             /* убираем белую рамку при фокусе */
+}
+
+select:focus {
+  border: 1px solid #fed970; /* фиксируем бордер при фокусе */
+  outline: none;
+}
 
 /* ===========КОНТЕЙНЕР МЕЙНА============= */
 
@@ -234,7 +244,7 @@ button {
   gap: 61px;
 }
 
-.modal__balance__button-container {
+.modal__balance__button-container1 {
   margin: 0;
   transform: translateY(-5px);
 }
@@ -634,19 +644,35 @@ button {
   font-size: 14px;
   color: #7c612f;
   background-color: transparent;
-  border: 1px solid #7c612f;
+  border: 1px solid #3b2b0d;
   border-radius: 8px;
   appearance: none; /* убрать стандартную стрелку */
-  background-image: url('assets/img/levels/arrow_downRules.svg');
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 16px;
   cursor: pointer;
   background-color: rgba(35, 27, 11, 0.7);
+  position: relative;
+  transition: all .3s;
+}
+.custom-select::before{
+  content: "";
+  background: url('../assets/img/levels/arrow_downRules.svg');
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transition: all .3s;
 }
 
 .custom-select select:focus{
   border: 1px solid #fed970;
+}
+.custom-select:has(select:focus)::before {
+  transform: rotate(180deg);
+filter: brightness(2.4) saturate(4) hue-rotate(-20deg);
 }
 option{
   color: #fff;

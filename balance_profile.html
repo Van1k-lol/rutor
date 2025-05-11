@@ -36,9 +36,10 @@
                 <div class="modal__balance__main">
                   <div class="balance__main__wrap">
                     <div class="balance__info">
-                      <div class="modal__balance-amount">
-                        <img class="modal__balance-amount-img" src="./assets/img/balance/Balance Icon.png" alt="">
-                        <div class="modal__balance-amount-text">
+                      <div class="modal__balance-amount-bonus">
+                        <img class="modal__balance__bonus-amount-img" src="./assets/img/balance/Balance Icon.png"
+                          alt="">
+                        <div class="modal__balance-bonus-amount-text">
                           <h>Баланс</h>
                           <p>0.00 USD</p>
                         </div>
@@ -225,49 +226,58 @@
             <span style="color: #A74A40;">Выйти из аккаунта</span>
           </div>
         </nav>
-        <div class="balance-wrapper active">
+        <div class="balance-wrapper1 active">
           <!-- Модалка -->
-          <div class="balance-modal" id="balanceModal">
-            <div class="modal__balance">
-              <div class="modal__balance__main">
-                <div class="balance__main__wrap">
-                  <div class="title__balance">Баланс счета</div>
-                  <div class="balance__info">
-                    <div class="modal__balance-amount">
-                      <div class="modal__balance__title">
-                        <img class="modal__balance-amount-img" src="./assets/img/balance/Balance Icon.png" alt="">
+          <div class="balance-modal balance-modal1" id="balanceModal">
+            <div class="modal__balance modal__balance1">
+              <div class="modal__balance__main modal__balance__main1">
+                <div class="balance__main__wrap balance__main__wrap1">
+                  <div class="title__balance title__balance1">Баланс счета</div>
+                  <div class="balance__info balance__info1">
+                    <div class="modal__balance-amount modal__balance-amount1">
+                      <div class="modal__balance__title modal__balance__title1">
+                        <img class="modal__balance-amount-img modal__balance-amount-img1"
+                          src="./assets/img/balance/Balance Icon.png" alt="">
                         <h>Баланс</h>
                       </div>
-                      <div class="modal__balance-amount-text">
+                      <div class="modal__balance-amount-text modal__balance-amount-text1">
                         <p>0.00 USD</p>
                       </div>
                     </div>
-                    <div class="modal__balance-amount">
-                      <div class="modal__balance__title">
-                        <img class="modal__balance-amount-img" src="./assets/img/balance/Bonus Giftbox.png" alt="">
+                    <div class="modal__balance-amount modal__balance-amount1">
+                      <div class="modal__balance__title modal__balance__title1">
+                        <img class="modal__balance-amount-img modal__balance-amount-img1"
+                          src="./assets/img/balance/Bonus Giftbox.png" alt="">
                         <h>Бонусный Баланс</h>
                       </div>
-                      <div class="modal__balance-amount-text">
+                      <div class="modal__balance-amount-text modal__balance-amount-text1">
                         <p>0.00 USD</p>
                       </div>
                     </div>
                   </div>
-                  <div class="balance__info-buttons">
-                    <div class="modal__balance__button-container modal__balance__button-container" id="button__apply">
-                      <div class="modal__balance__button-shadow-bgc-correct modal__balance__button-shadow-bgc-correct"></div>
+                  <div class="balance__info-buttons balance__info-buttons1">
+                    <div class="modal__balance__button-container modal__balance__button-container1" id="button__apply">
+                      <div class="modal__balance__button-shadow-bgc-correct modal__balance__button-shadow-bgc-correct">
+                      </div>
                       <div class="modal__balance__button-shadow modal__balance__button-shadow"></div>
                       <div class="modal__balance__button-shadow-bgc modal__balance__button-shadow-bgc1"></div>
-                      <button id="modalButtonSign" class="modal__balance__button-signin modal__balance__button-signin">
-                        <div class="text__modal__balance__button text__modal__balance__button">Пополнить</div>
+                      <button id="modalButtonSign" class="modal__balance__button-signin">
+
+                        <div class="text__modal__balance__button text__modal__balance__button"><img
+                            src="./assets/icon/up1.png" alt=""> Пополнить</div>
                       </button>
                     </div>
                     <div class="modal__balance__button__withdraw-container">
                       <div class="modal__balance__button__withdraw-shadow-bgc-correct"></div>
                       <div class="modal__balance__button__withdraw-shadow"></div>
                       <div class="modal__balance__button__withdraw-shadow-bgc"></div>
-                      <button id="modalButtonSign" class="modal__balance__button__withdraw-signin "><img
-                          src="./assets/icon/Arrow 1 (Stroke).png" alt=""
-                          class="modal__balance__button__withdraw-img">Вывести</button>
+                      <button id="modalButtonSign" class="modal__balance__button__withdraw-signin ">
+                        <div class="text__modal__balance__button">
+                          <img src="./assets/icon/Arrow 1 (Stroke).png" alt=""
+                            class="modal__balance__button__withdraw-img1">
+                          Вывести
+                        </div>
+                      </button>
                     </div>
                   </div>
 
@@ -279,5 +289,6 @@
       </div>
     </div>
   </main>
-  </body>
-  </html>
+</body>
+
+</html>

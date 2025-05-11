@@ -102,6 +102,7 @@ button {
 
 .first__wrap__main {
   max-width: 1200px;
+  width: 100%;
 }
 
 .profile__title {
@@ -117,8 +118,10 @@ button {
 
 .profile__main__container {
   display: flex;
-  max-width: 1200px;
+  gap: 32px;
   width: 100%;
+  margin-bottom: 120px;
+
 }
 
 
@@ -134,6 +137,7 @@ button {
   border: 1px solid #251c06;
   border-radius: 16px;
   max-width: 241px;
+  width: 100%;
   overflow: hidden;
   padding: 16px 0;
   margin-right: 32px;
@@ -164,9 +168,127 @@ button {
 }
 
 
+/* content */
+
+.content__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.history {
+  padding: 24px;
+  border: 1px solid #251c06;
+  border-radius: 16px;
+  background: #161003;
+  font-family: Gilroy;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 819px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.date__time__filter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 16px;
+}
+
+.date {
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid #3b2b0d;
+  border-radius: 16px;
+  background-color: rgba(35, 27, 11, 0.7);
+  text-align: center;
+}
 
 
 
+.modal__balance__button-container {
+  margin: 0;
+  transform: translateY(-4px);
+  margin-left: 20px;
+}
+
+.modal__balance__button-shadow-bgc-correct {
+  width: 131px;
+}
+
+.modal__balance__button-shadow {
+  width: 131px;
+}
+
+.modal__balance__button-shadow-bgc {
+  width: 131px;
+}
+
+.modal__balance__button-signin {
+  width: 131px;
+}
+
+.text__modal__balance__button {
+  transform: skew(10deg);
+}
+
+.filter__header {
+  margin: 0 -24px;
+  padding: 0 36px;
+  background: #1f1704;
+  display: flex;
+  align-items: center;
+  gap: 95px;
+  height: 41px;
+}
+
+.filter__header div {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.content {
+  display: none;
+}
+
+.content__underfind {
+  margin: 40px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.content__underfind img{
+  max-width: 78px;
+}
+.content__underfind div {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+}
+
+.requests {
+  padding: 24px;
+  border: 1px solid #251c06;
+  border-radius: 16px;
+  background: #161003;
+  font-family: Gilroy;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 819px;
+}
 
 
 

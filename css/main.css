@@ -2508,9 +2508,6 @@ button {
   /* Firefox */
   -ms-overflow-style: none;
   /* IE и Edge */
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
 }
 
 .chat-body::-webkit-scrollbar {

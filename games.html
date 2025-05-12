@@ -20,8 +20,8 @@
     <div class="wrap header__wrap">
       <a href="bonuses.html" class="balance">5 000$ + 250FS</a>
       <div class="logo">
-        <a href="#" class="logo__link">
-          <img src="/assets/img/main/main_top/logo.png" alt="logo" class="logo__img">
+        <a href="index.html" class="logo__link">
+          <img src="./assets/img/main/main_top/logo.png" alt="logo" class="logo__img">
         </a>
       </div>
       <div class="auth_container">
@@ -195,16 +195,109 @@
     </div>
     <div class="nav_menu__button">
       <div class="new__message-active"></div>
-      <a href="#" class="nav_menu__link link_chat">
+      <div class="nav_menu__link link_chat">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
             d="M0.385809 15.9524C0.619358 16.0491 0.888188 15.9957 1.06694 15.8169L1.18919 15.6947C2.03665 14.8472 3.32872 14.6288 4.3895 15.1604C5.4642 15.699 6.67913 16.0005 7.96707 16C12.366 16.0019 15.9573 12.4841 15.9996 8.07843C16.0422 3.64457 12.4994 0 8 0C3.57114 0 -0.0405768 3.63923 0.000344394 8.07535L6.10786e-10 15.375C-1.11356e-05 15.6277 0.15226 15.8557 0.385809 15.9524ZM4 9C4.55228 9 5 8.55229 5 8C5 7.44772 4.55228 7 4 7C3.44772 7 3 7.44772 3 8C3 8.55229 3.44772 9 4 9ZM9 8C9 8.55229 8.55229 9 8 9C7.44772 9 7 8.55229 7 8C7 7.44772 7.44772 7 8 7C8.55229 7 9 7.44772 9 8ZM12 9C12.5523 9 13 8.55229 13 8C13 7.44772 12.5523 7 12 7C11.4477 7 11 7.44772 11 8C11 8.55229 11.4477 9 12 9Z"
             fill="#7C612F" />
         </svg>
         <span>Чат</span>
-      </a>
+      </div>
     </div>
   </nav>
+  <div class="chat-window" id="chat" style="display: none;">
+    <div class="chat__header__container">
+      <div class="chat-header">
+        <div class="chat__title">Чат</div>
+        <div class="chat__close"><img src="./assets/img/main/main_reg/Vector.png" alt=""></div>
+      </div>
+      <div class="chat__fixed__message">
+        <div class="chat-header chat-header1">
+          <div class="chat__title">
+            <div class="chat__title__top">100% к Депозиту + 100FS</div>
+            <div class="chat__title__bottom">Подробнее</div>
+          </div>
+          <div class="fixed__message"><img src="./assets/icon/fixedMessageIcon 1.svg" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="chat-body" id="chat-body">
+
+      <div class="message">
+        <div class="message__header">
+          <div class="message__from">Gena</div>
+          <span>новичок</span>
+          <div class="message__time">8:58</div>
+        </div>
+        <div class="message__text">Эй, ребята! Как дела? Давайте обсудим последние игры и стратегии, которые вы
+          используете</div>
+      </div>
+      <div class="message">
+        <div class="message__header">
+          <div class="message__from">Gena</div>
+          <span>новичок</span>
+          <div class="message__time">8:58</div>
+        </div>
+        <div class="message__text">Что нового в мире гейминга?</div>
+      </div>
+
+      <div class="message__win">
+        <div class="message__win__header">
+          <div class="left__part__win__header">
+            <div class="message__from1 message__from">Gena</div>
+            <div class="message__time">8:58</div>
+          </div>
+          <div class="right__part__win__header">
+            <div class="container__win__target">МЕГА ВЫИГРЫШ</div>
+          </div>
+        </div>
+        <div class="sum">Ставка: 10$</div>
+        <div class="container__sum__win">
+          <div class="sum__title">+$1399.00</div>
+          <span>x139</span>
+        </div>
+        <div class="link__to__game">
+          <img src="./assets/img/main/main/games/40_joker.png" alt="">
+          <a href="game.html" class="button__go__play">
+            Играть
+          </a>
+        </div>
+      </div>
+      <div class="message">
+        <div class="message__header status-top">
+          <div class="message__from">6178234bjca</div>
+          <span>топ</span>
+          <div class="message__time">8:58</div>
+        </div>
+        <img class="message__sticker" src="./assets/img/levels/avatar10.png" alt="">
+      </div>
+      <div class="message">
+        <div class="message__header">
+          <div class="message__from">Gena</div>
+          <span>новичок</span>
+          <div class="message__time">8:58</div>
+        </div>
+        <div class="message__text">)))))</div>
+      </div>
+    </div>
+    <div class="chat-input">
+      <div class="stikers__container">
+        
+        <img class="input__stiker" src="./assets/img/levels/avatar10.png" alt="">
+        <img class="input__stiker" src="./assets/img/levels/avatar10.png" alt="">
+        <img class="input__stiker" src="./assets/img/levels/avatar10.png" alt="">
+        <img class="input__stiker" src="./assets/img/levels/avatar10.png" alt="">
+        <img class="input__stiker" src="./assets/img/levels/avatar10.png" alt="">
+        <div class="btn__all__stickers">
+          <img src="./assets/icon/stikersBtn.svg" alt="">
+          <img style="max-width: 12px;" src="./assets/icon/arrowup_stikers.svg" alt="">
+        </div>
+      </div>
+      <input type="text" id="chat-message" placeholder="Напишите сообщение...">
+    </div>
+    <div class="resizer top"></div>
+    <div class="resizer left"></div>
+  </div>
   <div class="wraper">
     <section class="main_top">
       <div class="filters">

@@ -117,3 +117,6 @@ modalLoginEmailPassword.addEventListener("input", () => {
         modalColBox.classList.remove('checked');
     }
 })
+
+
+

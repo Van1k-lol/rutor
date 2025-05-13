@@ -63,6 +63,7 @@ changeView.forEach(button => {
 
 
 function initBalanceModal() {
+  const bodyHtml =document.getElementsByTagName("body")
   const depositTab = document.getElementById("tab1");
   const withdrawTab = document.getElementById("tab2");
   const historyTab = document.getElementById("tab3");
@@ -96,7 +97,7 @@ function initBalanceModal() {
     historyBody.classList.add("hidden")
     subtabsOffOn.classList.remove("hidden")
     depositWindowHTML.classList.add("hidden")
-    
+    document.body.classList.add("modal-open")
     console.log("added")
   }
   const openDepositTab = () => {
@@ -127,6 +128,7 @@ function initBalanceModal() {
     historyBody.classList.add("hidden")
     subtabsOffOn.classList.add("hidden")
     depositWindowHTML.classList.remove("hidden")
+
   
     for (let tab of tabsOffOn) {
       tab.classList.add("hidden")

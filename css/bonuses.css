@@ -4,7 +4,7 @@
 
 .main__bonuses {
   margin-top: 136px;
-  padding-bottom: 150px;
+  padding: 0 16px 150px 106px;
 }
 
 .wrap {
@@ -23,13 +23,12 @@ h1 {
 
 .bonuses__change {
   display: flex;
-  justify-content: center;
   border-radius: 16px;
-  width: 344px;
+  width: 296px;
   height: 57px;
-  gap: 32px;
   background-color: #231b0bb3;
   margin-bottom: 32px;
+  padding: 0 24px;
 }
 
 .bonuses__btn {
@@ -42,10 +41,14 @@ h1 {
   cursor: pointer;
   border-bottom: 2px solid #3b2b0d;
   padding: 18px 23.5px;
+  color: #a68e62;
+  width: 132px;
 }
 
 .bonuses__btn-active {
   border-bottom: 2px solid #fed970;
+  margin-right: 32px;
+  color: #FFF;
 }
 
 .bonuses__list {
@@ -179,7 +182,7 @@ h1 {
   gap: 10px;
   margin-bottom: 20px;
   font-weight: 400;
-font-size: 12px;
+  font-size: 12px;
   text-align: center;
   font-family: Gilroy;
   position: relative;
@@ -187,10 +190,40 @@ font-size: 12px;
   user-select: none;
 
 }
-.conditions__list.active{
+
+.conditions__list.active {
   display: flex;
 }
 
-.conditions.active::before  {
+.conditions.active::before {
   transform: rotate(180deg);
+}
+
+
+/* ===================адаптив==================== */
+
+
+@media (max-width: 650px){
+  .bonuses__change {
+    width: 240px;
+    height: 49px;
+    padding: 0 16px;
+  }
+
+  .bonuses__btn {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 18px 19px;
+  }
+  .bonuses__btn-active{
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .main__bonuses {
+    padding: 0 16px 52px 16px;
+  }
+
+
 }

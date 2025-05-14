@@ -1,4 +1,10 @@
 /* https://www.figma.com/design/Pq7DUAlrfmUONtpP1uc5h6/Rutor-Casino?node-id=223-9693&t=xo8hC4pJdnAI0PyP-0 */
+html {
+  overflow-x: hidden;
+}
+html.modal-open {
+  overflow-y: hidden;
+}
 
 @font-face {
   font-family: Gilroy;
@@ -24,7 +30,8 @@ body {
 }
 
 .background {
-  background: url("../assets/img/main/main/bg_main.jpg") center no-repeat #0e0a01;
+  background: url("../assets/img/main/main/bg_main.jpg") center no-repeat
+    #0e0a01;
   position: absolute;
   z-index: -100;
   top: 105px;
@@ -133,7 +140,8 @@ button {
 .balance {
   line-height: 44px;
   padding: 0 12px 0 40px;
-  background: url(../assets/img/main/main_top/Bonus\ Giftbox.svg) 12px 50% no-repeat;
+  background: url(../assets/img/main/main_top/Bonus\ Giftbox.svg) 12px 50%
+    no-repeat;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
@@ -245,13 +253,17 @@ button {
   border: 1px solid #eec248;
   box-shadow: 0 0 12.37px 0 rgba(232, 177, 29, 0.3),
     inset 0 -3.76px 8.84px 0 rgba(14, 10, 1, 0.53);
-  background: radial-gradient(68.61% 223.81% at 93.07% 3.57%,
+  background: radial-gradient(
+      68.61% 223.81% at 93.07% 3.57%,
       rgba(249, 176, 26, 0.3) 0,
-      rgba(249, 176, 26, 0) 63.51%),
-    linear-gradient(177.78deg,
+      rgba(249, 176, 26, 0) 63.51%
+    ),
+    linear-gradient(
+      177.78deg,
       rgba(249, 176, 26, 0.1) 0.9%,
       rgba(255, 255, 255, 0.1) 38.79%,
-      rgba(249, 176, 26, 0.1) 97.18%),
+      rgba(249, 176, 26, 0.1) 97.18%
+    ),
     linear-gradient(0deg, rgba(249, 176, 26, 0.4), rgba(249, 176, 26, 0.4)),
     #1f1704;
 }
@@ -296,7 +308,8 @@ button {
   font-weight: 500;
   color: #e0caa3;
   overflow: hidden;
-  background: url("../assets/img/main/main_top/Vector.png") no-repeat calc(100% - 8px) rgba(35, 27, 11, 0.7);
+  background: url("../assets/img/main/main_top/Vector.png") no-repeat
+    calc(100% - 8px) rgba(35, 27, 11, 0.7);
   transition: all 0.2s;
 }
 
@@ -425,12 +438,16 @@ button {
 }
 
 .nav-active {
-  background: radial-gradient(84.92% 84.92% at 75.4% 15.08%,
+  background: radial-gradient(
+      84.92% 84.92% at 75.4% 15.08%,
       rgba(249, 176, 26, 0.3) 0px,
-      rgba(249, 176, 26, 0) 63.51%),
-    linear-gradient(rgba(249, 176, 26, 0.1) 0px,
+      rgba(249, 176, 26, 0) 63.51%
+    ),
+    linear-gradient(
+      rgba(249, 176, 26, 0.1) 0px,
       rgba(255, 255, 255, 0.1) 30.71%,
-      rgba(249, 176, 26, 0.1) 100%),
+      rgba(249, 176, 26, 0.1) 100%
+    ),
     rgb(31, 23, 4);
   border-color: rgb(238, 194, 72);
   color: #fff;
@@ -831,13 +848,17 @@ button {
   border: 1px solid #eec248;
   box-shadow: 0 0 12.37px 0 rgba(232, 177, 29, 0.3),
     inset 0 -3.76px 8.84px 0 rgba(14, 10, 1, 0.53);
-  background: radial-gradient(68.61% 223.81% at 93.07% 3.57%,
+  background: radial-gradient(
+      68.61% 223.81% at 93.07% 3.57%,
       rgba(249, 176, 26, 0.3) 0,
-      rgba(249, 176, 26, 0) 63.51%),
-    linear-gradient(177.78deg,
+      rgba(249, 176, 26, 0) 63.51%
+    ),
+    linear-gradient(
+      177.78deg,
       rgba(249, 176, 26, 0.1) 0.9%,
       rgba(255, 255, 255, 0.1) 38.79%,
-      rgba(249, 176, 26, 0.1) 97.18%),
+      rgba(249, 176, 26, 0.1) 97.18%
+    ),
     linear-gradient(0deg, rgba(249, 176, 26, 0.4), rgba(249, 176, 26, 0.4)),
     #1f1704;
   position: relative;
@@ -925,6 +946,9 @@ button {
   align-items: center;
   justify-content: space-between;
   max-width: 1152px;
+  display: grid;
+  gap: 16px; /* отступы между элементами */
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .advantages__item {
@@ -944,7 +968,8 @@ button {
   left: 29px;
   width: 49px;
   height: 55px;
-  background: url("../assets/img/main/main/advantages/1.svg") no-repeat center/contain;
+  background: url("../assets/img/main/main/advantages/1.svg") no-repeat
+    center/contain;
   z-index: 1;
 }
 
@@ -955,7 +980,8 @@ button {
   left: 26px;
   width: 53px;
   height: 53px;
-  background: url("../assets/img/main/main/advantages/2.svg") no-repeat center/contain;
+  background: url("../assets/img/main/main/advantages/2.svg") no-repeat
+    center/contain;
   z-index: 1;
 }
 
@@ -966,7 +992,8 @@ button {
   left: 17px;
   width: 71px;
   height: 49px;
-  background: url("../assets/img/main/main/advantages/3crown.svg") no-repeat center/contain;
+  background: url("../assets/img/main/main/advantages/3crown.svg") no-repeat
+    center/contain;
   z-index: 1;
 }
 
@@ -977,7 +1004,8 @@ button {
   left: 22px;
   width: 66px;
   height: 59px;
-  background: url("../assets/img/main/main/advantages/4.svg") no-repeat center/contain;
+  background: url("../assets/img/main/main/advantages/4.svg") no-repeat
+    center/contain;
   z-index: 1;
 }
 
@@ -1143,6 +1171,7 @@ button {
   cursor: pointer;
   padding: 30px;
   overflow-y: auto;
+  background: #00000061;
   /* visibility: hidden; */
 }
 
@@ -1166,12 +1195,12 @@ button {
   position: relative;
   width: 1128px;
   height: 732px;
-  min-width: 600px;
+  /* min-width: 600px; */
   background-color: #0e0a01;
   margin: auto;
   color: white;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 20px;
   z-index: 1;
   cursor: default;
 }
@@ -1179,9 +1208,12 @@ button {
 .modal__add {
   width: 50%;
   align-items: center;
-  margin: 20px 0 20px 20px;
+  /* margin: 20px 0 20px 20px; */
 }
-
+.modal__add img {
+  position: absolute;
+  top: 40px;
+}
 .main__wrap {
   display: flex;
 }
@@ -1190,13 +1222,12 @@ button {
   width: 50%;
   display: flex;
   flex-direction: column;
+  margin-top: 33px;
 }
 
 .modal__button-close {
   display: flex;
   flex-direction: column;
-  width: 579px;
-  height: 85px;
   align-items: end;
   background-color: #0e0a01;
   border: #0e0a01;
@@ -1304,11 +1335,13 @@ button {
 
   box-shadow: 0px -3.76px 8.84px 0px #0e0a0187 inset;
 
-  background: linear-gradient(175.67deg,
-      #e8b21d 17.86%,
-      #ffedbd 34.62%,
-      #e8b21d 71.74%,
-      #ffda75 93.61%);
+  background: linear-gradient(
+    175.67deg,
+    #e8b21d 17.86%,
+    #ffedbd 34.62%,
+    #e8b21d 71.74%,
+    #ffda75 93.61%
+  );
 
   border-radius: 5.3px;
 }
@@ -1319,11 +1352,13 @@ button {
 
   box-shadow: 0px -3.76px 8.84px 0px #0e0a0187 inset;
 
-  background: linear-gradient(175.67deg,
-      #e8b21d 17.86%,
-      #ffedbd 34.62%,
-      #e8b21d 71.74%,
-      #ffda75 93.61%);
+  background: linear-gradient(
+    175.67deg,
+    #e8b21d 17.86%,
+    #ffedbd 34.62%,
+    #e8b21d 71.74%,
+    #ffda75 93.61%
+  );
 
   border-radius: 5.3px;
 }
@@ -1414,28 +1449,34 @@ button {
       0deg,
       var(--gray-gray-700, #1f1704),
       var(--gray-gray-700, #1f1704)
-    ), */
-    linear-gradient(0deg,
+    ), */ linear-gradient(
+      0deg,
       rgba(249, 176, 26, 0.5),
-      rgba(249, 176, 26, 0.5)),
-    linear-gradient(175.46deg,
+      rgba(249, 176, 26, 0.5)
+    ),
+    linear-gradient(
+      175.46deg,
       rgba(249, 176, 26, 0.1) 21.26%,
       rgba(255, 255, 255, 0.1) 49.63%,
-      rgba(249, 176, 26, 0.1) 93.33%),
-    radial-gradient(26.11% 174.07% at 35.42% 25%,
-      rgba(249, 176, 26, 0.3) 0%,
-      rgba(249, 176, 26, 0) 63.51%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-  ;
+      rgba(249, 176, 26, 0.1) 93.33%
+    ),
+    radial-gradient(
+        26.11% 174.07% at 35.42% 25%,
+        rgba(249, 176, 26, 0.3) 0%,
+        rgba(249, 176, 26, 0) 63.51%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   content: "";
   cursor: pointer;
   border-width: 1.33px;
   border-style: solid;
-  border-image-source: linear-gradient(175.67deg,
-      #e8b21d 17.86%,
-      #ffedbd 34.62%,
-      #e8b21d 71.74%,
-      #ffda75 93.61%);
+  border-image-source: linear-gradient(
+    175.67deg,
+    #e8b21d 17.86%,
+    #ffedbd 34.62%,
+    #e8b21d 71.74%,
+    #ffda75 93.61%
+  );
   border-image-slice: 1;
 
   -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
@@ -1449,28 +1490,34 @@ button {
       0deg,
       var(--gray-gray-700, #1f1704),
       var(--gray-gray-700, #1f1704)
-    ), */
-    linear-gradient(0deg,
+    ), */ linear-gradient(
+      0deg,
       rgba(249, 176, 26, 0.5),
-      rgba(249, 176, 26, 0.5)),
-    linear-gradient(175.46deg,
+      rgba(249, 176, 26, 0.5)
+    ),
+    linear-gradient(
+      175.46deg,
       rgba(249, 176, 26, 0.1) 21.26%,
       rgba(255, 255, 255, 0.1) 49.63%,
-      rgba(249, 176, 26, 0.1) 93.33%),
-    radial-gradient(26.11% 174.07% at 35.42% 25%,
-      rgba(249, 176, 26, 0.3) 0%,
-      rgba(249, 176, 26, 0) 63.51%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-  ;
+      rgba(249, 176, 26, 0.1) 93.33%
+    ),
+    radial-gradient(
+        26.11% 174.07% at 35.42% 25%,
+        rgba(249, 176, 26, 0.3) 0%,
+        rgba(249, 176, 26, 0) 63.51%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   content: "";
   cursor: pointer;
   border-width: 1.33px;
   border-style: solid;
-  border-image-source: linear-gradient(175.67deg,
-      #e8b21d 17.86%,
-      #ffedbd 34.62%,
-      #e8b21d 71.74%,
-      #ffda75 93.61%);
+  border-image-source: linear-gradient(
+    175.67deg,
+    #e8b21d 17.86%,
+    #ffedbd 34.62%,
+    #e8b21d 71.74%,
+    #ffda75 93.61%
+  );
   border-image-slice: 1;
 
   -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
@@ -1569,7 +1616,7 @@ button {
 .modal__register {
   position: fixed;
   inset: 0;
-
+  background: #00000061;
   z-index: 2;
   display: flex;
   cursor: pointer;
@@ -1807,7 +1854,8 @@ button {
   transform: translate(-5% -40%);
   width: 20px;
   height: 20px;
-  background: url("../assets/img/main/main_modal_search/Loupe_Icon.svg") no-repeat center;
+  background: url("../assets/img/main/main_modal_search/Loupe_Icon.svg")
+    no-repeat center;
 }
 
 .modal__search__results {
@@ -2002,17 +2050,22 @@ button {
       0deg,
       var(--gray-gray-700, #1f1704),
       var(--gray-gray-700, #1f1704)
-    ), */
-    linear-gradient(0deg,
+    ), */ linear-gradient(
+      0deg,
       rgba(249, 176, 26, 0.5),
-      rgba(249, 176, 26, 0.5)),
-    linear-gradient(175.46deg,
+      rgba(249, 176, 26, 0.5)
+    ),
+    linear-gradient(
+      175.46deg,
       rgba(249, 176, 26, 0.1) 21.26%,
       rgba(255, 255, 255, 0.1) 49.63%,
-      rgba(249, 176, 26, 0.1) 93.33%),
-    radial-gradient(26.11% 174.07% at 35.42% 25%,
+      rgba(249, 176, 26, 0.1) 93.33%
+    ),
+    radial-gradient(
+      26.11% 174.07% at 35.42% 25%,
       rgba(249, 176, 26, 0.3) 0%,
-      rgba(249, 176, 26, 0) 63.51%);
+      rgba(249, 176, 26, 0) 63.51%
+    );
 
   color: #ffffff;
   text-shadow: 0 0 5px #fff, 0 0 10px #ffc14173;
@@ -2099,11 +2152,13 @@ button {
   /* 
   border: 1.33px solid; */
 
-  background: linear-gradient(180deg,
-      #f9211a -43.9%,
-      #ffc7bd -12.06%,
-      #f9211a 58.45%,
-      #ff4741 100%);
+  background: linear-gradient(
+    180deg,
+    #f9211a -43.9%,
+    #ffc7bd -12.06%,
+    #f9211a 58.45%,
+    #ff4741 100%
+  );
 
   border-radius: 5.3px;
   border: 1px #ff524c solid;
@@ -2111,13 +2166,17 @@ button {
 
 .modal__balance__button__withdraw-signin {
   display: block;
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(249, 33, 26, 0.4),
-      rgba(249, 33, 26, 0.4)),
-    linear-gradient(176.35deg,
+      rgba(249, 33, 26, 0.4)
+    ),
+    linear-gradient(
+      176.35deg,
       rgba(249, 33, 26, 0.425) 0.88%,
       rgba(255, 255, 255, 0.144) 37.88%,
-      rgba(249, 33, 26, 0.1) 94.9%);
+      rgba(249, 33, 26, 0.1) 94.9%
+    );
 
   color: #ffffff;
   text-shadow: 0 0 5px #fff, 0 0 10px #ffc14173;
@@ -2338,104 +2397,6 @@ button {
   width: 100%;
 }
 
-@media (max-width: 425px) {
-  .balance {
-    display: none;
-    visibility: none;
-    opacity: 0;
-  }
-  .header__wrap {
-    justify-content: start;
-  }
-  .filter-tabs {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 10px;
-    gap: 8px;
-    scroll-snap-type: x mandatory;
-  }
-
-  .filter-tabs::-webkit-scrollbar {
-    display: none; /* скрыть скроллбар */
-  }
-
-  .filter-tabs .tab {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    border-radius: 8px;
-    min-width: 120px; /* или сколько тебе нужно */
-  }
-
-  .games_bottom {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 карточки в строке */
-    gap: 10px;
-  }
-
-  .games_bottom .game {
-    display: block;
-  }
-
-  .games_bottom .game:nth-child(n + 5) {
-    display: none; /* скрыть все карточки, начиная с 5-й */
-  }
-  .games_bottom {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 карточки в ряд */
-    gap: 10px;
-  }
-
-  .games_bottom .game {
-    display: block;
-  }
-
-  .games_bottom .game:nth-child(n + 5) {
-    display: none; /* скрыть карточки, начиная с 5-й */
-  }
-  .transactions__list_img {
-    grid-template-columns: repeat(
-      4,
-      1fr
-    ); /* 4 элемента в первом ряду для экрана шириной до 425px */
-  }
-
-  .transactions__list_img img:nth-child(n + 5) {
-    grid-column: span 2; /* Второй ряд с 5 элементами */
-  }
-  .filter-tabs {
-    width: 0;
-    display: none;
-    visibility: none;
-    opacity: 0;
-  }
-  .games__wrap {
-    width: 425px;
-  }
-  .language {
-    width: 0;
-    display: none;
-    visibility: none;
-    opacity: 0;
-  }
-  .auth_container {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  .wrap.header__wrap {
-    width: 425px;
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 0;
-  }
-  .header {
-    margin-left: 0;
-  }
-  .buttons {
-    display: flex;
-  }
-}
-
 /* <div class="modal-overlay">
   <div class="modal" >
     <div class="tabs">
@@ -2469,14 +2430,6 @@ button {
   </div>
 </div> */
 
-
-
-
-
-
-
-
-
 /* =================ЧАТ=========================== */
 /* =================ЧАТ=========================== */
 /* =================ЧАТ=========================== */
@@ -2486,8 +2439,6 @@ button {
 /* =================ЧАТ=========================== */
 /* =================ЧАТ=========================== */
 /* =================ЧАТ=========================== */
-
-
 
 .chat-window {
   position: fixed;
@@ -2634,8 +2585,8 @@ button {
 }
 
 .message__header.status-top span::before {
-  content: '';
-  background: url('../assets/icon/Icon_Raket_topStatus.svg');
+  content: "";
+  background: url("../assets/icon/Icon_Raket_topStatus.svg");
   width: 10px;
   height: 10px;
   display: block;
@@ -2667,7 +2618,11 @@ button {
 }
 
 .message__win {
-  background: linear-gradient(90deg, rgba(232, 178, 29, 0.22) 0%, rgba(237, 97, 27, 0.22) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(232, 178, 29, 0.22) 0%,
+    rgba(237, 97, 27, 0.22) 100%
+  );
   display: flex;
   flex-direction: column;
   margin: 0 -16px;
@@ -2703,7 +2658,6 @@ button {
   margin: 12px 11px 0 11px;
 }
 
-
 .message__from1 {
   margin-right: 8px;
   color: #fff;
@@ -2711,7 +2665,6 @@ button {
   font-size: 16px;
   text-align: center;
 }
-
 
 .left__part__win__header {
   display: flex;
@@ -2729,8 +2682,8 @@ button {
 }
 
 .container__win__target::before {
-  content: '';
-  background: url('../assets/icon/Star_icon_win.svg');
+  content: "";
+  background: url("../assets/icon/Star_icon_win.svg");
   width: 14px;
   height: 14px;
   display: block;
@@ -2795,14 +2748,13 @@ button {
 }
 
 .button__go__play::after {
-  content: '';
-  background: url('../assets/icon/ArrowRight__Play.svg');
+  content: "";
+  background: url("../assets/icon/ArrowRight__Play.svg");
   width: 10px;
   height: 10px;
   display: block;
   margin-left: 4px;
 }
-
 
 .chat-input {
   border-top: 1px solid #1f1704;
@@ -2843,7 +2795,6 @@ button {
   max-width: 18px;
 }
 
-
 .chat-input input {
   flex: 1;
   padding: 12px 16px;
@@ -2861,4 +2812,285 @@ button {
   color: #a68e62;
   font-weight: 400;
   font-size: 16px;
+}
+/* ====================== АДАПТАЦИЯ ДО 425PX ====================== */
+@media (max-width: 425px) {
+  body {
+    font-size: 13px;
+    overflow-x: hidden;
+  }
+  .background {
+    top: 0;
+    left: 0;
+  }
+
+  .header {
+    margin-left: 0;
+    /* padding: 8px 12px; */
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .wrap {
+    padding: 0 10px;
+  }
+
+  .buttons button {
+    margin-right: 12px;
+  }
+
+  .balance {
+    display: none;
+  }
+
+  .slider {
+    margin-top: 90px;
+    border-radius: 12px;
+  }
+
+  .filter-tabs {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .tab {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .filters {
+    margin-top: 16px;
+  }
+
+  .favorites {
+    padding: 16px;
+    margin-bottom: 32px;
+  }
+
+  .games__wrap,
+  .games_bottom {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .game {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+
+  .favorites_add_game {
+    width: 100%;
+    height: 120px;
+  }
+
+  .modal__main {
+    padding: 16px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal__forms__inputs__aditional-wrap {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .modal__forms__inputs-currency,
+  .modal__forms__inputs-promocode {
+    width: 100%;
+  }
+
+  .modal__forms__button--auth {
+    gap: 12px;
+  }
+
+  .chat-window {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 90vh;
+  }
+
+  .chat__fixed__message {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .chat-input {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .input__stiker {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (max-width: 425px) {
+  .balance {
+    display: none;
+    visibility: none;
+    opacity: 0;
+  }
+  .header__wrap {
+    justify-content: start;
+    margin: 0;
+  }
+  .filter-tabs {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    gap: 8px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-tabs .tab {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    min-width: 120px;
+  }
+
+  .games_bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .games_bottom .game {
+    display: block;
+  }
+
+  .games_bottom .game:nth-child(n + 5) {
+    display: none;
+  }
+  .games_bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .games_bottom .game {
+    display: block;
+  }
+
+  .games_bottom .game:nth-child(n + 5) {
+    display: none;
+  }
+  /* .transactions__list_img {
+    grid-template-columns: repeat(4, 1fr);
+  } */
+
+  /* .transactions__list_img img:nth-child(n + 5) {
+    grid-column: span 2;
+  } */
+  .filter-tabs {
+    width: 0;
+    display: none;
+    visibility: none;
+    opacity: 0;
+  }
+  .games__wrap {
+  }
+  .language {
+    width: 0;
+    display: none;
+    visibility: none;
+    opacity: 0;
+  }
+  .auth_container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .wrap.header__wrap {
+    width: 425px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .header {
+    margin-left: 0;
+  }
+  .buttons {
+    display: flex;
+  }
+  .modal__login {
+    box-sizing: border-box;
+    width: 425px;
+    padding: 0;
+  }
+  .modal__register {
+    box-sizing: border-box;
+    width: 425px;
+    padding: 0;
+  }
+  .modal__main {
+    display: block;
+    min-width: none;
+    width: 100%;
+    padding: 0;
+  }
+  .modal__add {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 116px;
+    border-radius: 12px;
+  }
+  .modal__add img {
+    width: 330px;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+  .modal__text-auth {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  .modal__forms {
+    width: 100%;
+  }
+  .main__wrap {
+    display: block;
+  }
+  .modal__button-close {
+    display: flex;
+    justify-content: start;
+  }
+  .modal__button--img {
+    padding: 15px 20px 0 0;
+  }
+  .modal__search__container {
+    width: 425px;
+  }
+  .advantages__list {
+    grid-template-columns: repeat(2, 1fr); /* по 2 в ряд на маленьких экранах */
+  }
+  .transactions__list_img {
+    display: grid;
+    grid-template-columns: repeat(4, 0.7fr);
+    gap: 10px;
+    align-items: center;
+    place-items: center;
+  }
+
+  .transactions__list_img img:nth-child(n + 5) {
+    grid-column: span 1;
+  }
+
+  .transactions__list_img img:nth-child(n + 5) {
+    grid-row: 2;
+  }
+  .modal__button--img1 {
+    padding: 20px 20px 0 0;
+  }
 }

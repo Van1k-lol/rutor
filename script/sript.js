@@ -48,7 +48,8 @@ const closeModal = event => {
         modalWind.style.visibility = 'hidden';
         modalWind.style.opacity = 0;
         // modalWind.style.display = "none"
-        document.body.classList.remove('modal-open');
+        document.body.classList.remove('modal-open')
+        document.documentElement.classList.remove('modal-open');;
         modalLoginEmailInput.value = ""
         modalLoginEmailPassword.value = ""
         modalContainerBox.classList.remove('checked');
@@ -60,6 +61,7 @@ const closeModal = event => {
         modalRegWind.style.opacity = 0;
         // modalRegWind.style.display = "none"
         document.body.classList.remove('modal-open');
+        document.documentElement.classList.remove('modal-open');
         modalLoginEmailInput.value = ""
         modalLoginEmailPassword.value = ""
         modalContainerBox.classList.remove('checked');
@@ -71,12 +73,14 @@ const openModal = () => {
     modalWind.style.visibility = 'visible'
     modalWind.style.opacity = 1;
     document.body.classList.add('modal-open');
+    document.documentElement.classList.add('modal-open');
 }
 
 const openRegModal = () => {
      modalRegWind.style.visibility = 'visible'
     modalRegWind.style.opacity = 1;
     document.body.classList.add('modal-open');
+    document.documentElement.classList.add('modal-open');
 }
 const closeRegModal = event = {
     

@@ -509,13 +509,6 @@ button {
   margin-bottom: 46px;
 }
 
-@media (max-width: 390px) {
-  .filters {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-  }
-}
 
 .filter-tabs {
   flex-wrap: wrap;
@@ -592,7 +585,7 @@ button {
   font-size: 14px;
   font-weight: 500;
   max-width: 272px;
-  height: 20px;
+  height: 40px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -2971,13 +2964,7 @@ button {
   .provider-select {
     width: 100%;
     max-width: 100%;
-    box-sizing: border-box;
   }
-
-
-
-
-
 
   .advantages__list {
     flex-wrap: wrap;
@@ -3028,6 +3015,7 @@ button {
   }
 
   .language1 {
+    margin: 0;
     margin-top: 12px;
     display: block;
     border: 1px solid #3b2b0d;
@@ -3140,7 +3128,9 @@ button {
   .nav_menu__button {
     transform: scale(0.8);
   }
-
+  .logo__img {
+    width: 100px;
+  }
 }
 
 @media (max-width: 350px) {

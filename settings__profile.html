@@ -93,51 +93,8 @@
         </div>
       </div>
     </div>
-
-
-
-    <!-- начало модалки -->
-
-    <div class="modal-overlay">
-      <div class="modal">
-        <div class="tabs">
-          <button class="tab active" id="tab1"><img src="./assets/icon/up.png" class="modal__overlay__tabs-icon">
-            Депозит</button>
-          <button class="tab" id="tab2">Выплата</button>
-          <button class="tab" id="tab3">История</button>
-        </div>
-
-        <div class="subtabs">
-          <span class="subtab active">Все</span>
-          <span class="subtab">Карта</span>
-          <span class="subtab">Электронный кошелек</span>
-        </div>
-        <div class="modal__switch-html" id="modal-switch">
-
-          <div class="section">
-            <label>Карта</label>
-            <div class="input-row">
-              <div class="input-box"><Input class="input-box"></Input></div>
-              <div class="input-box"><Input class="input-box"></Input></div>
-            </div>
-          </div>
-
-          <div class="section">
-            <label>Электронный кошелек</label>
-            <div class="input-box large"><Input class="input-box large"></Input></div>
-          </div>
-        </div>
-
-        <button class="bottom-button">Не нашли платежную систему?</button>
-      </div>
-    </div>
-
-    <!-- конец модалки -->
-
-
-
-
   </header>
+  <div id="modalContainerJs" class="modalContainerJs"></div>
   <main>
     <div class="first__wrap__main">
       <h1 class="profile__title">
@@ -476,23 +433,23 @@
                   <option value="female">Женский</option>
                 </select>
               </div>
-            </div>
-            <div class="buttons__container">
-              <div class="modal__balance__button-container modal__balance__button-container1" id="btnBack2">
-                <div class="modal__balance__button-shadow-bgc-correct1"></div>
-                <div class="modal__balance__button-shadow1"></div>
-                <div class="modal__balance__button-shadow-bgc1"></div>
-                <button id="modalButtonSign" class="modal__balance__button-signin modal__balance__button-signin1">
-                  <div class="text__modal__balance__button1">Отменить</div>
-                </button>
-              </div>
-              <div class="modal__balance__button-container modal__balance__button-container1 disable" id="btnSave2">
-                <div class="modal__balance__button-shadow-bgc-correct"></div>
-                <div class="modal__balance__button-shadow"></div>
-                <div class="modal__balance__button-shadow-bgc"></div>
-                <button id="modalButtonSign" class="modal__balance__button-signin">
-                  <div class="text__modal__balance__button">Сохранить</div>
-                </button>
+              <div class="buttons__container">
+                <div class="modal__balance__button-container modal__balance__button-container1" id="btnBack2">
+                  <div class="modal__balance__button-shadow-bgc-correct1"></div>
+                  <div class="modal__balance__button-shadow1"></div>
+                  <div class="modal__balance__button-shadow-bgc1"></div>
+                  <button id="modalButtonSign" class="modal__balance__button-signin modal__balance__button-signin1">
+                    <div class="text__modal__balance__button1">Отменить</div>
+                  </button>
+                </div>
+                <div class="modal__balance__button-container modal__balance__button-container1 disable" id="btnSave2">
+                  <div class="modal__balance__button-shadow-bgc-correct"></div>
+                  <div class="modal__balance__button-shadow"></div>
+                  <div class="modal__balance__button-shadow-bgc"></div>
+                  <button id="modalButtonSign" class="modal__balance__button-signin">
+                    <div class="text__modal__balance__button">Сохранить</div>
+                  </button>
+                </div>
               </div>
             </div>
 

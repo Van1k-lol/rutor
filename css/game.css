@@ -27,8 +27,7 @@ body {
 }
 
 .background {
-  background: url("../assets/img/main/main/bg_main.jpg") center no-repeat
-    #0e0a01;
+  background: url("../assets/img/main/main/bg_main.jpg") center no-repeat #0e0a01;
   position: absolute;
   z-index: -100;
   top: 105px;
@@ -243,17 +242,13 @@ button {
 }
 
 .profile__button__container {
-  background: radial-gradient(
-      68.61% 223.81% at 93.07% 3.57%,
+  background: radial-gradient(68.61% 223.81% at 93.07% 3.57%,
       rgba(249, 176, 26, 0.3) 0,
-      rgba(249, 176, 26, 0) 63.51%
-    ),
-    linear-gradient(
-      177.78deg,
+      rgba(249, 176, 26, 0) 63.51%),
+    linear-gradient(177.78deg,
       rgba(249, 176, 26, 0.1) 0.9%,
       rgba(255, 255, 255, 0.1) 38.79%,
-      rgba(249, 176, 26, 0.1) 97.18%
-    ),
+      rgba(249, 176, 26, 0.1) 97.18%),
     linear-gradient(0deg, rgba(249, 176, 26, 0.4), rgba(249, 176, 26, 0.4)),
     #1f1704;
   box-shadow: 0 0 12px #e8b11d4d, inset 0 -4px 9px #0e0a0187;
@@ -336,8 +331,7 @@ button {
   font-weight: 500;
   color: #e0caa3;
   overflow: hidden;
-  background: url("../assets/img/main/main_top/Vector.png") no-repeat
-    calc(100% - 8px) rgba(35, 27, 11, 0.7);
+  background: url("../assets/img/main/main_top/Vector.png") no-repeat calc(100% - 8px) rgba(35, 27, 11, 0.7);
   transition: all 0.2s;
 }
 
@@ -501,12 +495,14 @@ button {
   z-index: 5;
   border-radius: 24px;
 }
+
 .balance__main__wrap {
   position: relative;
   width: 536px;
   z-index: 5;
   border-radius: 24px;
 }
+
 .balance__info {
   display: flex;
   gap: 20px;
@@ -517,6 +513,7 @@ button {
   padding: 0;
   margin: 0;
 }
+
 .modal__balance-amount {
   box-sizing: border-box;
   width: 222px;
@@ -526,6 +523,7 @@ button {
   padding: 12px 20px;
   border: 1px solid var(--gray-gray-400, #3b2b0d);
 }
+
 .modal__balance-amount-img {
   width: 24px;
   height: 24px;
@@ -538,6 +536,7 @@ button {
   font-size: 14px;
   font-family: Gilroy;
 }
+
 .modal__balance-amount-text p {
   font-weight: 600;
   font-size: 20px;
@@ -555,6 +554,7 @@ button {
   padding: 12px 20px;
   border: 1px solid var(--gray-gray-400, #3b2b0d);
 }
+
 .modal__balance__bonus-amount-img {
   width: 24px;
   height: 24px;
@@ -567,6 +567,7 @@ button {
   font-size: 14px;
   font-family: Gilroy;
 }
+
 .modal__balance-bonus-amount-text p {
   font-weight: 600;
   font-size: 20px;
@@ -584,6 +585,7 @@ button {
   margin-left: 36px;
   margin-right: 20px;
 }
+
 .modal__balance__button-shadow-bgc-correct {
   position: absolute;
   top: 3px;
@@ -597,6 +599,7 @@ button {
   border-radius: 5.3px;
   transform: skew(-10deg);
 }
+
 .modal__balance__button-shadow-bgc {
   position: absolute;
   top: 0;
@@ -608,6 +611,7 @@ button {
   border-radius: 5.3px;
   transform: skew(-10deg);
 }
+
 .modal__balance__button-shadow {
   position: absolute;
   top: 0;
@@ -625,6 +629,7 @@ button {
 
   border-radius: 5.3px;
 }
+
 .modal__balance__button-signin {
   display: block;
   background:
@@ -632,22 +637,17 @@ button {
       0deg,
       var(--gray-gray-700, #1f1704),
       var(--gray-gray-700, #1f1704)
-    ), */ linear-gradient(
-      0deg,
+    ), */
+    linear-gradient(0deg,
       rgba(249, 176, 26, 0.5),
-      rgba(249, 176, 26, 0.5)
-    ),
-    linear-gradient(
-      175.46deg,
+      rgba(249, 176, 26, 0.5)),
+    linear-gradient(175.46deg,
       rgba(249, 176, 26, 0.1) 21.26%,
       rgba(255, 255, 255, 0.1) 49.63%,
-      rgba(249, 176, 26, 0.1) 93.33%
-    ),
-    radial-gradient(
-      26.11% 174.07% at 35.42% 25%,
+      rgba(249, 176, 26, 0.1) 93.33%),
+    radial-gradient(26.11% 174.07% at 35.42% 25%,
       rgba(249, 176, 26, 0.3) 0%,
-      rgba(249, 176, 26, 0) 63.51%
-    );
+      rgba(249, 176, 26, 0) 63.51%);
 
   color: #ffffff;
   text-shadow: 0 0 5px #fff, 0 0 10px #ffc14173;
@@ -663,6 +663,7 @@ button {
   overflow: visible;
   border: 1.33px solid #ffda75;
 }
+
 .modal__balance__button-signin::after {
   content: "";
   position: absolute;
@@ -673,14 +674,17 @@ button {
   bottom: -1px;
   transform: rotate(-55deg);
 }
+
 .modal__balance__button-img {
   height: 14px;
   margin-right: 6px;
 }
+
 .balance__info-buttons {
-    display: flex;
-    margin-bottom: 36px;
+  display: flex;
+  margin-bottom: 36px;
 }
+
 .modal__balance__button__withdraw-container {
   position: relative;
   width: fit-content;
@@ -688,6 +692,7 @@ button {
   width: 222px;
   margin-top: 24px;
 }
+
 .modal__balance__button__withdraw-shadow-bgc-correct {
   position: absolute;
 
@@ -702,6 +707,7 @@ button {
   border-radius: 5.3px;
   transform: skew(-10deg);
 }
+
 .modal__balance__button__withdraw-shadow-bgc {
   position: absolute;
   /* top: 0;
@@ -713,6 +719,7 @@ button {
   border-radius: 5.3px;
   transform: skew(-10deg);
 }
+
 .modal__balance__button__withdraw-shadow {
   position: absolute;
   /* top: 0;
@@ -728,30 +735,25 @@ button {
   /* 
   border: 1.33px solid; */
 
-  background: linear-gradient(
-    180deg,
-    #f9211a -43.9%,
-    #ffc7bd -12.06%,
-    #f9211a 58.45%,
-    #ff4741 100%
-  );
+  background: linear-gradient(180deg,
+      #f9211a -43.9%,
+      #ffc7bd -12.06%,
+      #f9211a 58.45%,
+      #ff4741 100%);
 
   border-radius: 5.3px;
   border: 1px #ff524c solid;
 }
+
 .modal__balance__button__withdraw-signin {
   display: block;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(249, 33, 26, 0.4),
-      rgba(249, 33, 26, 0.4)
-    ),
-    linear-gradient(
-      176.35deg,
+      rgba(249, 33, 26, 0.4)),
+    linear-gradient(176.35deg,
       rgba(249, 33, 26, 0.425) 0.88%,
       rgba(255, 255, 255, 0.144) 37.88%,
-      rgba(249, 33, 26, 0.1) 94.9%
-    );
+      rgba(249, 33, 26, 0.1) 94.9%);
 
   color: #ffffff;
   text-shadow: 0 0 5px #fff, 0 0 10px #ffc14173;
@@ -767,6 +769,7 @@ button {
   overflow: visible;
   border: 1px #ff524c solid;
 }
+
 .modal__balance__button__withdraw-signin::after {
   content: "";
   position: absolute;
@@ -777,12 +780,166 @@ button {
   bottom: -1px;
   transform: rotate(-55deg);
 }
+
 .modal__balance__button-img {
   height: 14px;
   margin-right: 6px;
 }
+
 .modal__balance__button__withdraw-img {
   transform: rotate(180deg);
   height: 14px;
   margin-right: 6px;
+}
+
+
+
+
+
+
+
+
+.profile__nav {
+  flex-direction: column;
+  background: #161003;
+  border: 1px solid #251c06;
+  border-radius: 16px;
+  max-width: 241px;
+  width: 100%;
+  overflow: hidden;
+  padding: 16px 0;
+  max-height: 264px;
+}
+
+.profile__nav__item.active {
+  background: #1f1704;
+  color: #fff;
+  border-left: 5px solid #e8b21d;
+}
+
+.profile__nav__item {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #7c612f;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.profile__nav__item span {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 650px) {
+  .header {
+    margin-bottom: 24px;
+  }
+
+  .header__wrap {}
+
+  .logo__img {
+    max-width: 120px;
+  }
+  .header-buttons{
+    gap: 17px;
+  }
+
+  .balance-wrapper {
+    width: 100px;
+  }
+
+  .balance-wrapper::before {
+    width: 100px;
+  }
+
+  .balance-button {
+    width: 83px;
+    min-width: 81px;
+    max-width: 84px;
+    padding: 3px 6px 3px 9px;
+  }
+
+  .balance-label {
+    font-weight: 500;
+    font-size: 10px;
+  }
+
+  .balance-value {
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .profile__button__container {
+    max-width: 107px;
+    padding: 10px 14px;
+  }
+
+  .profile-button::before {
+    width: 105px;
+    left: -4px;
+  }
+
+  .profile-icon {
+    display: none;
+  }
+
+  .level-badge {
+    display: none;
+  }
+
+  .profile-text {
+    font-weight: 700;
+    font-size: 14px;
+    text-shadow: 0 0 8px 0 rgba(255, 193, 65, 0.45);
+    display: flex;
+  }
+
+  .profile-text::before {
+    content: '';
+    background: url('../assets/icon/user__link__to__profile.svg');
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-right: 4px;
+  }
+
+  .language {
+    display: none;
+  }
+
+  main {
+    padding: 0 16px;
+  }
+
+  .profile__main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .profile__nav {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .content__container {
+    max-width: 100%;
+  }
+  
+}
+
+@media (max-width: 390px) {
+  .logo__img {
+    max-width: 100px;
+  }
+  
 }

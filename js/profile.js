@@ -64,4 +64,11 @@ Btn.addEventListener('click', () => {
   }
 });
 
-
+  window.addEventListener('DOMContentLoaded', () => {
+    // или до конкретной активной карточки
+    const activeSlide = container.querySelector('.profile__slide.active');
+    if (activeSlide) {
+      const offset = activeSlide.offsetLeft - 120; // небольшой отступ слева
+      container.scrollLeft = offset;
+    }
+  });

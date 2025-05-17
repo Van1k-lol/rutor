@@ -1,3 +1,8 @@
+.content__container__top{
+  background: url('../assets/img/levels/bg4_4.png') no-repeat, #1f1704;
+}
+
+
 .bonuses__level__container {
   display: flex;
   gap: 17px;
@@ -184,4 +189,21 @@
   font-size: 24px;
   color: #fed970;
   font-family: Gilroy;
+}
+@media (max-width: 650px) {
+  .content__container__top {
+    flex-direction: column;
+    max-width: 100%;
+    /* или конкретная ширина */
+    /* или auto, или 100vh и т.п. */
+    background-size: cover;
+    /* Растягивает картинку, сохраняя пропорции */
+    background-position: center;
+    /* Центрирует изображение */
+    background-repeat: no-repeat;
+    /* Убирает повторение */
+    gap: 15px;
+    align-items: center;
+  }
+  
 }

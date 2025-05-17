@@ -99,7 +99,7 @@ const errorText = document.getElementById('passwordError');
 changePasswordBtn.addEventListener('click', () => {
   changePasswordBtn.style.display = 'none';
   passwordContent.style.display = 'none';
-  changePasswordContainer.style.display = 'block';
+  changePasswordContainer.style.display = 'flex';
 });
 
 // Скрыть блок смены пароля (отмена)

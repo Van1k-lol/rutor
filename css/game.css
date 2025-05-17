@@ -153,7 +153,7 @@ button {
   position: absolute;
   left: -5px;
   top: 3px;
-  width: 107px;
+  width: 130px;
   height: 100%;
   border-radius: 5.3px;
   transform: skew(-11deg);
@@ -343,6 +343,7 @@ button {
 .main {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 0 16px;
 }
 
 .main_top {
@@ -513,7 +514,9 @@ button {
   padding: 0;
   margin: 0;
 }
-
+.modal__balance-amount1{
+  width: 100%;
+}
 .modal__balance-amount {
   box-sizing: border-box;
   width: 222px;
@@ -834,10 +837,61 @@ button {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  .balance-modal {
+    left: -80px;
+    width: 358px;
+    max-width: 500px;
+  }
 
+  .modal__balance__main {
+    width: 358px;
+    max-width: 500px;
+  }
+
+  .balance__main__wrap {
+    width: 358px;
+    max-width: 500px;
+  }
+
+  .balance__info {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 26px;
+  }
+
+  .balance__info-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal__balance-amount{
+    width: 100%;
+  }
+  .modal__balance-amount-bonus{
+    width: 100%;
+  }
+
+  .modal__balance__button-container {
+    margin: 0;
+  }
+}
 
 
 @media (max-width: 650px) {
+  .name_game{
+    font-size: 14px;
+  }
+  .link_to_game{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .link_text{
+    text-align: center;
+  }
+    .balance-modal {
+    left: -130px;
+  }
   .header {
     margin-bottom: 24px;
   }
@@ -847,7 +901,8 @@ button {
   .logo__img {
     max-width: 120px;
   }
-  .header-buttons{
+
+  .header-buttons {
     gap: 17px;
   }
 
@@ -934,12 +989,12 @@ button {
   .content__container {
     max-width: 100%;
   }
-  
+
 }
 
 @media (max-width: 390px) {
   .logo__img {
     max-width: 100px;
   }
-  
+
 }

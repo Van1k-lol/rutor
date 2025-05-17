@@ -95,6 +95,7 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+
 /* ===========КОНТЕЙНЕР МЕЙНА============= */
 
 .first__wrap__main {
@@ -117,6 +118,7 @@ button {
   display: flex;
   max-width: 1200px;
   width: 100%;
+  gap: 32px;
 }
 
 /*================= НАВИГАЦИЯ=============== */
@@ -126,7 +128,6 @@ button {
   background: #161003;
   border: 1px solid #251c06;
   border-radius: 16px;
-  max-width: 241px;
   overflow: hidden;
   padding: 16px 0;
   max-height: 264px;
@@ -159,6 +160,7 @@ button {
 
 .profile__right__part {
   position: relative;
+  width: 100%;
 }
 
 .profile__slider__wrapper {
@@ -209,11 +211,9 @@ button {
 }
 
 .profile__slide.level__1 {
-  background: linear-gradient(
-    180deg,
-    rgba(155, 78, 38, 0.5) 0%,
-    rgba(53, 27, 13, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(155, 78, 38, 0.5) 0%,
+      rgba(53, 27, 13, 0) 100%);
 }
 
 .profile__slide {
@@ -241,11 +241,9 @@ button {
 
 .profile__slide.open.level__2 {
   background: url("../assets/img/levels/bg2.png"),
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(124, 229, 101, 0.5) 0%,
-      rgba(53, 27, 13, 0) 100%
-    );
+      rgba(53, 27, 13, 0) 100%);
 }
 
 .profile__slide.open.level__3 {
@@ -254,11 +252,9 @@ button {
 }
 
 .profile__slide.open.level__4 {
-  background: linear-gradient(
-    180deg,
-    rgba(124, 229, 101, 0.5) 0%,
-    rgba(53, 27, 13, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(124, 229, 101, 0.5) 0%,
+      rgba(53, 27, 13, 0) 100%);
 }
 
 .profile__slide.level__3 {
@@ -276,11 +272,9 @@ button {
 
 .profile__slide.open.level__4 {
   background: url("../assets/img/levels/bg4.png"),
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(172, 87, 30, 0.5) 0%,
-      rgba(172, 87, 30, 0) 100%
-    );
+      rgba(172, 87, 30, 0) 100%);
 }
 
 .profile__slide.level__5 {
@@ -289,11 +283,9 @@ button {
 
 .profile__slide.open.level__5 {
   background: url("../assets/img/levels/bg5.png"),
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(30, 101, 172, 0.5) 0%,
-      rgba(30, 101, 172, 0) 100%
-    );
+      rgba(30, 101, 172, 0) 100%);
 }
 
 .profile__slide.level__6 {
@@ -302,11 +294,9 @@ button {
 
 .profile__slide.open.level__6 {
   background: url("../assets/img/levels/bg6.png"),
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(165, 78, 246, 0.5) 0%,
-      rgba(165, 78, 246, 0) 100%
-    );
+      rgba(165, 78, 246, 0) 100%);
 }
 
 .profile__slide.level__7 {
@@ -324,11 +314,9 @@ button {
 
 .profile__slide.open.level__8 {
   background: url("../assets/img/levels/bg8.png"),
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(255, 104, 63, 0.5) 0%,
-      rgba(255, 104, 63, 0) 100%
-    );
+      rgba(255, 104, 63, 0) 100%);
 }
 
 .profile__slide.level__9 {
@@ -337,11 +325,9 @@ button {
 
 .profile__slide.open.level__9 {
   background: url("../assets/img/levels/bg9.png"),
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       rgba(255, 127, 63, 0.5) 0%,
-      rgba(255, 127, 63, 0) 100%
-    );
+      rgba(255, 127, 63, 0) 100%);
 }
 
 .profile__slide.level__10 {
@@ -437,6 +423,7 @@ button {
 
 .profile__content__wrap {
   max-width: 927px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -478,9 +465,6 @@ button {
   background-size: cover;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  background-position: center;
-  display: flex;
-  justify-content: space-between;
   padding: 12px 20px;
 }
 
@@ -512,7 +496,7 @@ button {
   right: 0px;
 }
 
-.your__progress__bottom {
+/* .your__progress__bottom {
   margin: 12px 12px 14px 12px;
   background: #251c06;
   border: 1px solid #3b2b0d;
@@ -559,7 +543,57 @@ button {
   width: 440px;
   height: 8px;
   border-radius: 8px;
+} */
+
+
+
+.your__progress__bottom {
+  margin: 12px;
+  background: #251c06;
+  border: 1px solid #3b2b0d;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 20px 16px;
 }
+
+.progress__to__next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.progress__to__next__title,
+.progress__to__next__percent {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  color: #ffffff;
+}
+
+.progress__bar__wrapper {
+  width: 100%;
+}
+
+.progress__bar__background {
+  width: 100%;
+  height: 8px;
+  background: #7c612f;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress__bar__fill {
+  height: 8px;
+  background: #e8b21d;
+  border-radius: 8px;
+  transition: width 0.3s ease-in-out;
+}
+
+
 
 .your__progress__tasks {
   display: flex;
@@ -667,8 +701,26 @@ button {
 .bonuses__level__container {
   display: flex;
   gap: 17px;
+  flex-wrap: wrap; /* позволяет элементам переноситься */
 }
 
+.bonuse__level__item {
+  border-radius: 12px;
+  padding: 13px 36px;
+  flex: 1;
+  overflow: hidden;
+  height: 51px;
+}
+.bonuse__item__title{
+  margin-bottom: 8px;
+}
+.bonuse__item__desc {
+  font-weight: 600;
+  font-size: 24px;
+  color: #fed970;
+  font-family: Gilroy;
+  margin: 8px 0 0 0;
+}
 .rules {
   border: 1px solid #251c06;
   border-radius: 16px;
@@ -728,3 +780,101 @@ button {
   transform: rotate(180deg);
 }
 
+@media (max-width: 1200px) {
+  .bonuse__item__title::after {
+    display: none;
+  }
+}
+@media (max-width: 1050px) {
+  .bonuses__level__container {
+    flex-wrap: wrap;
+  }
+
+  .bonuses__level__container .bonuse__level__item:nth-child(3) {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .profile__slider__wrapper{
+    left: -620px;
+  }
+  .profile__slider{
+    position: absolute;
+    left: 560px;
+  }
+  .profile__content__wrap {
+    max-width: 100%;
+    width: 100%;
+  }
+  .profile__content__container{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .content__container__top {
+    flex-direction: column;
+    max-width: 100%;
+    /* или конкретная ширина */
+    /* или auto, или 100vh и т.п. */
+    background-size: cover;
+    /* Растягивает картинку, сохраняя пропорции */
+    background-position: center;
+    /* Центрирует изображение */
+    background-repeat: no-repeat;
+    /* Убирает повторение */
+    gap: 15px;
+    align-items: center;
+  }
+  .content__container__top.level__2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  .your__progress{
+    max-width: 100%;
+  }
+  .progress__bottom__progressbar__container{
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .progress__bottom__progressbar{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  .your__progress__tasks{
+    width: 100%;
+    max-width: 100%
+  }
+.task {
+    display: flex;
+    background: url(../assets/img/levels/bg_task.png) no-repeat, rgba(255, 237, 189, 0.11);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 50px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+@media (max-width: 555px) {
+
+  .bonuses__level__container .bonuse__level__item:nth-child(2), .bonuses__level__container .bonuse__level__item:nth-child(3) {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .your__progress__top img{
+    display: none;
+  }
+  .bonuses__level__container{
+    flex-direction: column;
+  }
+  .bonuse__level__item{
+    min-height: 51px;
+  }
+}

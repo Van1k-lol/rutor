@@ -24,11 +24,11 @@
         <div class="header-buttons">
           <!-- Баланс -->
           <div class="balance-wrapper">
-            <button class="balance-button" id="balanceButton">
+            <div class="balance-button" id="balanceButton">
               <div class="balance-label">Баланс</div>
               <div class="balance-value">0.00 USD</div>
               <img src="./assets/img/bonuses/arrowdown.svg" alt="arrow" class="arrow-icon" />
-            </button>
+            </div>
 
             <!-- Модалка -->
             <div class="balance-modal hidden" id="balanceModal">
@@ -245,7 +245,7 @@
                     <div class="text__modal__balance__button1">Отменить</div>
                   </button>
                 </div>
-                <div class="modal__balance__button-container modal__balance__button-container1 disable" id="btnSave">
+                <div class="modal__balance__button-container modal__balance__button-container1 modal__balance__button-container-save disable" id="btnSave">
                   <div class="modal__balance__button-shadow-bgc-correct"></div>
                   <div class="modal__balance__button-shadow"></div>
                   <div class="modal__balance__button-shadow-bgc"></div>
@@ -306,7 +306,7 @@
                     <div class="text__modal__balance__button1">Отменить</div>
                   </button>
                 </div>
-                <div class="modal__balance__button-container modal__balance__button-container1 disable" id="btnSave1">
+                <div class="modal__balance__button-container modal__balance__button-container1 modal__balance__button-container-password disable" id="btnSave1">
                   <div class="modal__balance__button-shadow-bgc-correct"></div>
                   <div class="modal__balance__button-shadow"></div>
                   <div class="modal__balance__button-shadow-bgc"></div>
@@ -394,7 +394,7 @@
                 </div>
               </div>
 
-              <div class="name__surname__container" style="margin-bottom: 20px;">
+              <div class="name__surname__container name__surname__container1">
                 <div class="modal__search__search">
                   <div class="input-wrapper input-wrapper1">
                     <input type="text" id="country" autocomplete="off" placeholder="Страна">
@@ -410,7 +410,7 @@
                 </div>
               </div>
 
-              <div class="name__surname__container" style="margin-bottom: 36px;">
+              <div class="name__surname__container name__surname__container2">
                 <div class="modal__search__search">
                   <div class="input-wrapper input-wrapper1">
                     <input type="text" id="address" autocomplete="off" placeholder="Адрес">
@@ -426,7 +426,7 @@
                 </div>
               </div>
 
-              <div class="custom-select" style="max-width: 156px;">
+              <div class="custom-select custom-select1">
                 <select id="gender">
                   <option disabled selected>Пол</option>
                   <option value="male">Мужской</option>
@@ -484,61 +484,106 @@
   </main>
     <div class="about__us__border"></div>
   <div class="footer__wrapper">
-  <footer class="footer">
-    <div class="footer__header">
-      <div class="change__language">
-        <div class="change__language__title">Выберите язык</div>
-        <select class="language">
+    <footer class="footer">
+      <div class="footer__header">
+        <div class="change__language">
+          <div class="change__language__title">Выберите язык</div>
+          <select class="language">
             <option>RU</option>
             <option>EN</option>
           </select>
+        </div>
+        <div class="other__buttons">
+          <div class="footer__button">
+            Турниры
+          </div>
+          <div class="footer__button">
+            Служба поддержки
+          </div>
+          <div class="footer__button">
+            Правила и условия
+          </div>
+        </div>
       </div>
-      <div class="other__buttons">
-        <div class="footer__button">
-          Турниры
-        </div>
-        <div class="footer__button">
-          Служба поддержки
-        </div>
-        <div class="footer__button">
-          Правила и условия
-        </div>
+      <div class="select__language-footer">
+        <div>Выберите язык</div>
+        <select class="language language1">
+          <option>RU</option>
+          <option>EN</option>
+        </select>
       </div>
-    </div>
-
-    <div class="transactions">
-      <div class="transactions__title">Удобные транзакции</div>
-      <div class="transactions__list_img">
+      <div class="rules">
+        <div class="conditions">
+          <div class="rules__title">Навигация</div>
+          <div><img src="./assets/img/levels/arrow_downRules.svg" alt=""></div>
+        </div>
+        <ul class="conditions__list">
+          <div class="footer__button">
+            Турниры
+          </div>
+          <div class="footer__button">
+            Служба поддержки
+          </div>
+          <div class="footer__button">
+            Правила и условия
+          </div>
+        </ul>
+      </div>
+      <div class="transactions-adaptive">
         <img src="./assets/img/main/main/transactions/visa.png" alt="">
         <img src="./assets/img/main/main/transactions/master_card.png" alt="">
         <img src="./assets/img/main/main/transactions/city_24.png" alt="">
         <img src="./assets/img/main/main/transactions/easy_pay.png" alt="">
         <img src="./assets/img/main/main/transactions/apple_pay.png" alt="">
-        <img src="./assets/img/main/main/transactions/goo_pay.png" alt="">
       </div>
-    </div>
-  
+      <div class="transactions">
+        <div class="transactions__title">Удобные транзакции</div>
+        <div class="transactions__list_img">
+          <img src="./assets/img/main/main/transactions/visa.png" alt="">
+          <img src="./assets/img/main/main/transactions/master_card.png" alt="">
+          <img src="./assets/img/main/main/transactions/city_24.png" alt="">
+          <img src="./assets/img/main/main/transactions/easy_pay.png" alt="">
+          <img src="./assets/img/main/main/transactions/apple_pay.png" alt="">
+          <img src="./assets/img/main/main/transactions/goo_pay.png" alt="">
+        </div>
+      </div>
+      <div class="transactions__adaprtive"></div>
 
-    <div class="all_rigth_received">
-      <div>© 2021-2025 Rutor Casino. Все права защищены.</div>
-      <div>Copyright © 2025 www.rutorcasino.com is owned and operated by IAMA N.V., a company registered and established
-        under the laws of Curacao. Licence Holder - IAMA N.V., Julianaplein 22,
-        Willemstad, Curacao.</div>
-      <div>All payments with Paysafe are made via IAMA N.V. It is the players sole responsibility to inquire about the
-        existing laws and regulations of the given jurisdiction for online gambling.</div>
-    </div>
+      <div class="all_rigth_received">
+        <div>© 2021-2025 Rutor Casino. Все права защищены.</div>
+        <div>Copyright © 2025 www.rutorcasino.com is owned and operated by IAMA N.V., a company registered and
+          established
+          under the laws of Curacao. Licence Holder - IAMA N.V., Julianaplein 22,
+          Willemstad, Curacao.</div>
+        <div>All payments with Paysafe are made via IAMA N.V. It is the players sole responsibility to inquire about the
+          existing laws and regulations of the given jurisdiction for online gambling.</div>
+      </div>
 
 
-    <div class="sponsors">
-      <a href="#"><img src="./assets/img/main/main/footer/gamCare.png" alt=""></a>
-      <a href="#"><img src="./assets/img/main/main/footer/gambing.png" alt=""></a>
-      <a href="#"><img src="./assets/img/main/main/footer/begameble.png" alt=""></a>
-      <a href="#"><img src="./assets/img/main/main/footer/21+png.png" alt=""></a>
-      <a href="#"><img src="./assets/img/main/main/footer/sslsecure.png" alt=""></a>
-      <a href="#"><img src="./assets/img/main/main/footer/dmcaprotected.png" alt=""></a>
-    </div>
-  </footer>
-</div>
+      <div class="sponsors">
+        <a href="#"><img src="./assets/img/main/main/footer/gamCare.png" alt=""></a>
+        <a href="#"><img src="./assets/img/main/main/footer/gambing.png" alt=""></a>
+        <a href="#"><img src="./assets/img/main/main/footer/begameble.png" alt=""></a>
+        <a href="#"><img src="./assets/img/main/main/footer/21+png.png" alt=""></a>
+        <a href="#"><img src="./assets/img/main/main/footer/sslsecure.png" alt=""></a>
+        <a href="#"><img src="./assets/img/main/main/footer/dmcaprotected.png" alt=""></a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const Btn1 = document.querySelector('.conditions');
+    const navListFooter = document.querySelector('.conditions__list');
+    Btn1.addEventListener('click', () => {
+      if (navListFooter.classList.contains('active')) {
+        navListFooter.classList.remove('active');
+        Btn1.classList.remove('active');
+      } else {
+        navListFooter.classList.add('active');
+        Btn1.classList.add('active');
+      }
+    });
+
+  </script>
 </body>
 
 </html>

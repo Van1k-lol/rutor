@@ -128,7 +128,6 @@ button {
   background: #161003;
   border: 1px solid #251c06;
   border-radius: 16px;
-  max-width: 241px;
   overflow: hidden;
   padding: 16px 0;
   margin-right: 32px;
@@ -754,4 +753,34 @@ button {
   position: absolute;
   bottom: -35px;
   right: -36px;
+}
+
+@media (max-width: 650px) {
+  .profile__slider__wrapper{
+    left: -620px;
+  }
+  .profile__slider{
+    position: absolute;
+    left: 560px;
+  }
+  .profile__content__wrap {
+    max-width: 100%;
+    width: 100%;
+  }
+  .content__container__top {
+    flex-direction: column;
+    max-width: 100%;
+    /* или конкретная ширина */
+    /* или auto, или 100vh и т.п. */
+    background-size: cover;
+    /* Растягивает картинку, сохраняя пропорции */
+    background-position: center;
+    /* Центрирует изображение */
+    background-repeat: no-repeat;
+    /* Убирает повторение */
+    gap: 15px;
+    align-items: center;
+  }
+  
+
 }

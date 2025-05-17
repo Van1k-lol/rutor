@@ -400,6 +400,9 @@ button {
   line-height: 150%;
   cursor: pointer;
 }
+.select__language-footer {
+  display: none;
+}
 .rules {
   margin: 35px 0 32px 0;
   border: 1px solid #251c06;
@@ -463,6 +466,19 @@ button {
   transform: rotate(180deg);
 }
 
+.transactions-adaptive{
+  display: none;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(35, 27, 11, 0.7);
+  margin: 0 -16px;
+  padding: 8px 0;
+}
+.transactions-adaptive img{
+  width: 100%;
+  max-width: 73px;
+}
 
 .transactions {
   display: flex;
@@ -485,11 +501,7 @@ button {
   max-width: 650px;
 }
 
-@media (max-width: 390px) {
-  .transactions {
-    display: none;
-  }
-}
+
 
 .all_rigth_received {
   font-weight: 400;
@@ -583,6 +595,9 @@ button {
 
   .rules{
     display: block;
+  }
+    .transactions-adaptive {
+    display: flex;
   }
   .transactions {
     display: none;

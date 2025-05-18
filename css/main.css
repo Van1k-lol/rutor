@@ -147,14 +147,6 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 390px) {
-  .balance {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-  }
-}
-
 .logo__img {
   max-width: 100%;
 }
@@ -524,14 +516,6 @@ button {
   display: flex;
   flex-direction: column;
   margin-bottom: 46px;
-}
-
-@media (max-width: 390px) {
-  .filters {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-  }
 }
 
 .filter-tabs {
@@ -1095,14 +1079,6 @@ button {
   gap: 10px; /* Отступы между элементами */
 }
 
-@media (max-width: 390px) {
-  .transactions__list_img {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-  }
-}
-
 /* ===================== footer ======================= */
 
 .footer {
@@ -1173,22 +1149,6 @@ button {
   overflow-y: auto;
   background: #00000061;
   /* visibility: hidden; */
-}
-
-@media (max-width: 390px) {
-  .modal__login {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-  }
-}
-
-@media (max-width: 390px) {
-  .modal__register {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-  }
 }
 
 .modal__main {
@@ -2439,7 +2399,9 @@ button {
 /* =================ЧАТ=========================== */
 /* =================ЧАТ=========================== */
 /* =================ЧАТ=========================== */
-
+.main__wraper {
+  padding: 0 88px;
+}
 .chat-window {
   position: fixed;
   bottom: 24px;
@@ -2814,6 +2776,132 @@ button {
   font-size: 16px;
 }
 /* ====================== АДАПТАЦИЯ ДО 425PX ====================== */
+@media (max-width: 1300px) {
+  .modal__search {
+    left: 80px;
+  }
+
+  .modal__search__container {
+    width: 950px;
+  }
+
+  .filter__modal__container {
+    width: 950px;
+  }
+
+  .filter__modal {
+    left: 90px;
+  }
+
+  .providers_list label,
+  .filter__active__container div {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .modal__search__container {
+    width: 600px;
+  }
+
+  .modal__search__search::after {
+    left: 8%;
+  }
+
+  .filter__modal__container {
+    width: 750px;
+  }
+}
+
+@media (max-width: 850px) {
+  .filter__modal__container {
+    width: 570px;
+  }
+
+  .providers_list label,
+  .filter__active__container div {
+    width: 120px;
+  }
+
+  .providers_list label span {
+    width: 15px;
+    height: 15px;
+  }
+
+  .providers_list {
+    justify-content: space-between;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    padding: 0 16px;
+    margin: 0;
+  }
+
+  .header__wrap {
+    justify-content: start;
+  }
+
+  .wrap.header__wrap {
+    /* width: 425px; */
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 10px;
+  }
+  .nav_menu {
+    padding: 12px 20px 12px 20px;
+    border: none;
+    border-top: 1px solid #1f1704;
+    background: #0e0a01;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 84px;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    gap: 20px;
+    z-index: 10000;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav_menu__button {
+    margin-bottom: 0px;
+    width: 60px;
+  }
+
+  .modal__search {
+    left: 0px;
+  }
+
+  .filter__modal {
+    left: 0px;
+  }
+
+  .modal__search__grid.active {
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    column-gap: 15px;
+  }
+
+  .game-card {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 460px) {
+  .providers_list label,
+  .filter__active__container div {
+    /* width: 45%; */
+  }
+}
+
 @media (max-width: 425px) {
   body {
     font-size: 13px;
@@ -2844,7 +2932,7 @@ button {
   }
 
   .slider {
-    margin-top: 90px;
+    margin-top: 100px;
     border-radius: 12px;
   }
 
@@ -2882,7 +2970,7 @@ button {
 
   .favorites_add_game {
     width: 100%;
-    height: 120px;
+    /* height: 120px; */
   }
 
   .modal__main {
@@ -2937,7 +3025,7 @@ button {
     opacity: 0;
   }
   .header__wrap {
-    justify-content: start;
+    justify-content: space-between;
     margin: 0;
   }
   .filter-tabs {
@@ -2974,9 +3062,9 @@ button {
     gap: 10px;
   }
 
-  .games_bottom .game {
-    display: block;
-  }
+  /* .games_bottom .game {
+    display: flex;
+  } */
 
   .games_bottom .game:nth-child(n + 5) {
     display: none;
@@ -2988,7 +3076,7 @@ button {
   }
 
   .games_bottom .game {
-    display: block;
+    display: flex;
   }
 
   .games_bottom .game:nth-child(n + 5) {
@@ -3020,25 +3108,26 @@ button {
     flex-wrap: nowrap;
   }
   .wrap.header__wrap {
-    width: 425px;
+    /* width: 425px; */
     display: flex;
     flex-wrap: nowrap;
     padding: 0;
   }
   .header {
     margin-left: 0;
+    padding: 0;
   }
   .buttons {
     display: flex;
   }
   .modal__login {
     box-sizing: border-box;
-    width: 425px;
+    /* width: 425px; */
     padding: 0;
   }
   .modal__register {
     box-sizing: border-box;
-    width: 425px;
+    /* width: 425px; */
     padding: 0;
   }
   .modal__main {
@@ -3141,10 +3230,14 @@ button {
   }
   .filters__tabs-wrap {
     /* overflow-x: auto; */
-    width: 390px;
+    /* width: 390px; */
+    margin-right: 14px;
   }
 }
 @media (max-width: 450px) {
+  /* .filter__active__container div {
+    width: 120px;
+  } */
   .nav_menu {
     padding: 12px 20px 12px 20px;
     border: none;
@@ -3161,6 +3254,30 @@ button {
     left: 0;
     gap: 20px;
     z-index: 10000;
+  }
+  .header {
+    padding: 0;
+  }
+  .transactions {
+    padding: 0 18px;
+  }
+  .main__wraper {
+    padding: 0;
+  }
+  .modal__search__container {
+    max-height: 100%;
+  }
+  .filter__modal__container {
+    max-height: 100%;
+  }
+  .modal__search__content {
+    padding: 0 10px 32px 10px;
+  }
+  .modal__search__search::after {
+    left: 12%;
+  }
+  .filter__active__container div {
+    width: 45%;
   }
 
   .nav_menu__button {

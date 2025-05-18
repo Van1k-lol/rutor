@@ -1,16 +1,16 @@
 /* https://www.figma.com/design/Pq7DUAlrfmUONtpP1uc5h6/Rutor-Casino?node-id=223-9693&t=xo8hC4pJdnAI0PyP-0 */
+html {
+  overflow-x: hidden;
+}
+html.modal-open {
+  overflow-y: hidden;
+}
 
 @font-face {
   font-family: Gilroy;
   src: url("../assets/fonts/gilroy/Gilroy-Regular.ttf");
   font-weight: normal;
   font-style: normal;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 body.modal-open {
@@ -27,12 +27,11 @@ body {
   height: 100%;
   color: #ffffff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  box-sizing: border-box;
 }
 
 .background {
-  background: url("../assets/img/main/main/bg_main.jpg") center / cover
-    no-repeat #0e0a01;
+  background: url("../assets/img/main/main/bg_main.jpg") center no-repeat
+    #0e0a01;
   position: absolute;
   z-index: -100;
   top: 105px;
@@ -118,17 +117,17 @@ button {
   max-height: 104px;
 }
 
-.main__wraper {
-  padding: 0 88px;
+@media (max-width: 390px) {
+  .header {
+    width: 390px;
+  }
 }
 
 .wrap {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 15px;
   box-sizing: border-box;
-  width: 100%;
-  /* можно добавить */
 }
 
 .header__wrap {
@@ -136,13 +135,6 @@ button {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.balance,
-.logo,
-.auth_container {
-  flex-shrink: 1;
-  min-width: 0;
 }
 
 .balance {
@@ -159,11 +151,8 @@ button {
   max-width: 100%;
 }
 
-.login {
-  margin-right: 24px;
-}
-
 .buttons button {
+  margin-right: 24px;
   font-size: 16px;
   font-weight: 500;
   position: relative;
@@ -314,7 +303,6 @@ button {
   background: url("../assets/img/main/main_top/Vector.png") no-repeat
     calc(100% - 8px) rgba(35, 27, 11, 0.7);
   transition: all 0.2s;
-  margin-left: 24px;
 }
 
 .language:hover {
@@ -334,8 +322,13 @@ button {
   left: 0;
   height: 100%;
   display: block;
-  z-index: 10000;
-  background: #0e0a01;
+}
+@media (max-width: 425px) {
+  .nav_menu {
+    /* visibility: hidden;
+    opacity: 0;
+    display: none; */
+  }
 }
 
 .nav_menu__button {
@@ -600,7 +593,7 @@ button {
   font-size: 14px;
   font-weight: 500;
   max-width: 272px;
-  height: 40px;
+  height: 20px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -638,7 +631,7 @@ button {
 .games__wrap {
   display: flex;
   flex-direction: column;
-  /* width: 1200px; */
+  width: 1200px;
 }
 
 .games_top {
@@ -937,6 +930,9 @@ button {
   align-items: center;
   justify-content: space-between;
   max-width: 1152px;
+  display: grid;
+  gap: 16px; /* отступы между элементами */
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .advantages__item {
@@ -1033,7 +1029,7 @@ button {
   background: #1f1704;
 }
 
-.logo__img1 {
+.logo__img {
   margin-bottom: 12px;
 }
 
@@ -1057,10 +1053,6 @@ button {
   color: #e0caa3;
 }
 
-.select__language-footer {
-  display: none;
-}
-
 /* ===================== transactions ======================= */
 
 .transactions {
@@ -1080,10 +1072,11 @@ button {
 
 .transactions__list_img {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  /* 10 элементов в одном ряду для экрана 1440px+ */
-  gap: 10px;
-  /* Отступы между элементами */
+  grid-template-columns: repeat(
+    10,
+    1fr
+  ); /* 10 элементов в одном ряду для экрана 1440px+ */
+  gap: 10px; /* Отступы между элементами */
 }
 
 /* ===================== footer ======================= */
@@ -1094,8 +1087,6 @@ button {
   align-items: center;
   gap: 48px;
   margin-bottom: 60px;
-  background: #0e0a01;
-  padding: 0 16px 0 106px;
 }
 
 .rules {
@@ -1115,9 +1106,6 @@ button {
 }
 
 .rules__text {
-  display: flex;
-  align-items: center;
-  gap: 12px;
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
@@ -1128,8 +1116,11 @@ button {
 }
 
 .rules__img {
+  position: absolute;
   width: 40px;
   height: 40px;
+  top: 0;
+  left: -50px;
 }
 
 .sponsors {
@@ -1156,35 +1147,20 @@ button {
   cursor: pointer;
   padding: 30px;
   overflow-y: auto;
+  background: #00000061;
   /* visibility: hidden; */
-}
-
-@media (max-width: 390px) {
-  .modal__login {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-  }
-}
-
-@media (max-width: 390px) {
-  .modal__register {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-  }
 }
 
 .modal__main {
   position: relative;
   width: 1128px;
   height: 732px;
-  min-width: 600px;
+  /* min-width: 600px; */
   background-color: #0e0a01;
   margin: auto;
   color: white;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 20px;
   z-index: 1;
   cursor: default;
 }
@@ -1192,9 +1168,12 @@ button {
 .modal__add {
   width: 50%;
   align-items: center;
-  margin: 20px 0 20px 20px;
+  /* margin: 20px 0 20px 20px; */
 }
-
+.modal__add img {
+  position: absolute;
+  top: 40px;
+}
 .main__wrap {
   display: flex;
 }
@@ -1203,13 +1182,12 @@ button {
   width: 50%;
   display: flex;
   flex-direction: column;
+  margin-top: 33px;
 }
 
 .modal__button-close {
   display: flex;
   flex-direction: column;
-  width: 579px;
-  height: 85px;
   align-items: end;
   background-color: #0e0a01;
   border: #0e0a01;
@@ -1598,7 +1576,7 @@ button {
 .modal__register {
   position: fixed;
   inset: 0;
-
+  background: #00000061;
   z-index: 2;
   display: flex;
   cursor: pointer;
@@ -2300,17 +2278,9 @@ button {
 .providers_list {
   display: flex;
   flex-wrap: wrap;
-  margin: 26px 32px 81px 32px;
+  margin: 26px 32px 113px 32px;
   gap: 26px;
-  overflow-y: auto;
-}
-
-.providers_list::-webkit-scrollbar-thumb {
-  background-color: #0e0a01;
-}
-
-.providers_list::-webkit-scrollbar-track {
-  background-color: #0e0a01;
+  padding-bottom: 32px;
 }
 
 .providers_list label,
@@ -2321,7 +2291,7 @@ button {
   background: #1f1704;
   border-radius: 8px;
   padding: 8px 16px;
-  width: 191px;
+  width: 160px;
   font-weight: 500;
   font-size: 17px;
   font-family: Gilroy;
@@ -2387,82 +2357,6 @@ button {
   width: 100%;
 }
 
-@media (max-width: 425px) {
-  .filter-tabs {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 10px;
-    gap: 8px;
-    scroll-snap-type: x mandatory;
-  }
-
-  .filter-tabs::-webkit-scrollbar {
-    display: none;
-    /* скрыть скроллбар */
-  }
-
-  .filter-tabs .tab {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    border-radius: 8px;
-    min-width: 120px;
-    /* или сколько тебе нужно */
-  }
-
-  .games_bottom {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 карточки в строке */
-    gap: 10px;
-  }
-
-  .games_bottom .game {
-    display: block;
-  }
-
-  .games_bottom .game:nth-child(n + 5) {
-    display: none;
-    /* скрыть все карточки, начиная с 5-й */
-  }
-
-  .games_bottom {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 карточки в ряд */
-    gap: 10px;
-  }
-
-  .games_bottom .game {
-    display: block;
-  }
-
-  .games_bottom .game:nth-child(n + 5) {
-    display: none;
-    /* скрыть карточки, начиная с 5-й */
-  }
-
-  .filter-tabs {
-    width: 0;
-    display: none;
-    visibility: none;
-    opacity: 0;
-  }
-
-  .games__wrap {
-    width: 425px;
-  }
-
-  .auth_container {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  .buttons {
-    display: flex;
-  }
-}
-
 /* <div class="modal-overlay">
   <div class="modal" >
     <div class="tabs">
@@ -2505,7 +2399,9 @@ button {
 /* =================ЧАТ=========================== */
 /* =================ЧАТ=========================== */
 /* =================ЧАТ=========================== */
-
+.main__wraper {
+  padding: 0 88px;
+}
 .chat-window {
   position: fixed;
   bottom: 24px;
@@ -2879,38 +2775,7 @@ button {
   font-weight: 400;
   font-size: 16px;
 }
-
-/* =================АДАПТИВ==================== */
-@media (max-width: 1450px) {
-  .language {
-    width: 0;
-    display: none;
-    opacity: 0;
-  }
-
-  .header {
-    padding: 0 16px;
-    margin: 0 880px 0 88px;
-  }
-
-  .header__wrap {
-    justify-content: space-between;
-  }
-
-  .wrap.header__wrap {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 0;
-  }
-
-  .balance {
-    display: none;
-    visibility: none;
-    opacity: 0;
-  }
-}
-
+/* ====================== АДАПТАЦИЯ ДО 425PX ====================== */
 @media (max-width: 1300px) {
   .modal__search {
     left: 80px;
@@ -2980,10 +2845,10 @@ button {
   }
 
   .wrap.header__wrap {
-    width: 425px;
+    /* width: 425px; */
     display: flex;
     flex-wrap: nowrap;
-    padding: 0;
+    padding: 0 10px;
   }
   .nav_menu {
     padding: 12px 20px 12px 20px;
@@ -3033,221 +2898,386 @@ button {
 @media (max-width: 460px) {
   .providers_list label,
   .filter__active__container div {
-    width: 45%;
+    /* width: 45%; */
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 425px) {
+  body {
+    font-size: 13px;
+    overflow-x: hidden;
+  }
   .background {
-    background: url("../assets/img/main/main/bg_main.jpg") center / cover
-      no-repeat #0e0a01;
-    position: absolute;
-    z-index: -100;
-    top: -128px;
-    left: 0px;
+    top: 0;
+    left: 0;
+  }
+
+  .header {
+    margin-left: 0;
+    /* padding: 8px 12px; */
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .wrap {
+    padding: 0 10px;
+  }
+
+  .buttons button {
+    margin-right: 12px;
+  }
+
+  .balance {
+    display: none;
+  }
+
+  .slider {
+    margin-top: 100px;
+    border-radius: 12px;
+  }
+
+  .filter-tabs {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .tab {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .filters {
+    margin-top: 16px;
+  }
+
+  .favorites {
+    padding: 16px;
+    margin-bottom: 32px;
+  }
+
+  .games__wrap,
+  .games_bottom {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .game {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+
+  .favorites_add_game {
+    width: 100%;
+    /* height: 120px; */
+  }
+
+  .modal__main {
+    padding: 16px;
     width: 100%;
     height: 100%;
-    max-width: 1353px;
-    transform: scale(1.5);
   }
 
-  .modal__search__container {
-    max-height: 100%;
+  .modal__forms__inputs__aditional-wrap {
+    flex-direction: column;
+    gap: 12px;
   }
 
-  .filter__modal__container {
-    max-height: 100%;
+  .modal__forms__inputs-currency,
+  .modal__forms__inputs-promocode {
+    width: 100%;
   }
 
-  .modal__search__content {
-    padding: 0 10px 32px 10px;
+  .modal__forms__button--auth {
+    gap: 12px;
   }
 
-  .modal__search__search::after {
-    left: 12%;
+  .chat-window {
+    width: 100%;
+    left: 0;
+    bottom: 80px;
+    right: 0;
+    max-height: 90%;
+    height: auto;
   }
 
+  .chat__fixed__message {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .chat-input {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .input__stiker {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (max-width: 425px) {
   .balance {
     display: none;
     visibility: none;
     opacity: 0;
   }
-
-  .logo__img {
-    width: 120px;
-  }
-
-  .login {
-    width: 71px;
-    height: 38px;
-  }
-
-  .registration {
-    margin-right: 0;
-    width: 113px;
-    height: 38px;
-  }
-
-  .buttons button span {
-    text-align: center;
-    padding: 0;
-    width: 71px;
-    height: 38px;
-  }
-
-  .buttons .login span {
-    text-align: center;
-    padding: 0;
-    width: 71px;
-    height: 38px;
-  }
-
-  .buttons .registration span {
-    text-align: center;
-    padding: 0;
-    width: 113px;
-    height: 38px;
-  }
-
-  .buttons button span i {
-    font-weight: 700;
-    font-size: 14px;
-    text-align: center;
-    font-family: Gilroy;
-    text-shadow: 0 0 8px 0 rgba(255, 193, 65, 0.45);
-  }
-
-  .filter-controls {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .search,
-  .provider-select {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .advantages__list {
-    flex-wrap: wrap;
-    justify-content: center;
-    /* Центрирует карточки, если вдруг не влезают */
-    gap: 16px;
-    /* Добавим отступы между карточками */
-  }
-
-  .advantages__item {
-    width: 45%;
-    /* Чуть меньше 50%, чтобы влезло с отступами */
-    margin-bottom: 16px;
-  }
-
-  .advantages__item__img img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .advantages__title {
-    font-size: 20px;
-  }
-
-  .footer {
-    margin-bottom: 0;
-    padding: 0 16px;
-    gap: 30px;
-  }
-
-  .about__us__border {
+  .header__wrap {
+    justify-content: space-between;
     margin: 0;
   }
-
-  .select__language-footer {
-    margin-top: 24px;
+  .filter-tabs {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    gap: 8px;
+    scroll-snap-type: x mandatory;
   }
 
-  .select__language-footer div {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 125%;
-    text-align: center;
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
   }
 
-  .language1 {
-    margin: 0;
-    margin-top: 12px;
-    display: block;
-    border: 1px solid #3b2b0d;
-    border-radius: 16px;
-    padding: 10px 20px 10px 24px;
-    width: 129px;
-    height: 37px;
-    opacity: 1;
+  .tab.filter-active svg path {
+    fill: #e8b21d;
+  }
+  .tab.filter-active {
+    color: white;
+    border-bottom: #fed970 2px solid;
   }
 
-  .transactions {
-    padding: 0 16px;
-    margin-top: 30px;
+  .filter-tabs .tab {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    min-width: 120px;
   }
 
-  .transactions__title {
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 8px;
+  .games_bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
-  .transactions__list_img {
+  /* .games_bottom .game {
     display: flex;
-    flex-wrap: wrap;
-    gap: 16px 20px;
+  } */
+
+  .games_bottom .game:nth-child(n + 5) {
+    display: none;
+  }
+  .games_bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .games_bottom .game {
+    display: flex;
+  }
+
+  .games_bottom .game:nth-child(n + 5) {
+    display: none;
+  }
+  /* .transactions__list_img {
     grid-template-columns: repeat(4, 1fr);
+  } */
+
+  /* .transactions__list_img img:nth-child(n + 5) {
+    grid-column: span 2;
+  } */
+  .filter-tabs {
+    /* width: 0;
+    display: none;
+    visibility: none;
+    opacity: 0; */
+  }
+  .games__wrap {
+  }
+  .language {
+    width: 0;
+    display: none;
+    visibility: none;
+    opacity: 0;
+  }
+  .auth_container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .wrap.header__wrap {
+    /* width: 425px; */
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .header {
+    margin-left: 0;
+    padding: 0;
+  }
+  .buttons {
+    display: flex;
+  }
+  .modal__login {
+    box-sizing: border-box;
+    /* width: 425px; */
+    padding: 0;
+  }
+  .modal__register {
+    box-sizing: border-box;
+    /* width: 425px; */
+    padding: 0;
+  }
+  .modal__main {
+    display: block;
+    min-width: none;
+    width: 100%;
+    padding: 0;
+  }
+  .modal__add {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 116px;
+    border-radius: 12px;
+  }
+  .modal__add img {
+    width: 330px;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+  .modal__text-auth {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  .modal__forms {
+    width: 100%;
+  }
+  .main__wrap {
+    display: block;
+  }
+  .modal__button-close {
+    display: flex;
+    justify-content: start;
+  }
+  .modal__button--img {
+    padding: 15px 20px 0 0;
+  }
+  .modal__search__container {
+    width: 425px;
+  }
+  .advantages__list {
+    grid-template-columns: repeat(2, 1fr); /* по 2 в ряд на маленьких экранах */
+  }
+  .transactions__list_img {
+    display: grid;
+    grid-template-columns: repeat(4, 0.7fr);
+    gap: 10px;
+    align-items: center;
+    place-items: center;
   }
 
   .transactions__list_img img:nth-child(n + 5) {
-    grid-column: span 2;
+    grid-column: span 1;
   }
 
-  .transactions__list_img img {
-    max-width: 68px;
-    height: 22px;
+  .transactions__list_img img:nth-child(n + 5) {
+    grid-row: 2;
   }
-
-  .rules__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 171%;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    font-family: Gilroy;
+  .modal__button--img1 {
+    padding: 20px 20px 0 0;
   }
-
   .rules__text {
-    font-weight: 400;
-    font-size: 12px;
-    color: #767676;
+    width: 250px;
+  }
+  .rules {
+    width: 250px;
+  }
+  .about__us__text {
+    width: 340px;
+  }
+  .hidden {
+    display: none;
+  }
+  .filters {
+    /* overflow-x: auto; */
+    width: 100%;
+  }
+  .filter-tabs {
     display: flex;
-    align-items: center;
-    max-width: 358px;
-  }
-
-  .rules__img {
-    position: static;
-    width: 40px;
-    height: 40px;
-    margin-right: 12px;
-  }
-
-  .sponsors {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     gap: 8px;
+    padding: 7px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tab {
+    flex: 0 0 auto; /* Запрет сжатия, ширина по содержимому */
+    scroll-snap-align: start;
+    white-space: nowrap;
+    width: 135px;
   }
 
-  .all_rigth_received {
-    margin-bottom: 108px;
+  /* Убираем перенос текста */
+  .tab div {
+    white-space: nowrap;
+  }
+  .filters__tabs-wrap {
+    /* overflow-x: auto; */
+    /* width: 390px; */
+    margin-right: 14px;
+  }
+}
+@media (max-width: 450px) {
+  /* .filter__active__container div {
+    width: 120px;
+  } */
+  .nav_menu {
+    padding: 12px 20px 12px 20px;
+    border: none;
+    border-top: 1px solid #1f1704;
+    background: #0e0a01;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 84px;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    gap: 20px;
+    z-index: 10000;
+  }
+  .header {
+    padding: 0;
+  }
+  .transactions {
+    padding: 0 18px;
+  }
+  .main__wraper {
+    padding: 0;
+  }
+  .modal__search__container {
+    max-height: 100%;
+  }
+  .filter__modal__container {
+    max-height: 100%;
+  }
+  .modal__search__content {
+    padding: 0 10px 32px 10px;
+  }
+  .modal__search__search::after {
+    left: 12%;
+  }
+  .filter__active__container div {
+    width: 45%;
   }
 
   .nav_menu__button {
@@ -3269,7 +3299,6 @@ button {
   .nav_menu__button {
     transform: scale(0.8);
   }
-
   .logo__img {
     width: 100px;
   }

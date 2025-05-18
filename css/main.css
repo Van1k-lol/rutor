@@ -5,7 +5,9 @@ html {
 html.modal-open {
   overflow-y: hidden;
 }
-
+/* * {
+  border: 1px solid red;
+} */
 @font-face {
   font-family: Gilroy;
   src: url("../assets/fonts/gilroy/Gilroy-Regular.ttf");
@@ -2775,6 +2777,7 @@ button {
   font-weight: 400;
   font-size: 16px;
 }
+
 /* ====================== АДАПТАЦИЯ ДО 425PX ====================== */
 @media (max-width: 1300px) {
   .modal__search {
@@ -3324,5 +3327,133 @@ button {
 
   .nav_menu__button {
     transform: scale(0.7);
+  }
+}
+@media (max-width: 375px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    width: 98vw;
+    max-width: 98vw;
+    box-sizing: border-box;
+  }
+  .header {
+    min-width: 0 !important;
+    width: 100vw !important;
+    margin-left: 0 !important;
+    padding: 0 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    box-sizing: border-box;
+  }
+  .wrap,
+  .main__wraper {
+    max-width: 98vw !important;
+    width: 98vw !important;
+    padding: 0 0 !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+  }
+  .filter-tabs {
+    width: 98vw !important;
+    min-width: 0 !important;
+    max-width: 98vw !important;
+    box-sizing: border-box;
+    padding: 7px 0 !important;
+  }
+  .tab {
+    min-width: 98px !important;
+    width: auto !important;
+    max-width: 98vw !important;
+  }
+  .favorites,
+  .games__wrap,
+  .games_bottom {
+    width: 98vw !important;
+    max-width: 98vw !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 0 !important;
+  }
+}
+@media (max-width: 375px) {
+  .modal__main,
+  .modal__search__container,
+  .modal__forms__inputs,
+  .modal__forms__inputs__aditional-wrap {
+    width: 98vw !important;
+    max-width: 98vw !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    padding: 0 0 !important;
+    margin: 0 auto !important;
+  }
+  .modal__add img {
+    width: 90vw !important;
+    max-width: 90vw !important;
+    min-width: 0 !important;
+  }
+  .modal__forms__inputs-currency,
+  .modal__forms__inputs-promocode {
+    width: 100% !important;
+    max-width: 98vw !important;
+  }
+  .modal__button-signin,
+  .modal__button-shadow-bgc-correct,
+  .modal__button-shadow-bgc,
+  .modal__button-shadow,
+  .modal__button__telegram-signin,
+  .modal__button__telegram-shadow {
+    width: 98vw !important;
+    min-width: 0 !important;
+    max-width: 98vw !important;
+  }
+}
+@media (max-width: 375px) {
+  .header {
+    width: 375px !important;
+    min-width: 375px !important;
+    max-width: 98vw !important;
+    margin-left: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    box-sizing: border-box;
+    padding: 0 !important;
+  }
+  .nav_menu {
+    box-sizing: border-box;
+    max-width: 98vw !important;
+  }
+  .modal__balance__main {
+    max-width: 98vw;
+    width: 98vw;
+  }
+  .modal__balance__button-container {
+    max-width: 98vw;
+    width: 98vw;
+  }
+  .balance__main__wrap {
+    max-width: 98vw;
+    width: 98vw;
+  }
+  .modal__balance__button__withdraw-container {
+    max-width: 98vw;
+    width: 98vw;
+  }
+  .modal__search {
+    max-width: 98vw;
+    width: 98vw;
+    left: 0;
+  }
+  .nav_menu {
+    z-index: 7;
+  }
+  .modal__register {
+    z-index: 12;
+    overflow-x: hidden;
+  }
+  .modal__login {
+    z-index: 12;
+    overflow-x: hidden;
   }
 }

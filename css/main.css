@@ -3132,6 +3132,7 @@ button {
     box-sizing: border-box;
     /* width: 425px; */
     padding: 0;
+    height: 100vh;
   }
   .modal__main {
     display: block;
@@ -3451,6 +3452,7 @@ button {
   .modal__register {
     z-index: 12;
     overflow-x: hidden;
+    height: 100vh;
   }
   .modal__login {
     z-index: 12;

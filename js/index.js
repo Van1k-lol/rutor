@@ -142,21 +142,21 @@ const resultsText = document.querySelector('.modal__search__results');
 const notFound = document.querySelector('.not__found');
 
 const games = [
-  { name: 'Rise of Merlin', img: '../assets/img/main/main/riseOfMerlin.png' },
-  { name: '40 Joker Staxx', img: '../assets/img/main/main/games/40_joker.png' },
-  { name: 'Sevens & Fruits', img: '../assets/img/main/main/games/sevens_fruits.png' },
-  { name: '6 Jokers', img: '../assets/img/main/main/games/6_jokers.png' },
-  { name: 'Mysterious Egypt', img: '../assets/img/main/main/games/mysterious_egyptp.png' },
-  { name: 'Rise of Merlin', img: '../assets/img/main/main/riseOfMerlin.png' },
-  { name: 'Big Bass Bonanza', img: '../assets/img/main/main/games/BigBassBonanza.png' },
-  { name: 'Rise of Merlin', img: '../assets/img/main/main/riseOfMerlin.png' },
-  { name: 'Mustang Trail', img: '../assets/img/main/main/games/MustangTrail.png' },
-  { name: 'Rise of Merlin', img: '../assets/img/main/main/riseOfMerlin.png' },
-  { name: 'Book of Gold', img: '../assets/img/main/main/games/BookOfGold.png' },
-  { name: 'Rise of Merlin', img: '../assets/img/main/main/riseOfMerlin.png' },
+  { name: 'Rise of Merlin', img: './assets/img/main/main/riseOfMerlin.png' },
+  { name: '40 Joker Staxx', img: './assets/img/main/main/games/40_joker.png' },
+  { name: 'Sevens & Fruits', img: './assets/img/main/main/games/sevens_fruits.png' },
+  { name: '6 Jokers', img: './assets/img/main/main/games/6_jokers.png' },
+  { name: 'Mysterious Egypt', img: './assets/img/main/main/games/mysterious_egyptp.png' },
+  { name: 'Rise of Merlin', img: './assets/img/main/main/riseOfMerlin.png' },
+  { name: 'Big Bass Bonanza', img: './assets/img/main/main/games/BigBassBonanza.png' },
+  { name: 'Rise of Merlin', img: './assets/img/main/main/riseOfMerlin.png' },
+  { name: 'Mustang Trail', img: './assets/img/main/main/games/MustangTrail.png' },
+  { name: 'Rise of Merlin', img: './assets/img/main/main/riseOfMerlin.png' },
+  { name: 'Book of Gold', img: './assets/img/main/main/games/BookOfGold.png' },
+  { name: 'Rise of Merlin', img: './assets/img/main/main/riseOfMerlin.png' },
   { name: '3 Genie Wishes', img: './assets/img/main/main/games/3GenieWishes.png' },
-  { name: 'Rise of Merlin', img: '../assets/img/main/main/riseOfMerlin.png' },
-  { name: '3 Fruits Win', img: '../assets/img/main/main/games/3FruitsWin.png' },
+  { name: 'Rise of Merlin', img: './assets/img/main/main/riseOfMerlin.png' },
+  { name: '3 Fruits Win', img: './assets/img/main/main/games/3FruitsWin.png' },
 ];
 
 // Функция рендера карточек

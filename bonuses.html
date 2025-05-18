@@ -44,23 +44,23 @@
       </div>
     </div>
   </header>
-  <div class="modal__login">
+    <div class="modal__login">
     <div class="modal__main">
+      <div class="modal__button-close"><img src="./assets/img/main/main_reg/Vector.png" class="modal__button--img"
+          alt=""></div>
       <div class="main__wrap">
-        <div class="modal__add"><img src="./assets/img/main/main_reg/Frame 16.png" alt=""></div>
+        <picture class="modal__add"><source srcset="./assets/banner/Banner.png" media="(max-width: 425px)"><img src="./assets/img/main/main_reg/Frame 16.png" alt=""></picture>
         <div class="modal__forms">
-          <div class="modal__button-close"><img src="./assets/img/main/main_reg/Vector.png" class="modal__button--img"
-              alt=""></div>
           <div class="modal__forms__top">
             <h2 class="modal__text-auth">Авторизация</h2>
           </div>
           <div class="modal__forms__container">
             <div class="modal__forms__inputs">
-              <input placeholder="Почта" type="email" class="modal__input-email">
+              <input placeholder="Почта" type="email" id="modal-login-email" class="modal__input-email">
               <div class="modal__input--wrapper">
 
-                <input placeholder="Пароль" id="password" type="password" class="modal__input-password">
-                <button class="modal__input--toggle" type="button" onclick="togglePassword()"><img
+                <input placeholder="Пароль" id="password2" type="password" class="modal__input-password">
+                <button class="modal__input--toggle" type="button" onclick="togglePassword2()"><img id="password2-img"
                     src="./assets/img/main/main_reg/eye-1.png" alt=""></button>
               </div>
               <div class="modal__forms__inputs--reset">
@@ -69,11 +69,11 @@
             </div>
           </div>
           <div class="modal__forms__button--auth">
-            <div class="modal__button-container">
+            <div id="modBtnContainer" class="modal__button-container">
               <div class="modal__button-shadow-bgc-correct"></div>
               <div class="modal__button-shadow"></div>
               <div class="modal__button-shadow-bgc"></div>
-              <button class="modal__button-signin">Вход</button>
+              <button id="modalButtonSign" class="modal__button-signin">Вход</button>
             </div>
             <p class="modal__forms__or-text">или</p>
             <div class="modal__button-container">
@@ -85,13 +85,16 @@
       </div>
     </div>
   </div>
+
+
+
   <div class="modal__register">
     <div class="modal__main">
+      <div class="modal__button-close"><img src="./assets/img/main/main_reg/Vector.png" class="modal__button--img1"
+          alt=""></div>
       <div class="main__wrap">
-        <div class="modal__add"><img src="./assets/img/main/main_log/Banner.png" alt=""></div>
+        <picture class="modal__add"><source srcset="./assets/banner/Banner_1.png" media="(max-width: 425px)"><img src="./assets/img/main/main_log/Banner.png" alt=""></picture>
         <div class="modal__forms">
-          <div class="modal__button-close"><img src="./assets/img/main/main_reg/Vector.png" class="modal__button--img"
-              alt=""></div>
           <div class="modal__forms__top">
             <h2 class="modal__text-auth">Регистрация</h2>
           </div>
@@ -104,25 +107,30 @@
                 <button class="modal__input--toggle" type="button" onclick="togglePassword()"><img
                     src="./assets/img/main/main_reg/eye-1.png" alt=""></button>
               </div>
-              <form action="" class="modal__forms__inputs-currency">
-                <select name="currency" id=""></select>
-              </form>
-              <input type="text" class="modal__forms__inputs-promocode">
-              <div class="modal__forms__inputs__checkbox--wrapp">
-                <input type="checkbox" name="" id="">
-                <p></p>
+              <div class="modal__forms__inputs__aditional-wrap">
+
+                <form placeholder="Валюта" action="" class="modal__forms__inputs-currency">
+                  <select name="currency" id="" class="modal__forms__inputs-currency-select">
+                    <option class="modal__forms__inputs-currency-select-main" value="" disabled selected>Валюта</option>
+                    <option value="USD">USD</option>
+                    <option value="RUB">RUB</option>
+                    <option value="EUR">EUR</option>
+                  </select>
+                </form>
+                <input placeholder="Промокод" type="text" class="modal__forms__inputs-promocode">
               </div>
-              <div class="modal__forms__inputs--reset">
-                <p>Забыли пароль?</p>
+              <div class="modal__forms__inputs__checkbox--wrapp">
+                <input type="checkbox" name="" id="regCheckbox" class="modal__forms__inputs__checkbox">
+                <p>Я согласен (-на) с правилами и условиями</p>
               </div>
             </div>
           </div>
           <div class="modal__forms__button--auth">
-            <div class="modal__button-container">
+            <div id="modBtnContainer" class="modal__button-container ">
               <div class="modal__button-shadow-bgc-correct"></div>
               <div class="modal__button-shadow"></div>
               <div class="modal__button-shadow-bgc"></div>
-              <button class="modal__button-signin">Вход</button>
+              <button id="modalButtonSign" class="modal__button-signin ">Регистрация</button>
             </div>
             <p class="modal__forms__or-text">или</p>
             <div class="modal__button-container">

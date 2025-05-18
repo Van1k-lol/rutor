@@ -3238,6 +3238,19 @@ button {
   /* .filter__active__container div {
     width: 120px;
   } */
+  .search,
+  .provider-select {
+    max-width: 391px;
+  }
+  .search {
+    margin-bottom: 12px;
+  }
+  .wrap {
+    padding: none;
+  }
+  .filter-controls {
+    display: block;
+  }
   .nav_menu {
     padding: 12px 20px 12px 20px;
     border: none;

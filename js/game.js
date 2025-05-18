@@ -4,6 +4,7 @@ const mainTop = document.querySelector('.main_top');
 const main = document.querySelector('.main');
 const changeView = document.querySelectorAll('.button__view');
 const openModalButton = document.getElementById("modalButtonSign");
+const openModalButtonFB = document.getElementById("modalButtonSign1")
 
 
 
@@ -150,6 +151,9 @@ function initBalanceModal() {
   // Показать модалку
   depositTab?.addEventListener("click",openDepositTab())
   openModalButton.addEventListener("click", () => {
+    modalOverlayBalance?.classList.remove("hidden");
+  });
+  openModalButtonFB.addEventListener("click", () => {
     modalOverlayBalance?.classList.remove("hidden");
   });
   depositTab.addEventListener("click",openDepositTab)

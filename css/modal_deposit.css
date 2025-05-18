@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -504,17 +508,22 @@
       0deg,
       var(--gray-gray-700, #1f1704),
       var(--gray-gray-700, #1f1704)
-    ), */
-    linear-gradient(0deg,
+    ), */ linear-gradient(
+      0deg,
       rgba(249, 176, 26, 0.5),
-      rgba(249, 176, 26, 0.5)),
-    linear-gradient(175.46deg,
+      rgba(249, 176, 26, 0.5)
+    ),
+    linear-gradient(
+      175.46deg,
       rgba(249, 176, 26, 0.1) 21.26%,
       rgba(255, 255, 255, 0.1) 49.63%,
-      rgba(249, 176, 26, 0.1) 93.33%),
-    radial-gradient(26.11% 174.07% at 35.42% 25%,
+      rgba(249, 176, 26, 0.1) 93.33%
+    ),
+    radial-gradient(
+      26.11% 174.07% at 35.42% 25%,
       rgba(249, 176, 26, 0.3) 0%,
-      rgba(249, 176, 26, 0) 63.51%);
+      rgba(249, 176, 26, 0) 63.51%
+    );
 
   color: #ffffff;
   text-shadow: 0 0 5px #fff, 0 0 10px #ffc14173;
@@ -568,4 +577,93 @@
   height: 20px;
   padding-top: 35px;
   padding-right: 32px;
+}
+
+@media (max-width: 425px) {
+  .tabs img {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+  }
+  .tabs {
+    margin-right: 0;
+    position: relative;
+  }
+  .tab {
+    width: auto;
+  }
+  .section {
+    width: auto;
+  }
+  .input-box.large {
+    width: auto;
+    height: 70px;
+  }
+  .modal-tabs-wrap {
+    justify-content: center;
+  }
+  .modal-tabs-wrap :nth-child(2) {
+    justify-content: end;
+  }
+  #modal-tabs-cross {
+    position: absolute;
+    right: 16px;
+    padding: 0 16px 0 0;
+  }
+  .input-box {
+    height: 70px;
+  }
+  .crypto-grid {
+    display: block;
+  }
+  .input-box.crypto {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 12px;
+  }
+  .input-row {
+    display: block;
+    width: auto;
+  }
+  .input-box {
+    width: auto;
+    margin-bottom: 12px;
+  }
+
+  /* table {
+   
+  } */
+  .history-table {
+    transform: translate(80px, 340px) rotate(-90deg);
+    transform-origin: top left;
+    width: auto;
+  }
+  td,
+  th {
+    writing-mode: vertical-lr;
+    transform: rotate(deg); /* чтобы текст читался снизу вверх */
+  }
+
+  .left-panel {
+    width: auto;
+    margin: 0;
+    margin-bottom: 16px;
+    height: 60px;
+  }
+  .modal-content {
+    display: block;
+  }
+  .right-panel {
+    margin: 0;
+    height: auto;
+  }
+  .currency {
+    position: absolute;
+    right: 0px;
+    left: auto;
+    top: 15px;
+  }
+  .top-text {
+    margin-top: 0;
+  }
 }
